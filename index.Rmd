@@ -41,9 +41,6 @@ output:
 ### R
 * [R homepage](http://www.r-project.org/)
 * [Download R](http://cran.r-project.org/)
-* [RStudio (IDE)](http://rstudio.org/)
-* [RStudio (IDE) preview relase](https://www.rstudio.com/ide/download/preview)
-* [RStudio Documentation](https://support.rstudio.com/hc/en-us/categories/200035113-Documentation)
 * [Quick R (all types of examples)](http://www.statmethods.net/index.html)
 * [Roger Peng's Computing for Data Analysis Videos](http://bit.ly/UC5UDc)
 * [An Introduction to R](http://cran.r-project.org/doc/manuals/r-release/R-intro.html)
@@ -51,6 +48,12 @@ output:
 * [Free Code School intro R Course](https://www.codeschool.com/courses/try-r)
 * [swirl](swirlstat.com) "swirl teaches you R programming and data science interactively, at your own pace, and right in the R console"
 * [_R Packages_ by Hadley Wickham](http://r-pkgs.had.co.nz/)
+
+### RStudio
+* [RStudio (IDE)](http://rstudio.org/)
+* [RStudio (IDE) preview relase](https://www.rstudio.com/ide/download/preview)
+* [RStudio Documentation](https://support.rstudio.com/hc/en-us/categories/200035113-Documentation)
+
 
 ### [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
 
@@ -72,6 +75,9 @@ output:
 * [Graph Catalog `ggplot2`](http://shinyapps.stat.ubc.ca/r-graph-catalog/)
 * [The Grammar and Graphics of Data Science (Video)](https://www.rstudio.com/resources/webinars/the-grammar-and-graphics-of-data-science/) (58:50)
 
+### Data Science
+* [R for Data Science](http://r4ds.had.co.nz/tidy-data.html)
+
 ### Using [`dplyr`](https://cran.r-project.org/web/packages/dplyr/index.html)
 
 * [`dplyr` video1-tutorial](http://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)
@@ -82,6 +88,7 @@ output:
 
 * [`knitr` Homepage](http://yihui.name/knitr/)
 * [`knitr` Package Development on GitHub](https://github.com/yihui/knitr)
+* [Bookdown: Authoring Books with R Markdown](https://bookdown.org/yihui/bookdown/)
 * [*Reproducible Research with* R/RStudio Development on GitHub](https://github.com/christophergandrud/Rep-Res-Book)
 * [CRAN views of Reproducible Analysis](http://cran.r-project.org/web/views/ReproducibleResearch.html)
 * [Reproducible Reporting (Video)](https://www.rstudio.com/resources/webinars/reproducible-reporting/) (58:03)
@@ -107,6 +114,7 @@ output:
 * [Slidify](http://slidify.org/index.html)
 
 ### Git
+* [Happy Git and GitHub for the useR](http://happygitwithr.com/)
 * [Download Git](http://git-scm.com)
 * [GitHub Help Page](https://help.github.com/)
 * [Git Tutorials (bitbucket)](https://www.atlassian.com/git/tutorial)
