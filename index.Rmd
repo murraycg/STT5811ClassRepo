@@ -17,11 +17,11 @@ output:
 
 * Materials for *Passion Driven Statistics* assignments are maintained in the [STT2810ClassRepo](https://github.com/STAT-ATA-ASU/STT2810ClassRepo) repository.
 
-* The text *Passion Driven Statistics (Light Weight)* is maintained in the [PDS-Book](https://github.com/alanarnholt/PDS-Book) repository.
+* The text *Passion Driven Statistics* modified for use at Appalachian State University is maintained in the [PDS-Book](https://github.com/alanarnholt/PDS-Book) repository.
 
 * The `R` package `PDS` is maintained in the [PDS](https://github.com/alanarnholt/PDS) repository.
 
-* A version (possibly dated) of *Passion Driven Statistics (Light Weight)* is viewable on [RPubs](http://rpubs.com/arnholt/193630).
+* A version (possibly dated) of *Passion Driven Statistics* is viewable on [RPubs](http://rpubs.com/arnholt/193630).
 
 
 * Questions related to ISCAM III materials should be addressed with the [piazza account for STT 5811](https://piazza.com/class/ida59td3ddq3zi).
