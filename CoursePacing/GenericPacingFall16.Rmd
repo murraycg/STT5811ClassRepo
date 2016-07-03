@@ -1,0 +1,692 @@
+---
+title: "Tentative Course Schedule STT 5811"
+author: "Alan Arnholt"
+date: '`r Sys.Date()`'
+output: html_document
+---
+
+General Notes:
+
+1.  Direct links for [CrowdGrader](http://www.crowdgrader.org/) assignments will be updated during the course.
+
+2.  All due dates are 5 PM Friday for CrowdGrader assignments.
+
+3.  All CrowdGrader peer reviews must be completed by 11 PM on Tuesdays.
+
+4.  Peer review feedback will close at 8 AM Wednesdays for CrowdGrader assignments.
+
+  
+5.  The grading rubric for submissions can be found in the [grubric](https://github.com/STAT-ATA-ASU/STT5811ClassRepo/tree/master/grubric) directory and below. 
+
+#### Grading Rubric for Assignments
+
+Field | Excellent (3) | Competent (2)  | Needs Work (1)
+------|---------------|----------------|---------------
+Reproducible | All graphs, code, and answers are created from text files.  Answers are never hardcoded but instead are inserted using inline R code. sessionInfo() is provided at the end of the document as well as an automatically generated references section with properly formatted citations when appropriate. | All graphs, code, and answers are created from text files.  Answers are  hardcoded. No sessionInfo() is provided at the end of the document. References are present but not cited properly or automatically generated. | Document uses copy and paste with graphs or code.  Answers are hardcoded and references when approapriate are hardcoded.
+Statistical Understanding | Answers to questions demonstrate clear statistical understanding by comparing theoretical answers to simulated answers.  When hypotheses are tested, classical methods are compared and contrasted to randomization methods.  When confidence intervals are constructed, classical approaches are compared and contrasted with bootstrap procedures.  The scope of inferential conclusions made is appropriate for the sampling method. | Theoretical and simulated answers are computed but no discussion is present comparing and contrasting the results.  When hypotheses are tested, results for classical and randomization methods are presented but are not compared and contrasted.  When confidence intervals are constructed, classical and bootstrap approaches are computed but the results are not compared and contrasted.  The scope of inferential conslcusions made is appropriate for the sampling method. | Theoretical and simulated answers are not computed correctly.  No comparison between classical and randomization approaches is present when testing hypotheses.  When confidence intervals are constructed, there is no comparison between classical and bootstrap confidence intervals .
+Graphics | Graphs for categorical data (barplot, mosaic plot, etc.) have appropriately labeled axes and titles.  Graphs for quantitative data (histograms, density plots, violin plots, etc.) have appropriately labeled axes and titles.  Multivariate graphs use appropriate legends and labels.  Computer variable names are replaced with descriptive variable names. | Appropriate graphs for the type of data are used.  Not all axes have appropriate labels or computer variable names are used in the graphs. | Inappropriate graphs are used for the type of data.  Axes are not labeled and computer variable names appear in the graphs.
+Coding  | Code (primarily R) produces correct answers.  Non-standard or complex functions are commented.  Code is formatted using a consistent standard. | Code produces correct answers.  Commenting is not used with non-standard and complex functions.  No consistent code formatting is used. | Code does not produce correct answers.  Code has no comments and is not formatted.
+Clarity  | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment. | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate.
+
+### Week 1: (Aug 16, 18)
+
+**Tuesday**
+
+* Sign-up for free accounts on [GitHub](https://github.com) and [Rpubs](https://rpubs.com).
+
+* When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **first_name_last_name** as your username when you register with GitHub.  For example, my username on GitHub is *alanarnholt*. If you have a popular name such as John Smith, you may need to provide some other distinquishing characteristic in your username.  Please use the same **username** for your account on Rpubs. 
+
+* Once you have a GitHub account, send an email to arnholtat@appstate.edu with a Subject line of **STT 5811 - GitHub Username**, and tell me in the body of your email your first name, last name, and your GitHub username.  I will then manually add you as a team member to the repository in the STAT-ATA-ASU organization that has your name (**Last_name-First_name**).  This repository will be where you store all of your work for this course.  I will also change your repository to a private repository.
+
+* Become familiar with the Appstate [RStudio server](https://mathr.math.appstate.edu/). You will use your Appstate user name and password to log in to the server.  You must be registered in the class to access the server.
+
+* Read Chapters 1-3 in Passion Driven Statistics (Light Weight) (PDS), and watch all linked videos in PDS.  The PDS text is maintained at [this repository](https://github.com/alanarnholt/PDS-Book).  There is also a copy on [RPubs](http://rpubs.com/arnholt/97944) (but it may not be as current as the repository).
+
+* Select a data set you will work with and update your GitHub repository **README** with your chosen data set.  
+
+* Complete the Medical Record Assignment, and push your excel spreadsheet to your GitHub account. 
+
+
+
+Watch the following videos:
+
+* [Creating RStudio projects from Github Repos (5 min)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)    
+* [Colaboration and time travel: version control with git, github and RStudio (48 minutes)](https://www.rstudio.com/resources/webinars/archives/)      
+* [Reproducible Reporting (58 minutes)](https://www.rstudio.com/resources/webinars/archives/) 
+
+* Test drive RStudio by following the directions from [Jenny Bryan's STAT 545 course](https://stat545-ubc.github.io/git07_git-github-rstudio.html).
+
+
+#### Optional
+* You may want to install [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), [zotero](https://www.zotero.org), and optionally [$LaTeX$](http://www.ctan.org/starter) on your personal computer. If you do, you will want to follow Jenny Bryan's excellent advice for [installing R and RStudio](http://stat545-ubc.github.io/block000_r-rstudio-install.html) and [installing Git](http://stat545-ubc.github.io/git01_git-install.html). Note: [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), and [$LaTeX$](http://www.ctan.org/starter) are installed on the [Appstate RStudio](https://mathr.math.appstate.edu/) server.
+
+* Watch the following videos as appropriate:
+
+* [Install R on Mac (2 min)](https://www.youtube.com/watch?v=lJxVRgiX-ik)    
+* [Install R for Windows (3 min)](https://www.youtube.com/watch?v=LII6of-5Odw)    
+* [Install R and RStudio on Windows (5 min)](https://www.youtube.com/watch?v=eD07NznguA4)    
+
+
+**Wednesday**
+
+* Read chapters 1-2 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+* Read and Complete *Investigation B: Random Babies* from ISCAMIII prior to class.
+
+* Submit at least one suggestion for improving the week 3 (**Citation  Assignment (PR#1)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
+**Friday**
+
+* Read and Complete *Investigation 1.1: Friend or Foe?* from ISCAMIII prior to class.
+
+* Discuss and finalize the week 3 (**Citation  Assignment (PR#1)**) grading rubric.
+
+### Week 2: (Aug 24, 26, 28)
+
+**Monday**
+
+* Read Chapters 4 and 5 of PDS (Conducting a Literature Review and Writing About Empirical Research).
+
+* Using [zotero](https://www.zotero.org/) will be covered.
+
+* Work on your personal Code Book.  You will show the instructor your folder in class.  The instructor will record your folder in the grade book as either a GO or NOGO.  
+
+* Watch the first 22 minutes of [Speaking Analytics: RStudio, Shiny, and RMarkdown Webinar](https://www.rstudio.com/resources/webinars/).
+
+* Work on the citation assignment.
+
+* [Fork](https://help.github.com/articles/fork-a-repo/) this repository.  
+
+* Watch [creating RStudio projects from Github Repos (5 min)](https://www.youtube.com/watch?v=YxZ8J2rqhEM) 
+
+* Clone the repository to your local machine using RStudio by following these instructions:
+
+1. Fork the repository.
+2. Copy the clone URL to the clipboard.
+3. Click `File > New Project > Version Control > Git`
+4. Paste the clone URL (`https://github.com/YourUserName/STAT-ATA-ASU/STT5811ClassRepo.git`) in the `Repository URL:` box.
+5. Type a name (suggestion `UserNameSTT5811`) in the `Project directory name:` box.
+6. Change if needed the location in the `Create project as subdirectory of:` box.
+7. Click the `Create Project` box.  You should now have a local copy of the forked repository on your local machine.  Congratulations!  
+
+* Set the upstream remote in your fork to this repository with the command
+```
+git remote add upstream https://github.com/STAT-ATA-ASU/STT5811ClassRepo.git
+```
+* Verify with
+```
+git remote -v
+```
+* To obtain updates from the upstream repository type
+```
+git pull upstream master
+```
+* If there are conflicts, you will need to resolve them before proceeding.
+
+* Submit ISCAM PR#1 NLT 23:00 8/25/15 (*Investigation B: Random Babies* parts i and o; *Investigation 1.1: Friend or Foe?* parts a, f, g, h, l, and m; RR chapters 1-2.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1274](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1274).
+
+
+**Wednesday**
+
+* Read chapter 3 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+* Read and Complete *Investigation 1.2: Do Names Match Faces?* from ISCAMIII prior to class.
+
+* Submit at least one suggestion for improving the week 4 (**Research Plan Assignment (PR#2)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
+**Friday**
+
+* Read and Complete *Investigation 1.3: Heart Transplant Mortality* from ISCAMIII prior to class.
+
+* Discuss and finalize the week 4 (**Research Plan Assignment (PR#2)**) grading rubric.
+
+### Week 3 (Aug 31, Sep 2, 4)
+
+**Monday**
+
+* Read/reread Chapters 4-5 of PDS and take notes as needed.
+
+* Practice with [http://www.crowdgrader.org/](http://www.crowdgrader.org/).
+
+* Integrating [zotero](www.zotero.com) with [RMarkdown](http://rmarkdown.rstudio.com) will be discussed during the first part of the week.  Example document will be stored in this folder.
+
+* You may find these [videos helpful](https://www.youtube.com/watch?v=dto4gARbsi0&list=PLJBNI3mCp9g0wsSDK111qgimqVF1dwPXO).
+
+
+* Students will continue to work on the Citation assignment.
+
+* Submit the **Citation Assignment** to [http://www.crowdgrader.org](http://www.crowdgrader.org) no later than 5 pm Friday (Sep 4).  The direct link for this assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1296](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1296)
+
+* In the YAML, use the title **Citation Assignment**, and leave the author field blank. 
+```
+title: "Citation Assignment"
+author: 
+```
+
+
+#### Grading Rubric for **Citation Assignment** (PR#1)
+
+Field      | Excellent          |  Competent      |  Needs Work
+-----------|--------------------|-----------------|-------------------
+Document (*.html) opens without issue and was created using an *Rmd file | Document opens without issue and no author name is present (1) | Document opens but author's name is visible (0.7) | Document does not open (0.1)
+Clarity | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. (1) | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment. (0.7)  | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate. (0.1) 
+Sources | five or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (1) | two or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (0.7) | fewer than two sources that are less than 10 years old --- references are not automatically generated from a Zotero BibTeX file (0.1)
+
+
+A well-written paper (without a visible name) that convinces you the author has reviewed the literature, has a topic that will expand the knowledge in the area, and has used at least five references (less than 10 years old---preferably less than five years old---automatically generated from a Zotero BibTeX file) should receive a 3.
+
+* Submit ISCAM PR#2 NLT 23:00 8/25/15 (*Investigation 1.2: Do Names Match Faces?* parts c (use $n = 22$ and assume 16 favored the left picture), d, k, l, m, n; *Investigation 1.3: Heart Transplant Mortality* parts h, i, j, l and m; RR chapter 3.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1295](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1295).
+
+**Wednesday**
+
+* Read chapter 4 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+* Read and Complete *Investigation 1.4: Kissing The Right Way* from ISCAMIII prior to class.
+
+* Submit at least one suggestion for improving the week 6 (**Data Management Assignment (PR#3)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
+**Friday**
+
+* Read and Complete *Investigation 1.5: Kissing The Right Way (cont.)* from ISCAMIII prior to class.
+
+* Discuss and finalize the week 6 (**Data Management Assignment (PR#3)**) grading rubric.
+
+### Week 4: (Sep 7 (no Class), 9, 11)
+
+**Monday---On your own**
+
+* Read/review Chapters 4-5 of PDS as needed.  
+* Work on **Research Plan Assignment** PDS.
+* Peer reviews for **Citation Assignment** are due NLT 11 PM Tuesday.
+* **Research Plan Assignment** PDS is due NLT 5 PM Friday (Sep 11).  
+         
+
+#### Grading Rubric for **Research Plan Assignment** (PR#2)
+
+Field      | Excellent          |  Competent      |  Needs Work
+-----------|--------------------|-----------------|-------------------
+Document (*.html) opens without issue and was created using an *Rmd file | Document opens without issue and no author name is present (0.6) | Document opens but author's name is visible (0.4) | Document does not open (0.1)
+Clarity | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. The title is a concise statement of the main topic that identifies the actual variables under investigation and the relationship between them. (0.6) | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment.  The title is not a concise statement of the main topic or does not identify the variables under investigation and the relationship between them (0.4)  | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate.  The title is does not identify the variables under investigation of the relationship between them (0.1) 
+Introduction | The introduction describes the question the author intends to investigate and how their research relates to other work in the field.  The literature review justifies the proposed research by identifying a hole in existing scholarship. (0.6) |  The introduction describes the question the author intends to investigate and how their research relates to other work in the field.  The literature review does not justify the proposed research by identifying a hole in existing scholarship. (0.4) | The introduction does not describe the proposed research or identify a hole in existing research. (0.1)
+Organization | There is a **Methods** section that describes how the research was conducted with discussion of the _sample_, _measures_, and _procedures_.  There is an **Implications/Predicted Results** section that discusses real implications linked to possible results. (0.6) | There is a **Methods** section that describes how the research was conducted but no discussion of the _sample_, _measures_, and _procedures_.  There is an **Implications/Predicted Results** but no discussion of real implications linked to possible results. (0.4) | The **Methods** and **Implications/Predicted Results** sections are missing. (0.1)
+Sources | five or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (0.6) | two or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (0.4) | fewer than two sources that are less than 10 years old --- references are not automatically generated from a Zotero BibTeX file (0.1)
+
+
+A well-written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the actual variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
+
+* Submit ISCAM PR#3 NLT 23:00 9/8/15 (*Investigation 1.4: Kissing The Right Way* parts g, h, and j; *Investigation 1.5: Kissing The Right Way (cont.)* parts c, d, and e; RR chapter 4.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1327](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1327).
+
+**Wednesday**
+
+* Read chapter 5 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+* Read and Complete *Investigation 1.6: Improved Baseball Player* from ISCAMIII prior to class.
+
+* Submit at least one suggestion for improving the week 7 (**Univariate Graphing Assignment (PR#4)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
+**Friday**
+
+* Read and Complete *Investigation 1.7: Reese’s Pieces* from ISCAMIII prior to class.
+* Discuss and finalize the week 7 **Univariate Graphing Assignment (PR#4)** grading rubric.
+* After action review of **Literature Review / Citation Assignment (PR#1)**.
+
+### Week 5: (Sep 14, 16, 18)
+
+**Monday**
+
+* Read Chapters 6 and 7 of PDS (Working with Data and Data Management).
+* This week you will "work with data".
+* Complete peer reviews of **Research Plan Assignment** by 11 PM Tuesday
+* Revise your Research Plan Assignment as needed 
+* Watch the [Data Wrangling with R and RStudio (55 minutes)](https://www.rstudio.com/resources/webinars/archives/) video.
+* Watch the first 30 minutes of [The Grammar of Graphics and Data Science](https://www.rstudio.com/resources/webinars/archives/).
+* Watch the [Working with Data video](https://www.youtube.com/watch?v=d9TgAspq9bA&index=52&list=PLDEF0B9CBD27AD37E) (41 min)
+* Watch the [Data Management video](https://www.youtube.com/watch?v=thGk4CUEXQ8&list=PLDEF0B9CBD27AD37E&index=53) (39 min).
+* Read the vignette in the `PDS` package.
+* Complete you peer grading evaluations for the **Research Plan Assignment** NLT 11 PM Tuesday.
+* Submit ISCAM PR#4 NLT 23:00 9/15/15 (*Investigation 1.6: Improved Baseball Player* parts b, c, g, h, i, p, s, and u; RR chapter 5.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1361](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1361).
+
+**The Data Management Assignment is Challenging and will require many hours of your time---so please start now --- not next week when it is due**
+
+**Wednesday**
+
+* Read chapter 6 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+* Read and Complete *Investigation 1.8: Is ESP real?* from ISCAMIII prior to class.
+
+* Submit at least one suggestion for improving the week 8 (**Bivariate Graphing Assignment (PR#5)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
+**Friday**
+
+* Read and Complete *Investigation 1.9: Halloween Treat Choices* from ISCAMIII prior to class.
+* Discuss and finalize the week 8 **Bivariate Graphing Assignment (PR#5)** grading rubric.
+* After action review of **Research Plan Assignment (PR#2)**.
+
+
+### Week 6: (Sep 21, 23, 25)
+
+**Monday**
+
+* Read/review Chapters 6 and 7 of PDS as needed.
+* This week you will "Manage your Data" based on your research proposal.
+* Submit via [http://www.crowdgrader.org](http://www.crowdgrader.org) the **Data Management Assignment** NLT 5 PM Friday (Sep 25). Directions: Select three _secondary_ categorical variables from the data set you are using.  Recode your data to create factors with appropriate labels.  Create a barplot for each of your factors, and write a sentence or two explaining each barplot.  Show all `R` code used to manage your data and used to create your barplots with `R` code chunks in your `*.Rmd` file.  Submit the resulting `*.html` file to CrowdGrader.  The direct link for the **Data Management Assignment** is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1394](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1394).  
+
+#### Grading Rubric for **Data Management Assignment** (PR#3)
+
+
+Field      | Excellent          |  Competent      |  Needs Work
+-----------|--------------------|-----------------|-------------------
+Document (*.html) opens without issue and was created using an *Rmd file | Document opens without issue and no author name is present (0.5) | Document opens but author's name is visible (0.3) | Document does not open (0.1)
+Purpose/Variables | The purpose and goals of the study are clearly explained. The variables (names) and data set (name) the author is working with are described (0.5) |  The purpose or goals of the study are unclear. Only one of either the variables (names) or the data set (name) are discussed. (0.3) | No discussion of the purpose or goals of the study.  Neither the variables (names) or data set (name) are discussed. (0.1)
+Clarity | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. (0.5) | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment.  (0.3)  | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate. (0.1) 
+DataManagement | Clear explanation of the selected group and how the data was managed. Missing values are properly coded, variable names are recoded to readable names, and factors are given informative labels.  (1.0) | Unclear explanation of the selected group or how the data was managed. Missing values are properly coded, variable names from the data set are renamed, and factors are given informative labels.  (0.7)| Unclear explanation of the selected group or how the data was managed. Missing values are not properly coded, variable names from the data set are not renamed, and factors are not given informative labels.  (0.1)
+Graphs | There are barplots for three different categorical variables with appropriate labels and R code.  A sentence or two explains each barplot mentioning features that may be present such as unexpected results, uneven distributions, extra categories, unbalanced experiments, missing values, etc.  (0.6) | There are barplots for three different categorical variables but the barplots do not have appropriate labels or R code is not shown. A sentence or two explains each barplot mentioning features that may be present such as unexpected results, uneven distributions, extra categories, unbalanced experiments, missing values, etc. (0.4) | No barplots are shown in the document.  (0.1)
+
+
+* Submit ISCAM PR#5 NLT 23:00 9/22/15 (*Investigation 1.9: Halloween Treat Choices* parts a-g, n, o-r; RR chapter 6.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1393](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1393).
+
+**Wednesday**
+
+* Read chapter 7 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+* Read and Complete *Investigation 1.10: Kissing the Right Way (cont.)* from ISCAMIII prior to class.
+
+**Friday**
+
+* Read and Complete *Investigation 1.11: Heart Transplant Mortality (cont)* from ISCAMIII prior to class.
+* After action review of **Research Plan Assignment (PR#3)**.
+
+* Revise and push your **Research Plan Assignment** to a folder named **ResearchPlan** in your private repository no later than 5:00 PM Friday.  I will grade your **Research Plan Assignment** using the Grading Rubric for **Research Plan Assignment** (PR#2).  I will also check to make sure the document compiles based on the `*.Rmd` and `*.bib` files in your **ResearchPlan** folder.  
+
+#### Grading Rubric for **Research Plan Assignment** (PR#2)
+
+Field      | Excellent          |  Competent      |  Needs Work
+-----------|--------------------|-----------------|-------------------
+Document (*.html) opens without issue and was created using an *Rmd file | Document opens without issue and no author name is present (0.6) | Document opens but author's name is visible (0.4) | Document does not open (0.1)
+Clarity | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. The title is a concise statement of the main topic that identifies the actual variables under investigation and the relationship between them. (0.6) | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment.  The title is not a concise statement of the main topic or does not identify the variables under investigation and the relationship between them (0.4)  | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate.  The title is does not identify the variables under investigation of the relationship between them (0.1) 
+Introduction | The introduction describes the question the author intends to investigate and how their research relates to other work in the field.  The literature review justifies the proposed research by identifying a hole in existing scholarship. (0.6) |  The introduction describes the question the author intends to investigate and how their research relates to other work in the field.  The literature review does not justify the proposed research by identifying a hole in existing scholarship. (0.4) | The introduction does not describe the proposed research or identify a hole in existing research. (0.1)
+Organization | There is a **Methods** section that describes how the research was conducted with discussion of the _sample_, _measures_, and _procedures_.  There is an **Implications/Predicted Results** section that discusses real implications linked to possible results. (0.6) | There is a **Methods** section that describes how the research was conducted but no discussion of the _sample_, _measures_, and _procedures_.  There is an **Implications/Predicted Results** but no discussion of real implications linked to possible results. (0.4) | The **Methods** and **Implications/Predicted Results** sections are missing. (0.1)
+Sources | five or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (0.6) | two or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (0.4) | fewer than two sources that are less than 10 years old --- references are not automatically generated from a Zotero BibTeX file (0.1)
+
+
+A well-written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the actual variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
+
+### Week 7: (Sep 28, 30, Oct 2)
+
+**Monday**
+
+* Read Chapter 8 of PDS (Graphing One Variable at a Time).
+* Watch [Graphing 1 Video](https://www.youtube.com/watch?v=7_b6Rd9Vad8&list=PLDEF0B9CBD27AD37E&index=54).
+* Work on **Univariate Graphing Assignment** PDS.
+* **Univariate Graphing Assignment** due NLT 5 PM Friday (Oct 2).  Submit assignment
+via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **Univariate Graphing Assignment** is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1428](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1428).
+
+#### Grading Rubric for **Univariate Graphing Assignment**  (PR#4)
+
+
+
+Field      | Excellent          |  Competent      |  Needs Work
+-----------|--------------------|-----------------|-------------------
+The document (*.html) opens without issue and was created using an *Rmd file. | The document opens without issue and no author name is present. (0.3) | The document opens but author's name is visible (0.2) | The document does not open. (0.1)
+Purpose/Variables | The purpose and goals of the study are clearly explained. The variables (names) and data set (name) the author is working with are described. (0.3) |  The purpose or goals of the study are unclear. Only one of either the variables (names) or the data set (name) are discussed. (0.2) | No discussion of the purpose or goals of the study.  Neither the variables (names) or data set (name) are discussed. (0.1)
+Clarity | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. (0.3) | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment.  (0.2)  | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate. (0.1) 
+DataManagement | Clear explanation of the selected group and how the data was managed. Missing values are properly coded, variable names are recoded to readable names, and factors are given informative labels.  (0.3) | Unclear explanation of the selected group or how the data was managed. Missing values are properly coded, variable names from the data set are renamed, and factors are given informative labels.  (0.2)| Unclear explanation of the selected group or how the data was managed. Missing values are not properly coded, variable names from the data set are not renamed, and factors are not given informative labels.  (0.1)
+Graphs | There are at least two different bar plots of categorical variables with appropriate labels and R code.  A sentence or two explains each barplot mentioning features that may be present such as unexpected results, uneven distributions, extra categories, unbalanced experiments, missing values, etc.  There is a least one histogram or density plot of a numeric variable proposed in the study.  When describing the distribution of the numeric variable, the author describes the shape and uses appropriate statistics to characterize the center and spread of the distribution. (1.8) | There is only one bar plot of a categorical variable with appropriate labels and R code.  A sentence or two explains the barplot mentioning features that may be present such as unexpected results, uneven distributions, extra categories, unbalanced experiments, missing values, etc.  There is a least one histogram or density plot of a numeric variable proposed in the study.  When describing the distribution of the numeric variable, the author describes the shape and uses inappropriate statistics to characterize the center and spread of the distribution. (1.4) | No barplots, histograms, or density plots are shown in the document.  (0.1)
+
+
+* Submit ISCAM PR#6 NLT 23:00 9/29/15 (*Investigation 1.10: Kissing the Right Way* parts d, e, f, g, h, k, l, n, and t;  *Investigation 1.11: Heart Transplant Mortality (cont)* parts a-d, f, g; RR chapter 7.) The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1437](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1437).
+
+
+**Wednesday**
+
+~~* Read chapter 8 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).~~
+
+* Read and Complete *Investigation 1.12: Sampling Words* from ISCAMIII prior to class.
+
+* Submit at least one suggestion for improving the week 10 (**ANOVA Assignment (PR#6)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
+**Friday**
+
+* Read and Complete *Investigation 1.13: Literary Digest* from ISCAMIII prior to class.
+
+* Discuss and finalize the week 10 **ANOVA Assignment (PR#6)** grading rubric.
+
+* After action review of **Research Plan Assignment (PR#4)**.
+
+
+
+
+
+### Week 8: (Oct 5, 7, 9)
+
+**Monday**
+
+* Read Chapter 9 of PDS (Graphing Relationships), and watch all videos in the chapter.
+
+ - [Graphing 2 Video](https://www.youtube.com/watch?v=Yf121fdtjDA&index=55&list=PLDEF0B9CBD27AD37E)
+ - [Graphing Rules](https://www.youtube.com/watch?v=JVq2VKib0vw&index=21&list=PLDEF0B9CBD27AD37E)
+ - [Common Graphing Mistakes](https://www.youtube.com/watch?v=iY_t31-R_xU&index=25&list=PLDEF0B9CBD27AD37E)
+ 
+* Work on **Bivariate Graphing Assignment**. 
+* **Bivariate Graphing Assignment** due NLT 5 PM Friday (Oct 9).  Submit assignment
+via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **Bivariate Graphing Assignment** is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1429](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1429)
+
+**Bivariate Graphing Assignment** 
+
+This is a continuation of the material submitted for the **Univariate Graphing Assignment** assignment submitted in week07.  You should revise your assignment as needed from last week and add one bivariate graph of your principal constructs and one one multivariate graph of your principal constructs.
+
+
+#### Grading Rubric for **Bivariate Graphing Assignment**  (PR#5)
+
+
+
+Field      | Excellent          |  Competent      |  Needs Work
+-----------|--------------------|-----------------|-------------------
+The document (*.html) opens without issue and was created using an *Rmd file. | The document opens without issue and no author name is present. (0.3) | The document opens but author's name is visible (0.2) | The document does not open. (0.1)
+Purpose/Variables | The purpose and goals of the study are clearly explained. The variables (names) and data set (name) the author is working with are described. (0.3) |  The purpose or goals of the study are unclear. Only one of either the variables (names) or the data set (name) are discussed. (0.2) | No discussion of the purpose or goals of the study.  Neither the variables (names) or data set (name) are discussed. (0.1)
+Clarity | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. (0.3) | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment.  (0.2)  | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate. (0.1) 
+DataManagement | Clear explanation of the selected group and how the data was managed. Missing values are properly coded, variable names are recoded to readable names, and factors are given informative labels.  (0.3) | Unclear explanation of the selected group or how the data was managed. Missing values are properly coded, variable names from the data set are renamed, and factors are given informative labels.  (0.2)| Unclear explanation of the selected group or how the data was managed. Missing values are not properly coded, variable names from the data set are not renamed, and factors are not given informative labels.  (0.1)
+Graphs | There are at least two different bar plots of categorical variables with appropriate labels and R code.  A sentence or two explains each barplot mentioning features that may be present such as unexpected results, uneven distributions, extra categories, unbalanced experiments, missing values, etc.  There is a least one histogram or density plot of a numeric variable proposed in the study.  When describing the distribution of the numeric variable, the author describes the shape and uses appropriate statistics to characterize the center and spread of the distribution.  There are at least two bivariate/multivariate graphs of the principal constructs the researcher is proposing to study. (1.8) | There is only one bar plot of a categorical variable with appropriate labels and R code.  A sentence or two explains the barplot mentioning features that may be present such as unexpected results, uneven distributions, extra categories, unbalanced experiments, missing values, etc.  There is a least one histogram or density plot of a numeric variable proposed in the study.  When describing the distribution of the numeric variable, the author describes the shape and uses inappropriate statistics to characterize the center and spread of the distribution.  There is only one bivariate/multivariate graph of the principal constructs the researcher is proposing to study. (1.4) | No barplots, histograms, density plots, or bivariate/multivariate graphs are shown in the document.  (0.1)
+
+
+~~* Submit ISCAM PR#7.~~
+
+**Wednesday**
+
+* Read chapter 9 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+* Read and Complete *Investigation 1.14: Sampling Words (cont.) from ISCAMIII prior to class.
+
+* Submit at least one suggestion for improving the week 11 (**Chi-Square Assignment (PR#7)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
+**Friday**
+
+* Read and Complete *Investigation 1.15: Freshmen Voting Pattern* from ISCAMIII prior to class.
+* Discuss and finalize the week 11 **Chi-Square Assignment (PR#7)** grading rubric.
+* After action review of **Univariate Graphing Assignment (PR#4)**.
+
+
+### Week 9: (Oct 12, 14 --- Fall Break Oct 15, 16)
+
+**Monday**
+
+* Read Chapter 10 of PDS (Hypothesis Testing), and watch all videos in the chapter.
+* Read the documents `SamplingDistributions.html` and `StatisticsTemplate.html` in the `/Statistics` folder.
+
+~~* Submit ISCAM PR#8.~~
+ 
+You should revise your assignment from last week as needed based on peer comments.  I encourage everyone to make an appointment with the writing center and to have the writing center review your current assignment.
+
+**Wednesday**
+
+* Read chapter 10 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book)
+
+* Read and Complete *Investigation 1.16: Teen Hearing Loss* from ISCAMIII prior to class.
+
+**Friday**
+
+* Break :)
+
+
+### Week 10: (Oct 19, 21, 23)
+
+**Monday**
+
+* Read Chapter 11 of PDS (Analysis of Variance), and watch all videos in the chapter.
+* Read the document `ANOVA.html` in the `/Statistics` folder.
+* Work on the **ANOVA Assignment** 
+* The **ANOVA Assignment** is due NLT 5 PM Friday (Oct 23).  Submit assignment
+via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **ANOVA Assignment** is https://www.crowdgrader.org/crowdgrader/venues/view_venue/1508).
+
+**ANOVA Assignment** 
+
+This is a continuation of the material submitted for the **Bivariate Graphing Assignment** submitted in week 09.  You should revise your assignment as needed based on peer comments.  I encourage everyone to make an appointment with the writing center and to have the writing center review your current assignment.
+
+#### Grading Rubric for **ANOVA Assignment** (PR#6)
+
+Does the document have sections that explain the `Purpose of the Study` (0.1), the `Variables` used in the study (0.1), and how the data was managed (0.1)? 
+
+Are there graphs for at least two of the categorical variables? (0.1) Is there a sentence or two describing what the reader is viewing? (0.1)  
+
+Is there either a histogram or density plot of one of the numeric variables proposed in the study? (0.1)
+
+Is there a bivariate graph of the principal constructs the researcher is proposing to study? (0.1)  Is there a sentence or two describing what the reader is viewing? (0.1)
+
+Is there a multivariate graph of the principal constructs the researcher is proposing to study? (0.1) Is there a sentence or two describing what the reader is viewing? (0.1)
+
+Do all graphs have the *x-* and *y-*axes labeled appropriately? (0.1). Do all graphs have descriptive titles? (0.1)
+
+Is there a null and alternative hypothesis appropriate for the data? (0.6)
+
+Is there code and output for testing the null hypothesis with an ANOVA? (0.6)
+
+Is there an appropriate explanation of the results including a post hoc test with interpretation if the results from the ANOVA are significant? (0.6)
+
+~~* Submit ISCAM PR#9.~~
+
+**Wednesday**
+
+* Read/reread chapters 8, 9, and 10 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+* Read and Complete *Investigation 1.17: Cat Households* from ISCAMIII prior to class.
+
+* Submit at least one suggestion for improving the week 12 (**Correlation Assignment (PR#8)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
+**Friday**
+
+* Read and Complete *Investigation 1.18: Female Senators* from ISCAMIII prior to class.
+* Discuss and finalize the week 12 **Correlation Assignment (PR#8)** grading rubric.
+* After action review of **Bivariate Graphing Assignment (PR#5)**.
+
+### Week 11: (Oct 26, 28, 30)
+
+**Monday**
+
+* Read Chapter 12 of PDS (Chi-Square Test of Independence), and watch the embedded videos. 
+* Read the document `ChiSquare.html` in the `/Statistics` folder.
+
+* Work on the **Chi-Square Assignment**. 
+* The **Chi-Square assignment** is due NLT 5 PM Friday (Oct 30).  Submit the assignment via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **Chi-Square Assignment** is (https://www.crowdgrader.org/crowdgrader/venues/view_venue/1550).
+
+**Chi-Square Assignment** 
+
+This is a continuation of the material submitted for the **ANOVA assignment** submitted in week 10.  You should revise your assignment as needed based on peer comments.  I encourage everyone to make an appointment with the writing center and to have the writing center review your current assignment.
+
+#### Grading Rubric for **Chi-Square Assignment** (PR#7)
+
+Does the document have sections that explain the `Purpose of the Study` (0.1), the `Variables` used in the study (0.1), and how the data was managed (0.1)? 
+
+Are there graphs for at least two of the categorical variables? (0.1) Is there a sentence or two describing what the reader is viewing? (0.1)  
+
+Is there either a histogram or density plot of one of the numeric variables proposed in the study? (0.1)
+
+Is there a bivariate graph of the principal constructs the researcher is proposing to study? (0.1)  Is there a sentence or two describing what the reader is viewing? (0.1)
+
+Is there a multivariate graph of the principal constructs the researcher is proposing to study? (0.1) Is there a sentence or two describing what the reader is viewing? (0.1)
+
+Do all graphs have the *x-* and *y-*axes labeled appropriately? (0.1). Do all graphs have descriptive titles? (0.1)
+
+Is there a null and alternative hypothesis appropriate for the ANOVA? (0.1)
+
+Is there code and output for testing the null hypothesis with an ANOVA? (0.1)
+
+Is there an appropriate explanation of the results including a post-hoc test with interpretation if the results from the ANOVA are significant? (0.1)
+
+Is there a null an alternative hypothesis for a Chi-Square test of independence? (0.5)
+
+Is there code and output for testing the null hypothesis with a Chi-Square test of independence? (0.5)
+
+Are there appropriate post-hoc tests if the Chi-Square test resulted in a significant *p-value*? (0.2)
+
+Is there a sentence or two describing the results of the Chi-Square test(s)? (0.3)
+
+~~* Submit ISCAM PR#10.~~
+
+* Submit ISCAM PR#7 NLT 23:00 10/27/15 (*Investigation 1.17: Cat Households* all parts; *Investigation 1.18: Female Senators* all parts; RR chapters 8-10.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1509](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1509).  Include one example with code illustrating a concept you have mastered for each chapter of RR you review. I will add an additional "peer review" grade for the assignment as well as a separate grade for your chapter summary reviews of RR.   
+
+**Wednesday**
+
+* Read chapter 11 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+* Read and Complete *Investigation 2.1: Birth Weights* from ISCAMIII prior to class.
+
+* Submit at least one suggestion for improving the week 13 (**Regression Assignment (PR#9)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
+**Friday**
+
+* Read and Complete *Investigation 2.2: How Long Can You Stand It?* from ISCAMIII prior to class.
+* Discuss and finalize the week 13 **Regression Assignment (PR#9)** grading rubric.
+* After action review of **ANOVA Assignment (PR#6)**.
+
+### Week 12: (Nov 2, 4, 6)
+
+**Monday**
+
+* Read Chapters 13 and 18 in PDS (Correlation Coefficient and Poster Presentation) and watch the embedded videos. 
+
+* Work on your poster.
+
+* Work on the **Correlation assignment** 
+* The **Correlation assignment** is due NLT 5 PM Friday (Nov 6).  Submit the assignment via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **Correlation Assignment** is (https://www.crowdgrader.org/crowdgrader/venues/view_venue/1580)
+
+**Correlation Assignment** 
+
+This is a continuation of the material submitted for the **Chi Square Assignment** submitted in week 11.  You should revise your assignment as needed based on peer comments.  I encourage everyone to make an appointment with the writing center and to have the writing center review your current assignment.
+
+#### Grading Rubric for **Correlation Assignment** (PR #8)
+
+Does the document have sections that explain the `Purpose of the Study` (0.1), the `Variables` used in the study (0.1), and how the data was managed (0.1)? 
+
+Are there graphs for at least two of the categorical variables? (0.1) Is there a sentence or two describing what the reader is viewing? (0.1)  
+
+Is there either a histogram or density plot of one of the numeric variables proposed in the study? (0.1)
+
+Is there a bivariate graph of the principal constructs the researcher is proposing to study? (0.1)  Is there a sentence or two describing what the reader is viewing? (0.1)
+
+Is there a multivariate graph of the principal constructs the researcher is proposing to study? (0.1) Is there a sentence or two describing what the reader is viewing? (0.1)
+
+Do all graphs have the *x-* and *y-*axes labeled appropriately? (0.1). Do all graphs have descriptive titles? (0.1)
+
+Is there a section for the Correlation assignment describing the two numeric variables the author uses? (0.6)
+
+Is there code and output for computing and testing the correlation coefficient?  Is there a scatterplot with appropriate labels? (0.6)
+
+Does the author explain their results following the example in PDS (direction, form, strength, and outliers)? (0.6)
+
+
+
+* Submit ISCAM PR#8. NLT 23:00 11/03/15 (*Investigation 2.1: Birth Weights* parts a, b, g, h, j, k, m, and n; *Investigation 2.2: How Long Can You Stand It* parts a-k; RR chapters 11.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1563](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1563).  Include one example with code illustrating a concept you have mastered for chapter 11 of RR. I will add an additional "peer review" grade for your chapter 11 summary review of RR. 
+
+**Wednesday**
+
+* Read chapter 12 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+* Read and Complete *Investigation 2.3: Readability of Cancer Pamphlets* from ISCAMIII prior to class.
+
+**Friday**
+
+* Read and Complete *Investigation 2.4: The Ethan Allen* from ISCAMIII prior to class.
+* After action review of **Chi-Square Assignment (PR#7)**.
+
+### Week 13: (Nov 9, 11, 13)
+
+**Monday**
+
+* Read Chapters 15 and 17 in PDS (Linear Regression and Confounding and Multivariate Models) and watch the embedded videos. 
+* Read the document `Regression.html` in the `/Regression` folder. 
+* Work on your poster.
+* Work on the **Regression Assignment** 
+* The **Regression Assignment** is due NLT 5 PM Friday (Nov 13).  Submit the assignment via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **Regression Assignment** is (https://www.crowdgrader.org/crowdgrader/venues/view_venue/1592).
+
+**Regression Assignment** 
+
+This is a continuation of the material submitted for the **Correlation** submitted in week 13.  You should revise your assignment as needed based on peer comments.  I encourage everyone to make an appointment with the writing center and to have the writing center review your current assignment.
+
+#### Grading Rubric for **Regression Assignment** (PR#9)
+
+Does the document have sections that explain the Purpose of the Study (0.3), the Variables used in the study (0.3), and how the data was managed (0.4)?
+
+Is all of the data management done near the beginning of the document (0.5)? 
+
+Is there a section for the Regression assignment? (0.5)
+
+Is there code and output for testing appropriate regression models? (0.5)
+
+Does the author describe their regression results appropriately? (0.5)
+
+* ~~Submit ISCAM PR#12.~~
+
+* Submit ISCAM PR#9. NLT 23:00 11/10/15 (*Investigation 2.3: Readability of Cancer Pamphlets* parts a-f; *Investigation 2.4: The Ethan Allen* parts c, d, f, h-n; RR chapters 12.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1591](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1591).  Include one example with code illustrating a concept you have mastered for chapter 12 of RR.  
+
+**Wednesday**
+
+* Read chapter 13 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+* Read and Complete *Investigation 2.5: Healthy Body Temperatures* from ISCAMIII prior to class.
+
+**Friday**
+
+* ~~Read and Complete *Investigation 2.6: Healthy Body Temperatures (cont.)* from ISCAMIII prior to class.~~
+
+* Read and Complete *Investigation 2.5: Healthy Body Temperatures* from ISCAMIII prior to class.
+
+* After action review of **ANOVA Assignment (PR#8)**.
+
+### Week 14: (Nov 16, 18, 20)
+
+**Monday**
+
+* Read Chapters 16 and 18 in PDS (Sampling and Designing Studies and Poster Presentation), and watch the embedded videos. 
+* Work on your poster.
+* ~~Submit ISCAM PR#13.~~
+Submit ISCAM PR#10. NLT 23:00 11/17/15 (*Investigation 2.5: Healthy Body Temperatures* all parts.) The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1610](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1610).  Include one example with code illustrating a concept you have mastered for chapter 13 of RR.  
+
+
+**Wednesday**
+
+* Read and Complete *Investigation 2.6: Healthy Body Temperatures (cont.)* from ISCAMIII prior to class.
+
+* ~~Read and Complete *Investigation 2.7: Water Oxygen Levels* from ISCAMIII prior to class.~~
+
+* Read chapter 14 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+
+**Friday**
+
+* Read and Complete *Investigation 2.7: Water Oxygen Levels* from ISCAMIII prior to class.
+
+* ~~Read and Complete *Investigation 2.8: Turbidity* from ISCAMIII prior to class.~~
+
+* After action review of **Regression Assignment (PR#9)**.
+ 
+### Week 15: (Nov 23, No Class Nov 25, 26, and 27; Nov 30, Dec 2 --- Poster Presentation: December 1, 2015, PLEMMONS STUDENT UNION - 137A Calloway Peak)
+
+
+* Submit ISCAM PR#11. NLT 23:00 11/24/15 (*Investigation 2.6: Healthy Body Temperatures (cont.)* all parts; *Investigation 2.7: Water Oxygen Levels* parts c-e; RR chapters 14.) The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1626](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1626)  
+
+* Work on your poster.
+
+* Print out your poster. Make sure your poster is stored in your private repository in a directory named `Poster`.
+
+* Present your poster (Dec 1).
+
+* Celebrate! 
+
+### Final 
+
+You are presented with a schedule of teaching that includes STT 5811.  Your job is to design a course that will be most helpful to your students, including assignments, activities, lectures, and investigations.  You are given access to all materials from the course you just completed.  You are required to cover all the topics of STT 5811 in a semester and to achieve the course objectives as listed on your syllabus.  You may not omit anything, as students must be prepared for the second semester; and the choice of topics was made at the department level.
+
+What materials will you include in your own course?  Why did you find them helpful (be very specific and cite examples)?
+
+Which materials will you not include in your own course?  Why will you leave them out (be very specific and cite examples)?
+
+Which three topics will you find easiest to cover because of what you learned in this course (be very specific and cite examples)?
+
+How will you reorder the presentation of topics to make things more clear to your own students?  What is your rationale for any changes?
+
+Your class plan should be written with either `RMarkdown` (`.Rmd`) or `LaTeX` (`.Rnw`) and stored in your private repo in a directory named `MyFinal`.
+
+Submit your `MyFinal` to CrowdGrader by midnight December 8, 2015.  Provide feedback on peer work prior to 9:00 am December 10, 2015.  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1650](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1650).
+
+* Final Exam December 10, 2015 9:00 am (in class during exam period)
+
+

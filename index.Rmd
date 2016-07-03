@@ -21,7 +21,7 @@ output:
 
 * The `R` package `PDS` is maintained in the [PDS](https://github.com/alanarnholt/PDS) repository.
 
-* A version (possibly dated) of *Passion Driven Statistics (Light Weight)* is viewable on [RPubs](http://rpubs.com/arnholt/126376).
+* A version (possibly dated) of *Passion Driven Statistics (Light Weight)* is viewable on [RPubs](http://rpubs.com/arnholt/193630).
 
 
 * Questions related to ISCAM III materials should be addressed with the [piazza account for STT 5811](https://piazza.com/class/ida59td3ddq3zi).
