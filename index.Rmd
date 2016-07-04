@@ -1,7 +1,7 @@
 ---
 title: "STT 5811 Homepage"
 author: ""
-date: 'Fall 2015'
+date: ""
 output:
   html_document:
     css: asu.css
@@ -12,22 +12,13 @@ output:
 
 * The course syllabus is stored in the [`Syllabus`](./Syllabus/STT5811sylFall15.html) directory of the STT 5811 repository.
 
-* Course pacing and assignments are stored in the [`CoursePacing`](./CoursePacing/GenericPacing.html) directory of the STT 5811 repository.
-
-
-* Materials for *Passion Driven Statistics* assignments are maintained in the [STT2810ClassRepo](https://github.com/STAT-ATA-ASU/STT2810ClassRepo) repository.
+* Course pacing and assignments are stored in the [`CoursePacing`](./CoursePacing/GenericPacingFall16.html) directory of the STT 5811 repository.
 
 * The text *Passion Driven Statistics* modified for use at Appalachian State University is maintained in the [PDS-Book](https://github.com/alanarnholt/PDS-Book) repository.
 
 * The `R` package `PDS` is maintained in the [PDS](https://github.com/alanarnholt/PDS) repository.
 
 * A version (possibly dated) of *Passion Driven Statistics* is viewable on [RPubs](http://rpubs.com/arnholt/193630).
-
-
-* Questions related to ISCAM III materials should be addressed with the [piazza account for STT 5811](https://piazza.com/class/ida59td3ddq3zi).
-
-* Questions related to PDS materials should be addressed with the [piazza account for STT 2810](https://piazza.com/class/iaawd0uzg2193).
-
 
 * [Class RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server)
 
