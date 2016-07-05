@@ -335,7 +335,7 @@ $(document).ready(function () {
 <p>LO 2. Explain why the long-run relative frequency of repeated independent events settles down to the true probability as the number of trials increases, i.e. why the law of large numbers holds.</p>
 <p>LO 3. Define disjoint (mutually exclusive) events as events that cannot both happen at the same time:</p>
 <ul>
-<li>If A and B are disjoint, P(A and B) = 0</li>
+<li>If A and B are disjoint, <span class="math inline">\(P(A \cap B) = 0\)</span></li>
 </ul>
 <p>LO 4. Distinguish between disjoint and independent events.</p>
 <ul>
@@ -352,16 +352,16 @@ $(document).ready(function () {
 </ul>
 <p>LO 7. Define complementary outcomes as mutually exclusive outcomes of the same random process whose probabilities add up to 1.</p>
 <ul>
-<li>If A and B are complementary, P(A) + P(B) = 1</li>
+<li>If A and B are complementary, <span class="math inline">\(P(A) + P(B) = 1\)</span></li>
 </ul>
 <p>LO 8. Distinguish between union of events (A or B) and intersection of events (A and B).</p>
 <ul>
 <li>Calculate the probability of union of events using the (general) addition rule:</li>
-<li>If A and B are not mutually exclusive, P(A or B) = P(A) + P(B) − P(A and B)</li>
-<li><p>If A and B are mutually exclusive, P (A or B) = P (A) + P (B), since for mutually exclusive events P(A and B) = 0</p></li>
+<li>If A and B are not mutually exclusive, <span class="math inline">\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)</span></li>
+<li><p>If A and B are mutually exclusive, <span class="math inline">\(P (A \cup B) = P (A) + P (B)\)</span>, since for mutually exclusive events <span class="math inline">\(P(A \cap B) = 0\)</span></p></li>
 <li>Calculate the probability of intersection of independent events using the multiplication rule:</li>
-<li>if A and B are independent, P(A and B) = P(A) × P(B)</li>
-<li><p>If A and B are dependent, P(A and B) = P(A|B) × P(B)</p></li>
+<li>if A and B are independent, <span class="math inline">\(P(A \cap B) = P(A) \times P(B)\)</span></li>
+<li><p>If A and B are dependent, <span class="math inline">\(P(A \cap B) = P(A|B) \times P(B)\)</span></p></li>
 </ul>
 <p>Test yourself:</p>
 <ol style="list-style-type: decimal">
@@ -418,7 +418,7 @@ $(document).ready(function () {
 <p>LO 2. Calculate the number of possible scenarios for obtaining k successes in n trials using the choose function: <span class="math inline">\(\binom{n}{k}=\frac{n!}{k!(n-k)!}.\)</span></p>
 <p>LO 3. Calculate probability of a given number of successes in a given number of trials using the binomial distribution: <span class="math inline">\(P(X=k)=\binom{n}{k}p^k(1-p)^{(n-k)}.\)</span></p>
 <p>LO 4. Calculate the expected number of successes in a given number of binomial trials <span class="math inline">\((\mu = np)\)</span> and its standard deviation <span class="math inline">\(\left(\sigma = \sqrt{np(1-p)}\right).\)</span></p>
-<p>LO 5. When number of trials is sufficiently large (<span class="math inline">\(np \ge 10\)</span> and <span class="math inline">\(n(1−p) \ge 10\)</span>), use the normal approximation to calculate binomial probabilities, and explain why this approach works.</p>
+<p>LO 5. When number of trials is sufficiently large (<span class="math inline">\(np \ge 10\)</span> and <span class="math inline">\(n(1-p) \ge 10\)</span>), use the normal approximation to calculate binomial probabilities, and explain why this approach works.</p>
 <p>Test yourself:</p>
 <ol style="list-style-type: decimal">
 <li>True/False: We can use the binomial distribution to determine the probability that in 10 rolls of a die the first 6 occurs on the 8th roll.</li>
@@ -502,11 +502,11 @@ $(document).ready(function () {
 </ul>
 <p>LO 4. Define a p-value as the conditional probability of obtaining a sample statistic at least as extreme as the one observed given that the null hypothesis is true.</p>
 <ul>
-<li>p−value=P(observed or more extreme sample statistic | <span class="math inline">\(H_0\)</span> true)</li>
+<li>p-value=P(observed or more extreme sample statistic | <span class="math inline">\(H_0\)</span> true)</li>
 </ul>
 <p>LO 5. Calculate a p-value as the area under the normal curve beyond the observed sample mean (either in one tail or both, depending on the alternative hypothesis). Note that in doing so you can use a Z score, where</p>
 <ul>
-<li><p>p−value=P(observed or more extreme sample statistic | <span class="math inline">\(H_0\)</span> true)</p></li>
+<li><p>p-value=P(observed or more extreme sample statistic | <span class="math inline">\(H_0\)</span> true)</p></li>
 <li><p>Always sketch the normal curve when calculating the p-value, and shade the appropriate area(s) depending on whether the alternative hypothesis is one- or two-sided.</p></li>
 </ul>
 <p>LO 6. Infer that if a confidence interval does not contain the null value the null hypothesis should be rejected in favor of the alternative.</p>
@@ -562,7 +562,7 @@ $(document).ready(function () {
 <p>LO 2. Explain why the <span class="math inline">\(t-\)</span>distribution helps make up for the additional variability introduced by using s (sample standard deviation) in calculation of the standard error, in place of <span class="math inline">\(\sigma\)</span> (population standard deviation).</p>
 <p>LO 3. Describe how the <span class="math inline">\(t-\)</span>distribution is different from the normal distribution, and what “heavy tail” means in this context.</p>
 <p>LO 4. Note that the <span class="math inline">\(t-\)</span>distribution has a single parameter, degrees of freedom, and as the degrees of freedom increases this distribution approaches the normal distribution.</p>
-<p>LO 5. Use a <span class="math inline">\(t-\)</span>statistic, with degrees of freedom <span class="math inline">\(df=n−1\)</span> for inference for a population mean:</p>
+<p>LO 5. Use a <span class="math inline">\(t-\)</span>statistic, with degrees of freedom <span class="math inline">\(df=n-1\)</span> for inference for a population mean:</p>
 <ul>
 <li><p>CI: <span class="math inline">\(\bar{x} \pm t_{1-\alpha/2, n-1}\cdot SE\)</span></p></li>
 <li><p>HT: <span class="math inline">\(t_{n-1}=\frac{\bar{x}-\mu_0}{SE}\)</span></p></li>
@@ -602,7 +602,7 @@ $(document).ready(function () {
 <li>the data within each group are nearly normal</li>
 <li>the variability across the groups is about equal and use graphical diagnostics to check if these conditions are met.</li>
 </ol>
-<p>LO 4. Recognize that the test statistic for ANOVA, the F statistic, is calculated as the ratio of the mean square between groups (MSG, variability between groups) and mean square error (MSE, variability within errors). Also recognize that the F statistic has a right skewed distribution with two different measures of degrees of freedom: one for the numerator (dfG=k−1, where k is the number of groups) and one for the denominator (dfE=n−k, where n is the total sample size).</p>
+<p>LO 4. Recognize that the test statistic for ANOVA, the F statistic, is calculated as the ratio of the mean square between groups (MSG, variability between groups) and mean square error (MSE, variability within errors). Also recognize that the F statistic has a right skewed distribution with two different measures of degrees of freedom: one for the numerator (dfG=k-1, where k is the number of groups) and one for the denominator (dfE=n-k, where n is the total sample size).</p>
 <ul>
 <li>Note that you won’t be expected to calculate MSG or MSE from the raw data, but you should have a conceptual understanding of how they’re calculated and what they measure.</li>
 </ul>
@@ -640,7 +640,7 @@ $(document).ready(function () {
 <p>LO 3. Recognize that the Central Limit Theorem (CLT) is about the distribution of point estimates, and that given certain conditions, this distribution will be nearly normal. In the case of the proportion the CLT tells us that if</p>
 <ul>
 <li>the observations in the sample are independent,</li>
-<li>the sample size is sufficiently large (checked using the success/failure condition: <span class="math inline">\(np\ge10\)</span> and <span class="math inline">\(n(1−p)\ge 10\)</span>,</li>
+<li>the sample size is sufficiently large (checked using the success/failure condition: <span class="math inline">\(np\ge10\)</span> and <span class="math inline">\(n(1-p)\ge 10\)</span>,</li>
 </ul>
 <p>then the distribution of the sample proportion will be nearly normal, centered at the true population proportion with a standard error of <span class="math inline">\(SE = \sqrt{\frac{p(1-p)}{n}}\)</span>.</p>
 <p><span class="math inline">\(\hat{p} \dot{\sim} N\left(\mu_{\hat{p}}=p, \sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}} \right)\)</span></p>
@@ -665,11 +665,11 @@ $(document).ready(function () {
 </ul>
 <p>LO 8. Note that the calculation of the standard error of the distribution of the difference in two independent sample proportions is different for a confidence interval and a hypothesis test.</p>
 <ul>
-<li>confidence interval and hypothesis test when <span class="math inline">\(H_0: p_1 − p_2 = \text{some value other than 0:}\)</span></li>
+<li>confidence interval and hypothesis test when <span class="math inline">\(H_0: p_1 - p_2 = \text{some value other than 0:}\)</span></li>
 </ul>
 <p><span class="math inline">\(SE_{\hat{p}_1 - \hat{p}_2} = \sqrt{\frac{\hat{p}_1(1 - \hat{p}_1)}{n_1} + \frac{\hat{p}_2(1 - \hat{p}_2)}{n_2}}\)</span></p>
 <ul>
-<li>hypothesis test when <span class="math inline">\(H_0:p_1 − p_2 = 0:\)</span></li>
+<li>hypothesis test when <span class="math inline">\(H_0:p_1 - p_2 = 0:\)</span></li>
 </ul>
 <p><span class="math inline">\(SE_{\hat{p}_1 - \hat{p}_2} = \sqrt{\frac{\hat{p}_{pool}(1 - \hat{p}_{pool})}{n_1} + \frac{\hat{p}_{pool}(1 - \hat{p}_{pool})}{n_2}}\)</span></p>
 <p>where <span class="math inline">\(\hat{p}_{pool}\)</span> is the overall rate of success:</p>
@@ -687,7 +687,7 @@ $(document).ready(function () {
 <p>LO 3. Calculate the chi-square test statistic as</p>
 <p><span class="math display">\[\chi^2 = \sum_{i=1}^k\frac{(\text{observed count} - \text{expected count})^2}{\text{expected count}},\]</span> where <span class="math inline">\(k\)</span> is the number of cells.</p>
 <p>LO 4. Note that the chi-square statistic is always positive, and follows a right skewed distribution with one parameter: degrees of freedom.</p>
-<p>LO 5. Note that the degrees of freedom for the chi-square statistic for the goodness of fit test is <span class="math inline">\(df=k−1\)</span>.</p>
+<p>LO 5. Note that the degrees of freedom for the chi-square statistic for the goodness of fit test is <span class="math inline">\(df=k-1\)</span>.</p>
 <p>LO 6. List the conditions necessary for performing a chi-square test (goodness of fit or independence)</p>
 <ol style="list-style-type: decimal">
 <li>the observations should be independent</li>
@@ -702,7 +702,7 @@ $(document).ready(function () {
 </ul>
 <p>LO 9. Calculate expected counts in two-way tables as</p>
 <p><span class="math display">\[E =\frac{\text{row total}\times\text{column total}}{\text{grand total}}\]</span></p>
-<p>LO 10. Calculate the degrees of freedom for chi-square test of independence as <span class="math inline">\(df=(R−1)\times(C−1)\)</span>, where <span class="math inline">\(R\)</span> is the number of rows in a two-way table, and <span class="math inline">\(C\)</span> is the number of columns.</p>
+<p>LO 10. Calculate the degrees of freedom for chi-square test of independence as <span class="math inline">\(df=(R-1)\times(C-1)\)</span>, where <span class="math inline">\(R\)</span> is the number of rows in a two-way table, and <span class="math inline">\(C\)</span> is the number of columns.</p>
 <p>LO 11. Note that there is no such thing as a chi-square confidence interval for proportions, since in the case of a categorical variables with many levels, there isn’t one parameter to estimate.</p>
 <p>LO 12. Use simulation methods when sample size conditions aren’t met for inference for categorical variables.</p>
 <p>*Note that the <span class="math inline">\(t-\)</span>distribution is only appropriate to use for means. When sample size isn’t sufficiently large, and the parameter of interest is a proportion or a difference between two proportions, we need to use simulation.</p>
@@ -825,14 +825,14 @@ $(document).ready(function () {
 <li>Note that <span class="math inline">\(\beta_1=0\)</span> means the regression line is horizontal, hence suggesting that there is no relationship between the explanatory and response variables.</li>
 </ul>
 <p>LO 7. Calculate the <span class="math inline">\(T\)</span> score for the hypothesis test as</p>
-<p><span class="math display">\[T_{df} = \frac{b_1 - \text{null value}}{SE_{b_1}}\]</span> with <span class="math inline">\(df=n−2\)</span>.</p>
+<p><span class="math display">\[T_{df} = \frac{b_1 - \text{null value}}{SE_{b_1}}\]</span> with <span class="math inline">\(df=n-2\)</span>.</p>
 <ul>
-<li>Note that the T score has <span class="math inline">\(n−2\)</span> degrees of freedom since we lose one degree of freedom for each parameter we estimate, and in this case we estimate the intercept and the slope.</li>
+<li>Note that the T score has <span class="math inline">\(n-2\)</span> degrees of freedom since we lose one degree of freedom for each parameter we estimate, and in this case we estimate the intercept and the slope.</li>
 </ul>
 <p>LO 8. Note that a hypothesis test for the intercept is often irrelevant since it is usually out of the range of the data, and hence it is usually an extrapolation.</p>
 <p>LO 9. Calculate a confidence interval for the slope as</p>
 <p><span class="math display">\[b_1 \pm t_{1- \alpha/2, df}\cdot SE_{b_1}\]</span></p>
-<p>where <span class="math inline">\(df=n−2\)</span> and <span class="math inline">\(t_{1- \alpha/2, df}\)</span> is the critical score associated with the given confidence level at the desired degrees of freedom.</p>
+<p>where <span class="math inline">\(df=n-2\)</span> and <span class="math inline">\(t_{1- \alpha/2, df}\)</span> is the critical score associated with the given confidence level at the desired degrees of freedom.</p>
 <ul>
 <li>Note that the standard error of the slope estimate <span class="math inline">\(SE_{b_1}\)</span> can be found on the regression output.</li>
 </ul>
@@ -868,14 +868,14 @@ $(document).ready(function () {
 <ul>
 <li><span class="math inline">\(H_0:\beta_1=\beta_2=\cdots=\beta_k\)</span></li>
 <li><span class="math inline">\(H_A: \text{at least one} \beta_i \ne 0\)</span></li>
-<li><span class="math inline">\(df = n−k−1\)</span> degrees of freedom.</li>
+<li><span class="math inline">\(df = n-k-1\)</span> degrees of freedom.</li>
 <li>Usually reported at the bottom of the regression output.</li>
 </ul>
 <p>LO 2. Note that the p-values associated with each predictor are conditional on other variables being included in the model, so they can be used to assess if a given predictor is significant, given that all others are in the model.</p>
 <ul>
 <li><span class="math inline">\(H_0:\beta_1=0\)</span>, given all other variables are included in the model</li>
 <li><span class="math inline">\(H_A:\beta_1\ne0\)</span>, given all other variables are included in the model</li>
-<li>These p-values are calculated based on a <span class="math inline">\(t\)</span> distribution with <span class="math inline">\(n−k−1\)</span> degrees of freedom</li>
+<li>These p-values are calculated based on a <span class="math inline">\(t\)</span> distribution with <span class="math inline">\(n-k-1\)</span> degrees of freedom</li>
 <li>The same degrees of freedom can be used to construct a confidence interval for the slope parameter of each predictor:</li>
 </ul>
 <p><span class="math display">\[b_i \pm t_{1-\alpha/2, n-k-1}\cdot SE_{b_i}\]</span></p>
