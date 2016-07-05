@@ -38,11 +38,11 @@ Clarity  | Few errors of grammar and usage; any minor errors do not interfere wi
 
 * Become familiar with the Appstate [RStudio server](https://mathr.math.appstate.edu/). You will use your Appstate user name and password to log in to the server.  You must be registered in the class to access the server.
 
-* Test drive RStudio by following the directions from [Jenny Bryan's STAT 545 course](https://stat545-ubc.github.io/git07_git-github-rstudio.html).  Additional material can be found in the detailed `Bookdown` document [Happy Git and GitHub for the usdR](http://happygitwithr.com/).  Chapters 8, 10-13 of [Happy Git and GitHub for the usdR](http://happygitwithr.com/) will be helpful if you need more directions for test driving RStudio. Note: Git, R, and the RStudio IDE have already been installed for you on the RStudio server.    
+* Test drive RStudio by following the directions from [Jenny Bryan's STAT 545 course](https://stat545-ubc.github.io/git07_git-github-rstudio.html).  Additional material can be found in the detailed `Bookdown` document [Happy Git and GitHub for the usdR](http://happygitwithr.com/).  chapters 8, 10-13 of [Happy Git and GitHub for the usdR](http://happygitwithr.com/) will be helpful if you need more directions for test driving RStudio. Note: Git, R, and the RStudio IDE have already been installed for you on the RStudio server.    
 
 * Read the [Git and GitHub](http://r-pkgs.had.co.nz/git.html) chapter from Hadley Wickham's book [R Packages](http://r-pkgs.had.co.nz/)
 
-* Read Chapters 1-3 in *Passion Driven Statistics, (PDS)*, and watch all linked videos in *PDS*.  The *PDS* text is maintained at [this repository](https://github.com/alanarnholt/PDS-Book).  There is also a copy on [RPubs](http://rpubs.com/arnholt/193630) (but it may not be as current as the repository).
+* Read chapters 1-3 in *Passion Driven Statistics, (PDS)*, and watch all linked videos in *PDS*.  The *PDS* text is maintained at [this repository](https://github.com/alanarnholt/PDS-Book).  There is also a copy on [RPubs](http://rpubs.com/arnholt/193630) (but it may not be as current as the repository).
 
 * Read chapters 1-3 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
@@ -52,7 +52,7 @@ Watch the following video:
  
 
 #### Optional
-* You may want to install [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), [zotero](https://www.zotero.org), and optionally [$LaTeX$](http://www.ctan.org/starter) on your personal computer. If you do, you will want to follow Jenny Bryan's excellent advice for [installing R and RStudio](http://stat545-ubc.github.io/block000_r-rstudio-install.html) and [installing Git](http://stat545-ubc.github.io/git01_git-install.html).  Jenny's advice is also in Chapters 6 and 7 of [Happy Git and GitHub for the usdR](http://happygitwithr.com/).  Note: [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), and [$LaTeX$](http://www.ctan.org/starter) are installed on the [Appstate RStudio](https://mathr.math.appstate.edu/) server.
+* You may want to install [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), [zotero](https://www.zotero.org), and optionally [$LaTeX$](http://www.ctan.org/starter) on your personal computer. If you do, you will want to follow Jenny Bryan's excellent advice for [installing R and RStudio](http://stat545-ubc.github.io/block000_r-rstudio-install.html) and [installing Git](http://stat545-ubc.github.io/git01_git-install.html).  Jenny's advice is also in chapters 6 and 7 of [Happy Git and GitHub for the usdR](http://happygitwithr.com/).  Note: [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), and [$LaTeX$](http://www.ctan.org/starter) are installed on the [Appstate RStudio](https://mathr.math.appstate.edu/) server.
 
 * Watch the following videos as appropriate:
 
@@ -102,7 +102,7 @@ git pull upstream master
 
 * Create a free account on [DataCamp](https://www.datacamp.com/).  Complete chapter 1 of [Data Analysis and Statistical Inference](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Fork the [StatsWithRLabs]() repository to your private GitHub account.  Complete the `intro_to_r_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 pm August 26 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.  Install the `statsr` package by running the following from the R command line:
+* Fork the [StatsWithRLabs]() repository to your private GitHub account.  Complete the `intro_to_r_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m. August 26 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.  Install the `statsr` package by running the following from the R command line:
 
 ```
 devtools::install_github('alanarnholt/statsr')
@@ -110,12 +110,12 @@ devtools::install_github('alanarnholt/statsr')
 
 #### Learning Objectives OI Sections 1.1-1.5
 
-LO 1. Identify variables as numerical and categorical.
+LO 1. Identify variables as numerical or categorical.
 
-* If the variable is numerical, further classify as continuous or discrete based on whether or not the variable can take on an infinite number of values or only non-negative whole numbers, respectively.
-* If the variable is categorical, determine if it is ordinal based on whether or not the levels have a natural ordering.
+* If the variable is numerical, further classify it as continuous or discrete based on whether or not the variable can take on an infinite number of values or only non-negative whole numbers, respectively.
+* If the variable is categorical, determine if it is ordinal or not based on whether the levels have a natural ordering.
 
-LO 2. Define associated variables as variables that show some relationship with one another. Further categorize this relationship as positive or negative association, when possible.
+LO 2. Define associated variables as variables that show some relationship with one another. Further categorize this relationship as a positive or negative association when possible.
 
 LO 3. Define variables that are not associated as independent.
 
@@ -123,20 +123,20 @@ Test yourself: Give one example of each type of variable you have learned.
 
 LO 4. Identify the explanatory variable in a pair of variables as the variable suspected of affecting the other, however note that labeling variables as explanatory and response does not guarantee that the relationship between the two is actually causal, even if there is an association identified between the two variables.
 
-LO 5. Classify a study as observational or experimental, and determine and explain whether the study’s results can be generalized to the population and whether the results suggest correlation or causation between the quantities studied.
+LO 5. Classify a study as observational or experimental, and determine and explain whether the study’s results can be generalized to the population and whether the results suggest an association or causation between the quantities studied.
 
 * If random sampling has been employed in data collection, the results should be generalizable to the target population.
 * If random assignment has been employed in study design, the results suggest causality.
 
 LO 6. Question confounding variables and sources of bias in a given study.
 
-LO 7. Distinguish between simple random, stratified, and cluster sampling, and recognize the benefits and drawbacks of choosing one sampling scheme over another.
+LO 7. Distinguish among simple random, stratified, and cluster sampling. Recognize the benefits and drawbacks of choosing one sampling scheme over another.
 
 * Simple random sampling: Each subject in the population is equally likely to be selected.
-Stratified sampling: First divide the population into homogenous strata (subjects within each stratum are similar, across strata are different), then randomly sample from within each strata.
-* Cluster sampling: First divide the population into clusters (subjects within each cluster are non-homogenous, but clusters are similar to each other), then randomly sample a few clusters, and then randomly sample from within each cluster.
+Stratified sampling: First divide the population into homogenous strata (subjects within each stratum are similar, across strata are different); then, randomly sample from within each strata.
+* Cluster sampling: First, divide the population into clusters (subjects within each cluster are non-homogenous, but clusters are similar to each other). Next, randomly sample a few clusters. Finally, randomly sample from within each cluster.
 
-LO 8. Identify the four principles of experimental design and recognize their purposes: control any possible confounders, randomize into treatment and control groups, replicate by using a sufficiently large sample or repeating the experiment, and block any variables that might influence the response.
+LO 8. Identify the four principles of experimental design, and recognize their purposes: control any possible confounders; randomize into treatment and control groups; replicate by using a sufficiently large sample or repeating the experiment; and block any variables that might influence the response.
 
 LO 9. Identify if single or double blinding has been used in a study.
 
@@ -159,16 +159,16 @@ Test yourself:
 
 * Complete chapter 2 of [Data Analysis and Statistical Inference](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `intro_to_data_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 pm September 2 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `intro_to_data_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m. September 2 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
 
 
-* Integrating [zotero](www.zotero.com) with [RMarkdown](http://rmarkdown.rstudio.com) will be discussed during the first part of the week.  Example document will be stored in this folder.
+* Integrating [zotero](www.zotero.com) with [RMarkdown](http://rmarkdown.rstudio.com) will be discussed during the first part of the week.  An example document will be stored in this folder.
 
 * You may find these [videos helpful](https://www.youtube.com/watch?v=dto4gARbsi0&list=PLJBNI3mCp9g0wsSDK111qgimqVF1dwPXO).
 
 #### Learning Objectives for OI Section 1.6
 
-LO 1. Use scatterplots for describing the relationship between two numerical variables making sure to note the direction (positive or negative), form (linear or non-linear) and the strength of the relationship as well as any unusual observations that stand out.
+LO 1. Use scatterplots to display the relationship between two numerical variables, making sure to note the direction (positive or negative), form (linear or non-linear), and strength of the relationship as well as any unusual observations.
 
 LO 2. When describing the distribution of a numerical variable, mention its shape, center, and spread, as well as any unusual observations.
 
@@ -179,11 +179,11 @@ LO 3. Note that there are three commonly used measures of center and spread:
 
 LO 4. Identify the shape of a distribution as symmetric, right skewed, or left skewed, and unimodal, bimodal, multimodal, or uniform.
 
-LO 5. Use histograms and box plots to visualize the shape, center, and spread of numerical distributions, and intensity maps for visualizing the spatial distribution of the data.
+LO 5. Use histograms and box plots to visualize the shape, center, and spread of numerical distributions. Use intensity maps to visualize the spatial distribution of the data.
 
-LO 6. Define a robust statistic (e.g. median, IQR) as a statistic that is not heavily affected by skewness and extreme outliers, and determine when such statistics are more appropriate measures of center and spread compared to other similar statistics.
+LO 6. Define a robust statistic (e.g. median, IQR) as a statistic that is not heavily affected by skewness or extreme outliers. Determine when robust statistics are more appropriate measures of center and spread compared to non-robust statistics.
 
-LO 7. Recognize when transformations (e.g. log) can make the distribution of data more symmetric, and hence easier to model.
+LO 7. Recognize when transformations (e.g. log) can make the distribution of data more symmetric and easier to model.
 
 Test yourself:
 
@@ -214,23 +214,23 @@ Test yourself:
 
 * Complete chapter 3 of [Data Analysis and Statistical Inference](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `probability_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 pm September 9 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `probability_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m. September 9 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
          
 #### Learning Objectives for OI Section 2.1
 
 LO 1. Define the probability of an outcome as the proportion of times the outcome would occur if we observed the random process that gives rise to it an infinite number of times.
 
-LO 2. Explain why the long-run relative frequency of repeated independent events settles down to the true probability as the number of trials increases, i.e. why the law of large numbers holds.
+LO 2. Explain why the long-run relative frequency of repeated independent events approaches the true probability as the number of trials increases, i.e. why the law of large numbers holds.
 
 LO 3. Define disjoint (mutually exclusive) events as events that cannot both happen at the same time:
 
-* If A and B are disjoint, $P(A \cap B) = 0$
+* If $A$ and $B$ are disjoint, $P(A \cap B) = 0$
 
 LO 4. Distinguish between disjoint and independent events.
 
-* If A and B are independent, then having information on A does not tell us anything about B (and vice versa).
-* If A and B are disjoint, then knowing that A occurs tells us that B cannot occur (and vice versa).
-* Disjoint (mutually exclusive) events are always dependent since if one event occurs we know the other one cannot.
+* If $A$ and $B$ are independent, then having information on $A$ does not tell us anything about $B$ (and vice versa).
+* If $A$ and $B$ are disjoint, then knowing that $A$ occurs tells us that $B$ cannot occur (and vice versa).
+* Disjoint (mutually exclusive) events are always dependent since if one event occurs we know the other one cannot *is not quite correct.* **NOTE:** $P(A \cap B) = 0$ if $P(A)=0$ and then $A$ and $B$ are both disjoint AND independent.
 
 LO 5. Draw Venn diagrams representing events and their probabilities.
 
@@ -242,17 +242,17 @@ LO 6. Define a probability distribution as a list of the possible outcomes with 
 
 LO 7. Define complementary outcomes as mutually exclusive outcomes of the same random process whose probabilities add up to 1.
 
-* If A and B are complementary, $P(A) + P(B) = 1$
+* If $A$ and $B$ are complementary, $P(A) + P(B) = 1$
 
-LO 8. Distinguish between union of events (A or B) and intersection of events (A and B).
+LO 8. Distinguish between union of events ($A$ or $B$) and intersection of events ($A$ and $B$).
 
-* Calculate the probability of union of events using the (general) addition rule:
- + If A and B are not mutually exclusive, $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
- + If A and B are mutually exclusive, $P (A \cup B) = P (A) + P (B)$, since for mutually exclusive events $P(A \cap B) = 0$
+* Calculate the probability of a union of events using the (general) addition rule:
+ + If $A$ and $B$ are not mutually exclusive, $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+ + If $A$ and $B$ are mutually exclusive, $P (A \cup B) = P (A) + P (B)$, since for mutually exclusive events $P(A \cap B) = 0$
 
-* Calculate the probability of intersection of independent events using the multiplication rule:
- + if A and B are independent, $P(A \cap B) = P(A) \times P(B)$
- + If A and B are dependent, $P(A \cap B) = P(A|B) \times P(B)$
+* Calculate the probability of the intersection of independent events using the multiplication rule:
+ + if $A$ and $B$ are independent, $P(A \cap B) = P(A) \times P(B)$
+ + If $A$ and $B$ are dependent, $P(A \cap B) = P(A|B) \times P(B)$
 
 Test yourself:
 
@@ -260,15 +260,15 @@ Test yourself:
 
 2. True / False: Being right handed and having blue eyes are mutually exclusive events.
 
-3. P(A) = 0.5, P(B) = 0.6, and there are no other possible outcomes in the sample space. What is P(A and B)?
+3. $P(A) = 0.5,$ $P(B) = 0.6,$ and there are no other possible outcomes in the sample space. What is $P(A \cap B)$?
 
 #### Learning Objectives for OI Section 2.2
 
 LO 1. Distinguish between marginal and conditional probabilities.
 
-LO 2. Construct tree diagrams to calculate conditional probabilities and probabilities of intersection of non-independent events using Bayes’ theorem: $P(A|B)=\frac{P(A \cap B)}{P(B)}$
+LO 2. Construct tree diagrams to calculate conditional probabilities and probabilities of the intersection of non-independent events using Bayes’ theorem: $P(A|B)=\frac{P(A \cap B)}{P(B)}.$
 
-Test yourself: 50% of students in a class are social science majors and the rest are not. 70% of the social science students and 40% of the non-social science students are in a relationship. Create a contingency table and a tree diagram summarizing these probabilities. Calculate the percentage of students in this class who are in a relationship.
+Test yourself: 50% of students in a class are social science majors and the rest are not. 70% of the social science students, and 40% of the non-social science students are in a biology class. Create a contingency table and a tree diagram summarizing these probabilities. Calculate the percentage of students in this class who are in a biology class.
 
 ### Week 5: (Sep 13, 15)
 
@@ -291,46 +291,46 @@ Test yourself: 50% of students in a class are social science majors and the rest
 
 #### Learning Objectives for OI Section 3.1-3.2
 
-LO 1. Define the standardized (Z) score of a data point as the number of standard deviations it is away from the mean: $Z = \frac{x - \mu}{\sigma}.$
+LO 1. Define the standardized ($Z$) score of a data point as the number of standard deviations it is away from the mean: $Z = \frac{x - \mu}{\sigma}.$
 
-LO 2. Use the Z score
+LO 2. Use the $Z$ score
 
-* if the distribution is normal: to determine the percentile score of a data point (using technology or normal probability tables)
-* regardless of the shape of the distribution: to assess whether or not the particular observation is considered to be unusual (more than 2 standard deviations away from the mean)
+* if the distribution is normal to determine the percentile score of a data point (using technology or normal probability tables);
+* regardless of the shape of the distribution to assess whether or not the particular observation is considered to be unusual (more than 2 standard deviations away from the mean).
 
-LO 3. Depending on the shape of the distribution determine whether the median would have a negative, positive, or 0 Z score keeping in mind that the mean always has a Z score of 0.
+LO 3. Depending on the shape of the distribution determine whether the median would have a negative, positive, or zero $Z$ score, keeping in mind that the mean always has a $Z$ score of 0.
 
-LO 4. Assess whether or not a distribution is nearly normal using the 68-95-99.7% rule or graphical methods such as a normal probability plot.
+LO 4. Assess whether or not a distribution is nearly normal using either the 68-95-99.7% rule or graphical methods such as a normal probability plot.
 
-Test yourself: True/False: In a right skewed distribution the Z score of the median is positive.
+Test yourself: True/False: In a right skewed distribution the $Z$ score of the median is positive.
 
 #### Learning Objectives for OI Section 3.4
 
-LO 1. Determine if a random variable is binomial using the four conditions.
+LO 1. Determine if a random variable is binomial using the four conditions:
 
-* The trials are independent.
-* The number of trials, n, is fixed.
-* Each trial outcome can be classified as a success or failure.
-* The probability of a success, p, is the same for each trial.
+1. The trials are independent.
+2. The number of trials, $n$, is fixed.
+3. Each trial outcome can be classified as a success or a failure.
+4. The probability of a success, $p$, is the same for each trial.
 
-LO 2. Calculate the number of possible scenarios for obtaining k successes in n trials using the choose function: $\binom{n}{k}=\frac{n!}{k!(n-k)!}.$
+LO 2. Calculate the number of possible scenarios for obtaining $k$ successes in n trials using the binomial coefficient: $\binom{n}{k}=\frac{n!}{k!(n-k)!}.$
 
 LO 3. Calculate probability of a given number of successes in a given number of trials using the binomial distribution: $P(X=k)=\binom{n}{k}p^k(1-p)^{(n-k)}.$
 
 LO 4. Calculate the expected number of successes in a given number of binomial trials $(\mu = np)$ and its standard deviation $\left(\sigma = \sqrt{np(1-p)}\right).$
 
-LO 5. When number of trials is sufficiently large ($np \ge 10$ and $n(1-p) \ge 10$), use the normal approximation to calculate binomial probabilities, and explain why this approach works.
+LO 5. When number of trials is sufficiently large ($np \ge 10$ and $n(1-p) \ge 10$), use the normal approximation to calculate binomial probabilities. Explain why this approach works.
 
 Test yourself:
 
-1. True/False: We can use the binomial distribution to determine the probability that in 10 rolls of a die the first 6 occurs on the 8th roll.
-2. True / False: If a family has 3 kids, there are 8 possible combinations of gender order.
-3. True/ False: When n = 100 and p = 0.92 we can use the normal approximation to the binomial to calculate the probability of 90 or more successes.
+1. True/False: We can use the binomial distribution to determine the probability that in 10 rolls of a die, the first 6 occurs on the 8th roll.
+2. True / False: If a family has 3 children, there are 8 possible combinations of gender order.
+3. True/ False: When $n = 100$ and $p = 0.92$, we can use the normal approximation to the binomial to calculate the probability of 90 or more successes.
 
 
 ### Week 6: (Sep 20, 22)
 
-* Fork the [StatsWithRProjects]() repository to your private GitHub account.  Complete the `intro_dataprob_project.Rmd` project and submit your compiled `*html` file no later than 5:00 pm September 23 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository. 
+* Fork the [StatsWithRProjects]() repository to your private GitHub account.  Complete the `intro_dataprob_project.Rmd` project, and submit your compiled `*html` file no later than 5:00 p.m. September 23 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository. 
 
 
 
@@ -344,25 +344,25 @@ Test yourself:
 
 * Complete chapter 4 of [Data Analysis and Statistical Inference](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `sampling_distributions_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 pm September 30 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `sampling_distributions_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 p.m. September 30 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
 
 
 #### Learning Objectives for OI Section 4.1
 
-LO 1. Define sample statistic as a point estimate for a population parameter, for example, the sample mean is used to estimate the population mean, and note that point estimate and sample statistic are synonymous.
+LO 1. Define a statistic as a point estimate for a population parameter. For example, the sample mean is used to estimate the population mean. Note that "point estimate" and "statistic" are synonymous.
 
-LO 2. Recognize that point estimates (such as the sample mean) will vary from one sample to another, and define this variability as sampling variability (sometimes also called sampling variation).
+LO 2. Recognize that point estimates (such as the sample mean) will vary from one sample to another.  We define this variability as sampling variability (sometimes also called sampling variation).
 
-LO 3. Calculate the sampling variability of the mean, the standard error, as $SE = \frac{\sigma}{\sqrt{n}}$ where $\sigma$ is the population standard deviation.
+LO 3. Calculate the sampling variability of the mean, the standard deviation of $\bar{x}$, as $\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}$ where $\sigma$ is the population standard deviation.
 
-* Note that when the population standard deviation $\sigma$ is not known (almost always), the standard error $SE$ can be estimated using the sample standard deviation $s$, so that $\widehat{SE} = \frac{s}{\sqrt{n}}$.
+* Note that when the population standard deviation $\sigma$ is not known (almost always), the standard error $SE$ can be computed using the sample standard deviation $s$, so that $SE_{\bar{x}} = \frac{s}{\sqrt{n}}$.
 
 LO 4. Distinguish between standard deviation ($\sigma$ or $s$) and standard error ($SE$): standard deviation measures the variability in the data, while standard error measures the variability in point estimates from different samples of the same size and from the same population, i.e. measures the sampling variability.
 
 LO 5. Recognize that when the sample size increases we would expect the sampling variability to decrease.
 
 * Conceptually: Imagine taking many samples from the population. When the size of each sample is large, the sample means will be much more consistent across samples than when the sample sizes are small.
-* Mathematically: Remember $SE = \frac{\sigma}{\sqrt{n}}$. Then, when $n$ increases $SE$ will decrease since $n$ is in the denominator.
+* Mathematically: Remember $SE = \frac{s}{\sqrt{n}}$. Then, when $n$ increases $SE$ will decrease since $n$ is in the denominator.
 
 #### Learning Objectives for OI Section 4.2
 
@@ -370,19 +370,19 @@ LO 1. Define a confidence interval as the plausible range of values for a popula
 
 LO 2. Define the confidence level as the percentage of random samples which yield confidence intervals that capture the true population parameter.
 
-LO 3. Recognize that the Central Limit Theorem (CLT) is about the distribution of point estimates, and that given certain conditions, this distribution will be nearly normal.
+LO 3. Recognize that the Central Limit Theorem (CLT) is about the distribution of point estimates. Under certain conditions, this distribution will be nearly normal.
 
-In the case of the mean, the CLT tells us that if the sample size is sufficiently large 
-and the observations in the sample are independent, then the distribution of the sample mean will be nearly normal.  The distribution will be centered at the true population mean and have a standard error of $\frac{\sigma}{\sqrt{n}}$.  Mathematically written $\bar{X} \dot{\sim} N\left(\mu_{\bar{x}} = \mu, \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\right)$
+In the case of the mean, the CLT tells us that if the sample size is sufficiently large, and the observations in the sample are independent then the distribution of the sample mean will be nearly normal.  The distribution will be centered at the true population mean and have a standard deviation of $\frac{\sigma}{\sqrt{n}}$.  The distribution of $\bar{x}$ is written with symbols as
+$$\bar{X} \dot{\sim} N\left(\mu_{\bar{x}} = \mu, \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\right)$$
 
 
 LO 4. Recall that independence of observations in a sample is provided by random sampling (in the case of observational studies) or random assignment (in the case of experiments).
 
-In addition, the sample should not be too large compared to the population, or more precisely, should be smaller than 10% of the population, since samples that are too large will likely contain observations that are not independent.
+In addition, the sample should not be too large compared to the population. More precisely, the sample should be smaller than 10% of the population. Samples that are too large will likely contain observations that are not independent.
 
 LO 5. Recognize that the nearly normal distribution of the point estimate (as suggested by the CLT) implies that a confidence interval can be calculated as
 
-* $\text{point estimate} \pm z_{1 - \alpha/2}\cdot SD$
+* $\text{point estimate} \pm z_{1 - \alpha/2}\cdot SD_{\text{point estimate}}$
 
 
 For means this is: $\bar{x} \pm z_{1 - \alpha/2}\cdot \frac{\sigma}{\sqrt{n}}$
@@ -405,7 +405,7 @@ LO 7. Interpret a confidence interval as “We are XX% confident that the true p
 
 * Complete chapter 5 of [Data Analysis and Statistical Inference](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `confidence_intervals_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 pm October 7 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `confidence_intervals_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m. October 7 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
 
 #### Learning Objectives for OI Section 4.3
 
@@ -418,26 +418,26 @@ LO 2. Recognize that in hypothesis testing we evaluate two competing claims:
 
 LO 3. Construction of hypotheses:
 
-* Always construct hypotheses about population parameters (e.g. population mean, $\mu$) and not the sample statistics (e.g. sample mean, $\bar{x}$). Note that the population parameter is unknown while the sample statistic is measured using the observed data and hence there is no point in hypothesizing about it.
+* Always construct hypotheses about population parameters (e.g. population mean, $\mu$) and not the sample statistics (e.g. sample mean, $\bar{x}$). Note that the population parameter is unknown while the statistic is measured using the observed data and hence there is no point in hypothesizing about it.
 * Define the null value as the value the parameter is set to equal in the null hypothesis.
-* Note that the alternative hypothesis might be one-sided ($\mu <$ or $>$ the null value) or two-sided ($\mu \ne$ the null value), and the choice depends on the research question.
+* The alternative hypothesis may be one-sided ($\mu <$ or $>$ the null value) or two-sided ($\mu \ne$ the null value). The choice depends on the research question.
 
-LO 4. Define a p-value as the conditional probability of obtaining a sample statistic at least as extreme as the one observed given that the null hypothesis is true.
+LO 4. Define a $p$-value as the conditional probability of obtaining a statistic at least as extreme as the one observed given that the null hypothesis is true.
 
-* p-value=P(observed or more extreme sample statistic | $H_0$ true)
+* $p$-value=P(observed or more extreme statistic | $H_0$ true)
 
-LO 5. Calculate a p-value as the area under the normal curve beyond the observed sample mean (either in one tail or both, depending on the alternative hypothesis). Note that in doing so you can use a Z score, where
+LO 5. Calculate a $p$-value as the area under the normal curve beyond the observed sample mean (either in one tail or both, depending on the alternative hypothesis). Note that in doing so you can use a $Z$ score, where
 
-* p-value=P(observed or more extreme sample statistic | $H_0$ true)
+* $p$-value=P(observed or more extreme statistic | $H_0$ true)
 
-* Always sketch the normal curve when calculating the p-value, and shade the appropriate area(s) depending on whether the alternative hypothesis is one- or two-sided.
+* Always sketch the normal curve when calculating the $p$-value, and shade the appropriate area(s) depending on whether the alternative hypothesis is one- or two-sided.
 
 LO 6. Infer that if a confidence interval does not contain the null value the null hypothesis should be rejected in favor of the alternative.
 
-LO 7. Compare the p-value to the significance level to make a decision between the hypotheses:
+LO 7. Compare the $p$-value to the significance level to make a decision between the hypotheses:
 
-* If the p-value < the significance level, reject the null hypothesis since this means that obtaining a sample statistic at least as extreme as the observed data is extremely unlikely to happen just by chance, and conclude that the data provides evidence for the alternative hypothesis.
-* If the p-value > the significance level, fail to reject the null hypothesis since this means that obtaining a sample statistic at least as extreme as the observed data is quite likely to happen by chance, and conclude that the data does not provide evidence for the alternative hypothesis.
+* If the $p$-value < the significance level, reject the null hypothesis. This means that obtaining a statistic at least as extreme as the observed data is extremely unlikely to happen just by chance. Conclude that the data provides evidence for the alternative hypothesis.
+* If the $p$-value > the significance level, fail to reject the null hypothesis. This means that obtaining a statistic at least as extreme as the observed data is quite likely to happen by chance. Conclude that the data does not provide evidence for the alternative hypothesis.
 * Note that we can never “accept” the null hypothesis since the hypothesis testing framework does not allow us to confirm it.
 
 LO 8. Note that the conclusion of a hypothesis test might be erroneous regardless of the decision we make.
@@ -447,20 +447,20 @@ LO 8. Note that the conclusion of a hypothesis test might be erroneous regardles
 
 LO 9. Note that the probability of making a Type 1 error is equivalent to the significance level, and choose a significance level depending on the risks associated with Type 1 and Type 2 errors.
 
-Use a smaller $\alpha$ if Type 1 error is relatively riskier.
-Use a larger $\alpha$ if Type 2 error is relatively riskier.
+Use a smaller $\alpha$ if a Type I error is more critical than a Type II error
+Use a larger $\alpha$ if a Type II error is more critical than a Type I error.
 
 #### Learning Objectives for OI Section 4.4-4.5
 
-LO 1. Notice that sampling distributions of point estimates coming from samples that don’t meet the required conditions for the CLT (about sample size, skew, and independence) will not be normal.
+LO 1. Recognize that sampling distributions of point estimates coming from samples that don’t meet the required conditions for the CLT (about sample size, skew, and independence) will not be normal.
 
 LO 2. Formulate the framework for statistical inference using hypothesis testing and nearly normal point estimates:
 
 1. Set up the hypotheses first in plain language and then using appropriate notation.
-2. Identify the appropriate sample statistic that can be used as a point estimate for the parameter of interest.
+2. Identify the appropriate statistic that can be used as a point estimate for the parameter of interest.
 3. Verify that the conditions for the CLT hold.
-4. Compute the $SE$, sketch the sampling distribution, and shade area(s) representing the p-value.
-5. Using the sketch and the normal model, calculate the p-value and determine if the null hypothesis should be rejected or not, and state your conclusion in context of the data and the research question.
+4. Compute the $SE$, sketch the sampling distribution, and shade area(s) representing the $p$-value.
+5. Using the sketch and the normal model, calculate the $p$-value and determine if the null hypothesis should be rejected or not, and state your conclusion in context of the data and the research question.
 
 LO 3. If the conditions necessary for the CLT to hold are not met, note this and do not go forward with the analysis. (We will later learn about methods to use in these situations.)
 
@@ -468,7 +468,7 @@ LO 4. Calculate the required sample size to obtain a given margin of error at a 
 
 LO 5. Distinguish between statistical significance vs. practical significance.
 
-LO 6. Define power as the probability of correctly rejecting the null hypothesis (complement of Type 2 error).
+LO 6. Define power as the probability of correctly rejecting the null hypothesis (complement of Type II error).
 
 
 ### Week 9: (Oct 11---Fall Break Oct 13, 14)
@@ -486,35 +486,35 @@ LO 6. Define power as the probability of correctly rejecting the null hypothesis
 
 * Complete chapter 6 of [Data Analysis and Statistical Inference](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `inf_for_numerical_datas_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 pm October 21 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `inf_for_numerical_datas_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m. October 21 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
 
 #### Learning Objectives for OI Sections 5.1-5.4
 
-LO 1. Use the t-distribution for inference on a single mean, difference of paired (dependent) means, and difference of independent means.
+LO 1. Use the $t$-distribution for inference on a single mean, difference of paired (dependent) means, and difference of independent means.
 
-LO 2. Explain why the $t-$distribution helps make up for the additional variability introduced by using s (sample standard deviation) in calculation of the standard error, in place of $\sigma$ (population standard deviation).
+LO 2. Explain why the $t-$distribution helps make up for the additional variability introduced by using $s$ (sample standard deviation) in place of $\sigma$ (population standard deviation).
 
 LO 3. Describe how the $t-$distribution is different from the normal distribution, and what “heavy tail” means in this context.
 
-LO 4. Note that the $t-$distribution has a single parameter, degrees of freedom, and as the degrees of freedom increases this distribution approaches the normal distribution.
+LO 4. Note that the $t-$distribution has a single parameter, degrees of freedom. As the degrees of freedom increases, this distribution approaches the normal distribution.
 
 LO 5. Use a $t-$statistic, with degrees of freedom $df=n-1$ for inference for a population mean:
 
-* CI: $\bar{x} \pm t_{1-\alpha/2, n-1}\cdot SE$
+* CI: $\bar{x} \pm t_{1-\alpha/2, n-1}\cdot SE_{\bar{x}}$
 
-* HT: $t_{n-1}=\frac{\bar{x}-\mu_0}{SE}$
+* HT: $t_{n-1}=\frac{\bar{x}-\mu_0}{SE_{\bar{x}}}$
 
-where $SE = \frac{s}{\sqrt{n}}.$
+where $SE_{\bar{x}} = \frac{s}{\sqrt{n}}.$
 
-LO 6. Describe how to obtain a p-value for a $t-$test and a critical $t-$score for a confidence interval.
+LO 6. Describe how to obtain a $p$-value for a $t$-test and a critical $t$-score for a confidence interval.
 
 LO 7. Define observations as paired if each observation in one dataset has a special correspondence or connection with exactly one observation in the other data set.
 
 LO 8. Carry out inference for paired data by first subtracting the paired observations from each other, and then treating the set of differences as a new numerical variable on which to do inference (such as a confidence interval or hypothesis test for the average difference).
 
-LO 9. Calculate the standard error of the difference between means of two paired (dependent) samples as $SE = \frac{s_{diff}}{\sqrt{n_{diff}}}$ and use this standard error in hypothesis testing and confidence intervals comparing means of paired (dependent) groups.
+LO 9. Calculate the standard error of the mean difference between two paired (dependent) samples as $SE = \frac{s_{diff}}{\sqrt{n_{diff}}}.$ Use this standard error in hypothesis testing and confidence intervals comparing means of paired (dependent) groups.
 
-LO 10. Use a $t-$statistic, with degrees of freedom $df=n_{diff}-1$ for inference for the difference in two paired (dependent) means:
+LO 10. Use a $t-$statistic, with degrees of freedom $df=n_{diff}-1$ for inference with the mean difference in two paired (dependent) samples:
 
 * CI: $\bar{x}_{diff} \pm t_{1-\alpha/2, n_{diff}-1}\cdot SE$
 
@@ -526,9 +526,9 @@ LO 11. Recognize that a good interpretation of a confidence interval for the dif
 
 LO 12. Recognize that a confidence interval for the difference between two parameters that doesn’t include 0 is in agreement with a hypothesis test where the null hypothesis that sets the two parameters equal to each other is rejected.
 
-LO 13. Calculate the standard error of the difference between means of two independent samples as $SE = \sqrt{\frac{s_1^2}{n_1}+\frac{s^2_2}{n_2}}$ and use this standard error in hypothesis testing and confidence intervals comparing means of independent groups.
+LO 13. Calculate the standard error for the difference between means of two independent samples as $SE = \sqrt{\frac{s_1^2}{n_1}+\frac{s^2_2}{n_2}}.$  Use this standard error in hypothesis testing and confidence intervals comparing means of independent groups.
 
-LO 14. Use a $t-$statistic, with $\nu$ degrees of freedom for inference for the difference in two independent means:
+LO 14. Use a $t-$statistic with $\nu$ degrees of freedom for conducting inference with the difference in two independent means:
 
 * CI: $\bar{x}_1 - \bar{x}_2 \pm t_{1-\alpha/2, \nu}\cdot SE$
 
@@ -536,44 +536,49 @@ LO 14. Use a $t-$statistic, with $\nu$ degrees of freedom for inference for the 
 
 where $SE = \sqrt{\frac{s_1^2}{n_1}+\frac{s^2_2}{n_2}}.$
 
-LO 15. Calculate the power of a test for a given effect size and significance level in two steps: (1) Find the cutoff for the sample statistic that will allow the null hypothesis to be rejected at the given significance level, (2) Calculate the probability of obtaining that sample statistic given the effect size.
+LO 15. Calculate the power of a test for a given effect size and significance level in two steps: 
+
+1. Find the cutoff for the statistic that will allow the null hypothesis to be rejected at the given significance level.
+2. Calculate the probability of obtaining that statistic given the effect size.
 
 LO 16. Explain how power changes for changes in effect size, sample size, significance level, and standard error.
 
 #### Learning Objectives for OI Section 5.5
 
-LO 1. Define analysis of variance (ANOVA) as a statistical inference method that is used to determine - by simultaneously considering many groups at once - if the variability in the sample means is so large that it seems unlikely to be from chance alone.
+LO 1. Define analysis of variance (ANOVA) as a statistical inference method that is used to determine, by simultaneously considering many groups at once, if the variability in the sample means is so large that it seems unlikely to be from chance alone.
 
-LO 2. Recognize that the null hypothesis in ANOVA sets all means equal to each other, and the alternative hypothesis suggest that at least one mean is different.
+LO 2. Recognize the null hypothesis in ANOVA sets all means equal to each other, and the alternative hypothesis suggest that at least one mean is different.
 
 $H_O:\mu_1 = \mu_2,\ldots,\mu_k$
 
 $H_A: \text{at least one mean is different}$
 
-LO 3. List the conditions necessary for performing ANOVA
+LO 3. List the conditions necessary for performing ANOVA:
 
-1. the observations should be independent within and across groups
-2. the data within each group are nearly normal
-3. the variability across the groups is about equal and use graphical diagnostics to check if these conditions are met.
+1. The observations should be independent within and across groups.
+2. The data within each group should be nearly normal
+3. The variability across the groups should be roughly equal. 
 
-LO 4. Recognize that the test statistic for ANOVA, the F statistic, is calculated as the ratio of the mean square between groups (MSG, variability between groups) and mean square error (MSE, variability within errors). Also recognize that the F statistic has a right skewed distribution with two different measures of degrees of freedom: one for the numerator (dfG=k-1, where k is the number of groups) and one for the denominator (dfE=n-k, where n is the total sample size).
+Use graphical diagnostics to check if these conditions are met.
 
-* Note that you won’t be expected to calculate MSG or MSE from the raw data, but you should have a conceptual understanding of how they’re calculated and what they measure.
+LO 4. Recognize that the test statistic for ANOVA, the $F$ statistic, is calculated as the ratio of the mean square between groups ($MSG$, variability between groups) and mean square error ($MSE$, variability within errors). Also recognize that the $F$ statistic has a right skewed distribution with two different measures of degrees of freedom: one for the numerator ($df_G=k-1,$ where $k$ is the number of groups) and one for the denominator ($df_E=n-k,$ where $n$ is the total sample size).
 
-LO 5. Describe why calculation of the p-value for ANOVA is always “one sided”.
+* Note that you will not be expected to calculate $MSG$ or $MSE$ from the raw data. However, you should have a conceptual understanding of how they are calculated and what they measure.
 
-LO 6. Describe why conducting many t-tests for differences between each pair of means leads to an increased Type 1 Error rate, and we use a corrected significance level (Bonferroni correction,$\alpha^*=\alpha/K$, where $K$ is the number of comparisons being considered) to combat inflating this error rate.
+LO 5. Describe why calculation of the $p$-value for ANOVA is always “one sided”.
+
+LO 6. Describe why conducting many t-tests for differences between each pair of means leads to an increased Type I Error rate, and we use a corrected significance level (Bonferroni correction, $\alpha^*=\alpha/K$, where $K$ is the number of comparisons being considered) to combat inflating this error rate.
 
 * Note that $K = \frac{k(k-1)}{2}$, where $k$ is the number of groups.
 
 LO 7. Describe why it is possible to reject the null hypothesis in ANOVA but not find significant differences between groups when doing pairwise comparisons.
 
-LO 8. Describe how bootstrap distributions are constructed, and recognize how they are different from sampling distributions.
+LO 8. Describe how bootstrap distributions are constructed. Recognize how bootstrap distributions are different from sampling distributions.
 
 LO 9. Construct bootstrap confidence intervals using one of the following methods:
 
 * Percentile method: XX% confidence level is the middle XX% of the bootstrap distribution.
-* Standard error method: If the standard error of the bootstrap distribution is known, and the distribution is nearly normal, the bootstrap interval can also be calculated as $\text{point estimate} \pm t_{1 - \alpha/2, df}\cdot SE_{boot}.$
+* Standard error method: If the standard error of the bootstrap distribution is known, and the distribution is nearly normal, the bootstrap interval can also be calculated as $$\text{point estimate} \pm t_{1 - \alpha/2, df}\cdot SE_{boot}.$$
 
 LO 10. Recognize that when the bootstrap distribution is extremely skewed and sparse, the bootstrap confidence interval may not be reliable.
 
@@ -587,33 +592,37 @@ LO 10. Recognize that when the bootstrap distribution is extremely skewed and sp
 
 * Complete chapter 7 of [Data Analysis and Statistical Inference](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `inf_for_categorical_data_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 pm October 28 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `inf_for_categorical_data_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m. October 28 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
 
 #### Learning Objectives for OI Sections 6.1-6.2
 
-LO 1. Define population proportion p (parameter) and sample proportion $\hat{p}$.
+LO 1. Define the population proportion as $p$ (parameter) and sample proportion as $\hat{p}$.
 
-LO 2. Calculate the sampling variability of the proportion, the standard error, as $SE = \sqrt{\frac{p(1-p)}{n}}$, where $p$ is the population proportion.
+LO 2. Calculate the sampling variability of the proportion, the standard deviation, as $\hat{\sigma}_{\hat{p}}=SD_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}$, where $p$ is the population proportion.
 
-* Note that when the population proportion $p$ is not known (almost always), this can be estimated using the sample proportion, $\widehat{SE} = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}.$
+* Note that when the population proportion $p$ is not known (almost always), the standard error of the sample proportion is written as $SE_{\hat{p}} = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}.$
 
-LO 3. Recognize that the Central Limit Theorem (CLT) is about the distribution of point estimates, and that given certain conditions, this distribution will be nearly normal. In the case of the proportion the CLT tells us that if
+LO 3. Recognize that the Central Limit Theorem (CLT) is about the distribution of point estimates. Under certain conditions, the distribution of $\hat{p}$ will be nearly normal. The CLT tells us that if
 
 * the observations in the sample are independent,
 * the sample size is sufficiently large (checked using the success/failure condition: $np\ge10$ and $n(1-p)\ge 10$,
 
-then the distribution of the sample proportion will be nearly normal, centered at the true population proportion with a standard error of $SE = \sqrt{\frac{p(1-p)}{n}}$.
+then the distribution of the sample proportion will be nearly normal, centered at the true population proportion with a standard deviation of $SD_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}$.
 
-$\hat{p} \dot{\sim} N\left(\mu_{\hat{p}}=p, \sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}} \right)$
+$$\hat{p} \dot{\sim} N\left(\mu_{\hat{p}}=p, \sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}} \right)$$
 
-LO 4. Note that if the CLT doesn’t apply and the sample proportion is low (close to 0) the sampling distribution will likely be right skewed, if the sample proportion is high (close to 1) the sampling distribution will likely be left skewed.
+LO 4. Note that if the CLT doesn’t apply and the sample proportion is low (close to 0), the sampling distribution will likely be right skewed. If the sample proportion is high (close to 1), the sampling distribution will likely be left skewed.
 
 LO 5. Remember that confidence intervals are calculated as
 
 * $\text{point estimate} \pm \text{margin of error}$
-* and test statistics are calculated as $\text{test statistic} = \frac{\text{point estimate} - \text{null value}}{\text{standard error}}$
+* and standardized test statistics are calculated as 
 
-LO 6. Note that the standard error calculation for the confidence interval and the hypothesis test are different when dealing with proportions, with hypothesis testing we assume that the null hypothesis is true – remember: p-value = P(observed or more extreme test statistic | $H_0$ true).
++ $Z = \frac{\text{statistic} - \mu_{\text{statistic}}}{\sigma_{\text{statistic}}}$
+
++ $T = \frac{\text{statistic} - \mu_{\text{statistic}}}{\hat{\sigma}_{\text{statistic}}}$
+
+LO 6. Note that the standard error calculation for the confidence interval and the hypothesis test are different when dealing with proportions. With hypothesis testing we assume that the null hypothesis is true. Remember: $p$-value = P(observed or more extreme test statistic | $H_0$ true).
 
 * For confidence intervals use $\hat{p}$ (observed sample proportion) when calculating the standard error and checking the success/failure condition:
 
@@ -621,17 +630,17 @@ LO 6. Note that the standard error calculation for the confidence interval and t
 
 * For hypothesis tests use $p_0$ (null value) when calculating the standard error and checking the success/failure condition:
 
-* $SE_{\hat{p}} = \sqrt{\frac{\hat{p_0}(1 - \hat{p_0})}{n}}$
+* $SE_{\hat{p}} = \sqrt{\frac{p_0(1 - p_0)}{n}}$
 
-Such a discrepancy doesn’t exist when conducting inference for means, since the mean doesn’t factor into the calculation of the standard error, while the proportion does.
+Such a discrepancy does not exist when conducting inference for means since the mean does not factor into the calculation of the standard error.
 
-LO 7. Explain why when calculating the required minimum sample size for a given margin of error at a given confidence level, we use $\hat{p} = 0.5$ if there are no previous studies suggesting a more accurate estimate.
+LO 7. Explain why when calculating the required minimum sample size for a given margin of error at a given confidence level we use $\hat{p} = 0.5$ if there are no previous studies suggesting a more accurate estimate.
 
 * Conceptually: When there is no additional information, 50% chance of success is a good guess for events with only two outcomes (success or failure).
 
 * Mathematically: Using $\hat{p} = 0.5$ yields the most conservative (highest) estimate for the required sample size.
 
-LO 8. Note that the calculation of the standard error of the distribution of the difference in two independent sample proportions is different for a confidence interval and a hypothesis test.
+LO 8. Note that the calculation of the standard error for the distribution of the difference in two independent sample proportions differs for a confidence interval and a hypothesis test.
 
 * confidence interval and hypothesis test when $H_0: p_1 - p_2 = \text{some value other than 0:}$
 
@@ -645,14 +654,14 @@ where $\hat{p}_{pool}$ is the overall rate of success:
 
 $\hat{p}_{pool} = \frac{\text{number of successes in group 1 + number of successes in group 2}}{n_1 + n_2}$
 
-LO 9. Note that the reason for the difference in calculations of standard error is the same as in the case of the single proportion: when the null hypothesis claims that the two population proportions are equal, we need to take that into consideration when calculating the standard error for the hypothesis test, and use a common proportion for both samples.
+LO 9. Note that the reason for the difference in calculations of standard error is the same as in the case of the single proportion. When the null hypothesis claims that the two population proportions are equal, we need to take that information into consideration when calculating the standard error for the hypothesis test. Consequently, we use a common proportion for both samples.
 
 
 #### Learning Objectives for OI Sections 6.3-6.6
 
 LO 1. Use a chi-square test of goodness of fit to evaluate if the distribution of levels of a single categorical variable follows a hypothesized distribution.
 
-* $H_0:$ The distribution of observed counts follows the hypothesized distribution, and any ob- served differences are due to chance.
+* $H_0:$ The distribution of observed counts follows the hypothesized distribution and any observed differences are due to chance.
 
 * $H_A:$ The distribution of observed counts does not follow the hypothesized distribution.
 
@@ -662,19 +671,19 @@ LO 3. Calculate the chi-square test statistic as
 
 $$\chi^2 = \sum_{i=1}^k\frac{(\text{observed count} - \text{expected count})^2}{\text{expected count}},$$ where $k$ is the number of cells.
 
-LO 4. Note that the chi-square statistic is always positive, and follows a right skewed distribution with one parameter: degrees of freedom.
+LO 4. Note that the chi-square statistic is always positive and follows a right skewed distribution with one parameter which is the degrees of freedom.
 
 LO 5. Note that the degrees of freedom for the chi-square statistic for the goodness of fit test is $df=k-1$.
 
 LO 6. List the conditions necessary for performing a chi-square test (goodness of fit or independence)
 
-1. the observations should be independent
-2. expected counts for each cell should be at least 5
-3. degrees of freedom should be at least 2 (if not, use methods for evaluating proportions)
+1. The observations should be independent.
+2. The expected counts for each cell should be at least five.
+3. The degrees of freedom should be at least two (if not, use methods for evaluating proportions).
 
-LO 7. Describe how to use the chi-square table to obtain a p-value.
+LO 7. Describe how to use the chi-square table to obtain a $p$-value.
 
-LO 8. When evaluating the independence of two categorical variables where at least one has more than two levels, use a chi-square test of independence.
+LO 8. When evaluating the independence of two categorical variables, where at least one has more than two levels, use a chi-square test of independence.
 
 * $H_0:$ The two variables are independent.
 
@@ -687,15 +696,15 @@ $$E =\frac{\text{row total}\times\text{column total}}{\text{grand total}}$$
 
 LO 10. Calculate the degrees of freedom for chi-square test of independence as $df=(R-1)\times(C-1)$, where $R$ is the number of rows in a two-way table, and $C$ is the number of columns.
 
-LO 11. Note that there is no such thing as a chi-square confidence interval for proportions, since in the case of a categorical variables with many levels, there isn’t one parameter to estimate.
+LO 11. Note that there is no such thing as a chi-square confidence interval for proportions.
 
-LO 12. Use simulation methods when sample size conditions aren’t met for inference for categorical variables.
+LO 12. Use simulation methods when sample size conditions are not met for inference for categorical variables.
 
-*Note that the $t-$distribution is only appropriate to use for means. When sample size isn’t sufficiently large, and the parameter of interest is a proportion or a difference between two proportions, we need to use simulation.
+* Note that the $t-$distribution is only appropriate to use for means. When the sample size is not sufficiently large and the parameter of interest is a proportion or a difference between two proportions, we need to use simulation.
 
 LO 13. In hypothesis testing
 
-* for one categorical variable, generate simulated samples based on the null hypothesis, and then calculate the number of samples that are at least as extreme as the observed data.
+* for one categorical variable, generate simulated samples based on the null hypothesis. Next, calculate the number of samples that are at least as extreme as the observed data.
 * for two categorical variables, use a randomization test.
 
 LO 14. Use bootstrap methods for confidence intervals for categorical variables with at most two levels.
@@ -703,7 +712,7 @@ LO 14. Use bootstrap methods for confidence intervals for categorical variables 
 
 ### Week 12: (Nov 1, 3)
 
-*  Complete the `stat_inf_project.Rmd` project found in your `StatsWithRProjects` forked repository. Submit your compiled `*html` file no later than 5:00 pm November 4 to [CrowdGrader]().  Make sure you commit and push your final product to your private repository. 
+*  Complete the `stat_inf_project.Rmd` project found in your `StatsWithRProjects` forked repository. Submit your compiled `*html` file no later than 5:00 p.m. November 4 to [CrowdGrader]().  Make sure you commit and push your final product to your private repository. 
 
 
 
@@ -723,7 +732,7 @@ LO 14. Use bootstrap methods for confidence intervals for categorical variables 
 
 LO 1. Define the explanatory variable as the independent variable (predictor), and the response variable as the dependent variable (predicted).
 
-LO 2. Plot the explanatory variable (x) on the x-axis and the response variable (y) on the y-axis, and fit a linear regression model 
+LO 2. Plot the explanatory variable ($x$) on the $x$-axis and the response variable ($y$) on the $y$-axis, and fit a linear regression model 
 
 $$y = \beta_0 + \beta_1 x,$$
 
@@ -743,13 +752,18 @@ LO 4. Define correlation as the linear association between two numerical variabl
 
 LO 5. Note that correlation coefficient ($r$, also called Pearson's $r$) has the following properties:
 
-* the magnitude (absolute value) of the correlation coefficient measures the strength of the linear association between two numerical variables
-* the sign of the correlation coefficient indicates the direction of association
-the correlation coefficient is always between -1 and 1, -1 indicating perfect negative linear association, +1 indicating perfect positive linear association, and 0 indicating no linear relationship
-* the correlation coefficient is unitless
-* since the correlation coefficient is unitless, it is not affected by changes in the center or scale of either variable (such as unit conversions)
-* the correlation of X with Y is the same as of Y with X
-* the correlation coefficient is sensitive to outliers
+* The magnitude (absolute value) of the correlation coefficient measures the strength of the linear association between two numerical variables.
+* The sign of the correlation coefficient indicates the direction of association.
+* The correlation coefficient is always between -1 and 1. 
+
+  + $r= -1$ indicates perfect negative linear association. 
+  + $r= +1$ indicates perfect positive linear association. 
+  + $r=0$ indictes no linear relationship.
+
+* The correlation coefficient is unitless.
+* Since the correlation coefficient is unitless, it is not affected by changes in the center or scale of either variable (such as unit conversions).
+* The correlation of $X$ with $Y$ is the same as the correlation of $Y$ with $X$.
+* The correlation coefficient is sensitive to outliers.
 
 LO 6. Recall that correlation does not imply causation.
 
@@ -757,11 +771,13 @@ LO 7. Define residual ($e$) as the difference between the observed ($y$) and pre
 
 $$e_i = y_i - \hat{y}_i$$
 
-LO 8. Define the least squares line as the line that minimizes the sum of the squared residuals, and list conditions necessary for fitting such line:
+LO 8. Define the least squares line as the line that minimizes the sum of the squared residuals.  Recognize if the conditions for using least squares:
 
 1. linearity
 2. nearly normal residuals
 3. constant variability
+
+have been satisfied.
 
 LO 9. Define an indicator variable as a binary explanatory variable (with two levels).
 
@@ -773,8 +789,8 @@ where $r$ is the correlation coefficient, $s_y$ is the standard deviation of the
 
 LO 11. Interpret the slope as
 
-* when x is numerical: "For each unit increase in x, we would expect y to be lower/higher on average by $|b_1|$ units"
-* when x is categorical: "The value of the response variable is predicted to be $|b_1|$ units higher/lower between the baseline level and the other level of the explanatory variable."
+* When $x$ is numerical: "For each unit increase in $x$, we would expect y to be lower/higher on average by $|b_1|$ units."
+* When $x$ is categorical: "The value of the response variable is predicted to be $|b_1|$ units higher/lower between the baseline level and the other level of the explanatory variable."
 * Note that whether the response variable increases or decreases is determined by the sign of $b_1$.
 
 LO 12. Note that the least squares line always passes through the average of the response and explanatory variables $(\bar{x}, \bar{y}).$
@@ -787,8 +803,8 @@ where $b_1$ is the slope, $\bar{y}$ is the average of the response variable, and
 
 LO 14. Interpret the intercept as
 
-* "When x=0, we would expect y to equal, on average, $b_0$"---when x is numerical.
-* "The expected average value of the response variable for the reference level of the explanatory variable is $b_0$"---when x is categorical.
+* "When $x=0$, we would expect y to equal, on average, $b_0$"---when $x$ is numerical.
+* "The expected average value of the response variable for the reference level of the explanatory variable is $b_0$"---when $x$ is categorical.
 
 #### Learning Objectives for OI Section 7.2
 
@@ -797,12 +813,12 @@ LO 1. Predict the value of the response variable for a given value of the explan
 $$\hat{y} = b_0 + b_1 x^*$$
 
 * Only predict for values of $x^*$ that are in the range of the observed data.
-* Do not extrapolate beyond the range of the data, unless you are confident that the linear pattern continues.
+* Do not extrapolate beyond the range of the data unless you are confident that the linear pattern continues.
 
 LO 2. Define $R^2$ as the percentage of the variability in the response variable explained by the the explanatory variable.
 
 * For a good model, we would like this number to be as close to 100% as possible.
-* This value is calculated as the square of the correlation coefficient.
+* $R^2$ is calculated as the square of the correlation coefficient.
 
 ### Week 14: (Nov 15, 17)
 
@@ -814,7 +830,7 @@ LO 2. Define $R^2$ as the percentage of the variability in the response variable
 
 * Review chapter 8 of [Data Analysis and Statistical Inference](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `simple_regression_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 pm November 18 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `simple_regression_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m. November 18 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
 
 
 #### Learning Objectives for OI Sections 7.3-7.4
@@ -823,26 +839,26 @@ LO 1. Define a leverage point as a point that lies away from the center of the d
 
 LO 2. Define an influential point as a point that influences (changes) the slope of the regression line.
 
-* This is usually a leverage point that is away from the trajectory of the rest of the data.
+*  An influential point is usually a leverage point that is removed from the trajectory of the rest of the data.
 
 LO 3. Do not remove outliers from an analysis without good reason.
 
 LO 4. Be cautious about using a categorical explanatory variable when one of the levels has very few observations, as these may act as influential points.
 
-LO 5. Determine whether an explanatory variable is a significant predictor for the response variable using the $t-$test and the associated p-value in the regression output.
+LO 5. Determine whether an explanatory variable is a significant predictor for the response variable using the $t$-test and the associated $p$-value in the regression output.
 
-LO 6. Set the null hypothesis testing for the significance of the predictor as $H_0:\beta_1=0$, and recognize that the standard software output yields the p-value for the two-sided alternative hypothesis.
+LO 6. When testing for the significance of the predictor the null hypothesisias $H_0:\beta_1=0$.  Recognize that standard software output returns a $p$-value for a two-sided alternative hypothesis.
 
-* Note that $\beta_1=0$ means the regression line is horizontal, hence suggesting that there is no relationship between the explanatory and response variables.
+* Note that $\beta_1=0$ means the regression line is horizontal suggesting there is no relationship between the explanatory and response variable.
 
 LO 7. Calculate the $T$ score for the hypothesis test as
 
 $$T_{df} = \frac{b_1 - \text{null value}}{SE_{b_1}}$$
 with $df=n-2$.
 
-* Note that the T score has $n-2$ degrees of freedom since we lose one degree of freedom for each parameter we estimate, and in this case we estimate the intercept and the slope.
+* Note that the T score has $n-2$ degrees of freedom since we lose one degree of freedom for each parameter we estimate.  In simple linear regression, we estimate the intercept and the slope.
 
-LO 8. Note that a hypothesis test for the intercept is often irrelevant since it is usually out of the range of the data, and hence it is usually an extrapolation.
+LO 8. Note that a hypothesis test for the intercept is often irrelevant since it is usually out of the range of the data.
 
 LO 9. Calculate a confidence interval for the slope as
 
@@ -861,7 +877,7 @@ where $df=n-2$ and $t_{1- \alpha/2, df}$ is the critical score associated with t
 
 * Complete chapter 9 of [Data Analysis and Statistical Inference](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `multiple_regression_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 pm November 30 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `multiple_regression_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m. November 30 to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
 
 #### Learning Objectives for OI Sections 8.1-8.2
 
@@ -877,13 +893,11 @@ LO 3. Interpret the estimate for a slope (say $b_1$) as "All else held constant,
 
 LO 4. Define collinearity as a high correlation between two independent variables such that the two variables contribute redundant information to the model---which is something we want to avoid in multiple linear regression.
 
-LO 5. Note that $R^2$ will increase with each explanatory variable added to the model, regardless of whether or not the added variable is a meaningful predictor of the response variable. Therefore we use adjusted $R^2$, which applies a penalty for the number of predictors included in the model, to better assess the strength of a multiple linear regression model:
+LO 5. Note that $R^2$ will increase with each explanatory variable added to the model, regardless of whether or not the added variable is a meaningful predictor of the response variable. We use adjusted $R^2$, which applies a penalty for the number of predictors included in the model, to better assess the strength of a multiple linear regression model.
 
 $$R^2_{adj}= 1 - \frac{SSE/(n-k-1)}{SST/(n-1)}$$
 
-where $n$ is the number of cases and $k$ is the number of predictors.
-
-Note that $R^2_{adj}$ will only increase if the added variable has a meaningful contribution to the amount of explained variability in $y$, i.e. if the gains from adding the variable exceeds the penalty.
+where $n$ is the number of cases and $k$ is the number of predictors.  Note that $R^2_{adj}$ will only increase if the added variable has a meaningful contribution to the amount of explained variability in $y$, i.e. if the gains from adding the variable exceeds the penalty.
 
 LO 6. Define model selection as identifying the best model for predicting a given response variable.
 
@@ -894,12 +908,12 @@ LO 8. Define the full model as the model with all explanatory variables included
 
 #### Learning Objectives for OI Section 8.3
 
-LO 1. The significance of the model as a whole is assessed using an F-test.
+LO 1. The significance of the model as a whole is assessed using an $F$-test where:
 
-* $H_0:\beta_1=\beta_2=\cdots=\beta_k$
-* $H_A: \text{at least one} \beta_i \ne 0$
-* $df = n-k-1$ degrees of freedom.
-* Usually reported at the bottom of the regression output.
+* $H_0:\beta_1=\beta_2=\cdots=\beta_k$,
+* $H_A: \text{at least one} \beta_i \ne 0$,
+* there are $df = n-k-1$ degrees of freedom, and
+* the observed $F$ value is usually reported at the bottom of the regression output.
 
 LO 2. Note that the p-values associated with each predictor are conditional on other variables being included in the model, so they can be used to assess if a given predictor is significant, given that all others are in the model.
 
@@ -914,43 +928,43 @@ LO 3. Stepwise model selection (backward or forward) can be done based on p-valu
 
 LO 4. The general idea behind backward-selection is to start with the full model and eliminate one variable at a time until the ideal model is reached.
 
-* p-value method:
+* $p$-value method:
 1. Start with the full model.
-2. Drop the variable with the highest p-value and refit the model.
+2. Drop the variable with the highest $p$-value and refit the model.
 3. Repeat until all remaining variables are significant.
 
 * adjusted $R^2$ method:
 1. Start with the full model.
-2. Refit all possible models omitting one variable at a time, and choose the model with the highest adjusted $R^2$.
+2. Refit all possible models omitting one variable at a time.  Choose the model with the highest adjusted $R^2$.
 3. Repeat until maximum possible adjusted $R^2$ is reached.
 
-LO 5. The general idea behind forward-selection is to start with only one variable and adding one variable at a time until the ideal model is reached.
+LO 5. The general idea behind forward-selection is to start with only one variable and add one variable at a time until the ideal model is obtained.
 
-* p-value method:
+* $p$-value method:
 
-1. Try all possible simple linear regression models predicting y using one explanatory variable at a time. Choose the model where the explanatory variable of choice has the lowest p-value.
+1. Try all possible simple linear regression models predicting $y$ using one explanatory variable at a time. Choose the model where the explanatory variable of choice has the lowest $p$-value.
 
-2. Try all possible models adding one more explanatory variable at a time, and choose the model where the added explanatory variable has the lowest p-value.
+2. Try all possible models adding one more explanatory variable at a time.  Choose the model where the added explanatory variable has the lowest $p$-value.
 
 3.  Repeat until all added variables are significant.
 
 * adjusted $R^2$ method:
 
-1. Try all possible simple linear regression models predicting y using one explanatory variable at a time. Choose the model with the highest adjusted $R^2$.
-2. Try all possible models adding one more explanatory variable at a time, and choose the model with the highest adjusted $R^2$.
+1. Try all possible simple linear regression models predicting $y$ using one explanatory variable at a time. Choose the model with the highest adjusted $R^2$.
+2. Try all possible models adding one more explanatory variable at a time. Choose the model with the highest adjusted $R^2$.
 3. Repeat until maximum possible adjusted $R^2$ is reached.
 
-LO 6. Adjusted $R^2$ method is more computationally intensive, but it is more reliable, since it doesn't depend on an arbitrary significance level.
+LO 6. Adjusted $R^2$ method is more computationally intensive; but, it is more reliable since it does not depend on an arbitrary significance level.
 
 LO 7. List the conditions for multiple linear regression as
 
-1. linear relationship between each (numerical) explanatory variable and the response - checked using scatterplots of $y$ vs. each $x$, and residuals plots of residuals vs. each $x$
-2. nearly normal residuals with mean 0 - checked using a normal probability plot and histogram of residuals
-3. constant variability of residuals - checked using residuals plots of residuals vs. $\hat{y}$, and residuals vs. each $x$
-4. independence of residuals (and hence observations) - checked using a scatterplot of residuals vs. order of data collection (will reveal non-independence if data have time series structure)
+1. linear relationship between each (numerical) explanatory variable and the response---checked using scatterplots of $y$ vs. each $x$, and residuals plots of residuals vs. each $x$
+2. nearly normal residuals with mean 0---checked using a normal probability plot and histogram of residuals
+3. constant variability of residuals---checked using residuals plots of residuals vs. $\hat{y}$, and residuals vs. each $x$
+4. independence of residuals (and hence observations)---checked using a scatterplot of residuals vs. order of data collection (will reveal non-independence if data have time series structure)
 
 LO 8. Note that no model is perfect, but even imperfect models can be useful.
 
 ### Final Exam
 
-*  Complete the `reg_model_project.Rmd` project found in your `StatsWithRProjects` forked repository. Submit your compiled `*html` file no later than 5:00 pm December 7 to [CrowdGrader]().  Make sure you commit and push your final product to your private repository. 
+*  Complete the `reg_model_project.Rmd` project found in your `StatsWithRProjects` forked repository. Submit your compiled `*html` file no later than 5:00 p.m. December 7 to [CrowdGrader]().  Make sure you commit and push your final product to your private repository. 
