@@ -293,7 +293,7 @@ Test yourself: 50% of students in a class are social science majors and the rest
 
   1. Define the standardized score ($z$-score) of a data point as the number of standard deviations it is away from the mean: $z = \frac{x - \mu}{\sigma}.$
 
-  2. Use the $Z$ score
+  2. Use the $z\!~\text{-score}$
 
 * if the distribution is normal to determine the percentile score of a data point (using technology or normal probability tables);
 * regardless of the shape of the distribution to assess whether or not the particular observation is considered to be unusual (more than 2 standard deviations away from the mean).
@@ -302,7 +302,7 @@ Test yourself: 50% of students in a class are social science majors and the rest
 
   4. Assess whether or not a distribution is nearly normal using either the 68-95-99.7% rule or graphical methods such as a normal probability plot.
 
-Test yourself: True/False: In a right skewed distribution the $Z$ score of the median is positive.
+Test yourself: True/False: In a right skewed distribution the $z\!~\text{-score}$ of the median is positive.
 
 #### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 3.4
 
@@ -426,7 +426,7 @@ Notice that this corresponds to half the width of the confidence interval.
 
 * $p\!~\text{-value}$=P(observed or more extreme statistic | $H_0$ true)
 
-  5. Calculate a $p\!~\text{-value}$ as the area under the normal curve beyond the observed sample mean (either in one tail or both, depending on the alternative hypothesis). Note that in doing so you can use a $Z$ score, where
+  5. Calculate a $p\!~\text{-value}$ as the area under the normal curve beyond the observed sample mean (either in one tail or both, depending on the alternative hypothesis). Note that in doing so you can use a $z\!~\text{-score}$, where
 
 * $p\!~\text{-value}$=P(observed or more extreme statistic | $H_0$ true)
 
