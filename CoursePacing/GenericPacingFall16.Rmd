@@ -797,15 +797,15 @@ $$E =\frac{\text{row total}\times\text{column total}}{\text{grand total}}$$
 ```{block, test12, type='rmdexercise'}
 Test yourself:
 
-1. Suppose 10% of Coursera students smoke. You collect many random samples of 100 Coursera students at a time, and calculate a sample proportion od students who smoke $(\hat{p})$ for each sample. What would you expect the distribution of $\hat{p}$ to be? Describe its shape, center, and spread.
+1. Suppose 10% of ASU students smoke. You collect many random samples of 100 ASU students at a time, and calculate a sample proportion od students who smoke $(\hat{p})$ for each sample. What would you expect the distribution of $\hat{p}$ to be? Describe its shape, center, and spread.
 
-2. Suppose you want to construct a confidence interval with a margin of error no more than 4% for the proportion of Coursera students who smoke. How would your calculation of the required sample size change if you do not know anything about the smoking habits of Coursera students versus if you have a reliable previous study estimating that about 10% of Coursera students smoke?
+2. Suppose you want to construct a confidence interval with a margin of error no more than 4% for the proportion of ASU students who smoke. How would your calculation of the required sample size change if you do not know anything about the smoking habits of ASU students versus if you have a reliable previous study estimating that about 10% of ASU students smoke?
 
-3.  Suppose a 95% confidence interval for the difference between the proportion of male and the proportion of female Coursera students who smoke is (-0.08,0.11). Interpret this interval making sure to incorporate a comparative statement about the two sexes of Coursera students.  
+3.  Suppose a 95% confidence interval for the difference between the proportion of male and the proportion of female ASU students who smoke is (-0.08,0.11). Interpret this interval making sure to incorporate a comparative statement about the two sexes of ASU students.  
 
 4.  Does the above interval suggest a significant difference between the true proportions of smokers in the two groups?
 
-5.  Suppose you had a sample of 100 male Coursera students where 11 of them smoke; and a sample of 80 female Coursera students where 10 of them smoke. Calculate $\hat{p}_{pool}$.
+5.  Suppose you had a sample of 100 male ASU students where 11 of them smoke; and a sample of 80 female ASU students where 10 of them smoke. Calculate $\hat{p}_{pool}$.
 
 6.  When and why do we use $\hat{p}_{pool}$ in the calculation of the standard error for the difference between two sample proportions?
 
@@ -817,7 +817,7 @@ Test yourself:
 
 10. Suppose a chi-square test of independence between two categorical variables (one with 5, the other with 3 levels) yields a test statistic of $\chi^2 = 14$. What is the conclusion of the hypothesis test at 5% significance level?
 
-11. Suppose you want to estimate the proportion of Coursera students who smoke. You collect a random sample of 100 students, where only 8 of them smoke. Can you use the theoretical methods ($Z$) to construct a confidence interval based on these data? If not, describe how you could calculate a 95% bootstrap confidence interval.
+11. Suppose you want to estimate the proportion of ASU students who smoke. You collect a random sample of 100 students, where only 8 of them smoke. Can you use the theoretical methods ($Z$) to construct a confidence interval based on these data? If not, describe how you could calculate a 95% bootstrap confidence interval.
 
 12. Why is the $p\!~\text{-value}$ for chi-square tests always "one sided"?
 ```
@@ -871,10 +871,10 @@ where $\beta_0$ is the intercept, $\beta_1$ is the slope, and $\varepsilon$ is r
 
   + $r= -1$ indicates perfect negative linear association. 
   + $r= +1$ indicates perfect positive linear association. 
-  + $r=0$ indictes no linear relationship.
+  + $r=0$ indicates no linear relationship.
 
-* The correlation coefficient is unitless.
-* Since the correlation coefficient is unitless, it is not affected by changes in the center or scale of either variable (such as unit conversions).
+* The correlation coefficient is unit-less.
+* Since the correlation coefficient is unit-less, it is not affected by changes in the center or scale of either variable (such as unit conversions).
 * The correlation of $X$ with $Y$ is the same as the correlation of $Y$ with $X$.
 * The correlation coefficient is sensitive to outliers.
 
@@ -1005,7 +1005,7 @@ $$\widehat{\text{gpa}}= 3.57 − 0.01 \times \text{premed}$$
 
   5. Determine whether an explanatory variable is a significant predictor for the response variable using the $t\!~\text{-test}$ and the associated $p\!~\text{-value}$ in the regression output.
 
-  6. When testing for the significance of the predictor the null hypothesisias $H_0:\beta_1=0$.  Recognize that standard software output returns a $p\!~\text{-value}$ for a two-sided alternative hypothesis.
+  6. When testing for the significance of the predictor the null hypothesis $H_0:\beta_1=0$.  Recognize that standard software output returns a $p\!~\text{-value}$ for a two-sided alternative hypothesis.
 
 * Note that $\beta_1=0$ means the regression line is horizontal, suggesting there is no relationship between the explanatory and response variable.
 
