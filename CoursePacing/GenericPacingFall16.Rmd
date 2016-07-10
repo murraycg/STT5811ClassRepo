@@ -6,7 +6,7 @@ output: html_document
 css: "../css/style.css"
 ---
 
-General Notes:
+### General Notes:
 
 ```{block, note-text, type='rmdnote'}
 1.  Most due dates are 5 p.m. Friday for [CrowdGrader](https://www.crowdgrader.org/) assignments.
