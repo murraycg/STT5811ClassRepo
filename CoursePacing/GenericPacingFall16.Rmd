@@ -3,15 +3,18 @@ title: "Tentative Course Schedule STT 5811"
 author: "Alan Arnholt"
 date: 'Last compiled: `r format(Sys.time(), "%B %d, %Y")`'
 output: html_document
+css: "../css/style.css"
 ---
 
 General Notes:
 
+```{block, note-text, type='rmdnote'}
 1.  Most due dates are 5 p.m. Friday for [CrowdGrader](https://www.crowdgrader.org/) assignments.
 
 2.  Most [CrowdGrader](https://www.crowdgrader.org/) peer reviews will be due by 11 p.m. on Tuesdays.
 
 3.  The grading rubric for submissions can be found in the [grubric](https://github.com/STAT-ATA-ASU/STT5811ClassRepo/tree/master/grubric) directory and below. 
+```
 
 #### Grading Rubric for Assignments
 
@@ -470,7 +473,9 @@ Use a smaller $\alpha$ if a Type I error is more critical than a Type II error. 
 
 ### Week 9: (Oct 11---Fall Break Oct 13, 14)
 
+```{block, MIDTERM, type='rmdnote'}
 * Midterm Exam---October 11
+```
 
 
 ### Week 10: (Oct 18, 20)
@@ -948,4 +953,6 @@ $$b_i \pm t_{1-\alpha/2, n-k-1}\cdot SE_{b_i}$$
 
 ### Final Exam
 
+```{block, FINAL, type='rmdnote'}
 *  Complete the `reg_model_project.Rmd` project found in your [StatsWithRProjects](https://github.com/STAT-ATA-ASU/StatsWithRProjects) forked repository. Submit your compiled `*html` file no later than 5:00 p.m., December 7, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your final product to your private repository. 
+```
