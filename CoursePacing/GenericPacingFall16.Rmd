@@ -417,24 +417,24 @@ Notice that this corresponds to half the width of the confidence interval.
 ```{block, test9, type='rmdexercise'}
 Test yourself:
 
-1. For each of the following situations, state whether the variable is categorical or numerical, and whether the parameter of interest is a mean or a proportion.
+1. For each of the following situations, state whether the variable is categorical or numerical and whether the parameter of interest is a mean or a proportion.
 
     + In a survey, college students are asked whether they agree with their parents’ political ideology.
     + In a survey, college students are asked what percentage of their non-class time they spend studying.
     
-2. Suppose heights of all women in the US have a mean of 63.7 inches, and a random sample of 100 women's heights yield a sample mean of 65.2 inches. Which one is the population parameter and which one is the point estimate? Which one is $\mu$ and which one is $\bar{x}$?
+2. Suppose heights of all women in the US have a mean of 63.7 inches and a random sample of 100 women's heights yields a sample mean of 65.2 inches. Which values are the population parameter and the point estimate, respectively? Which one is $\mu$ and which one is $\bar{x}$?
 
-3. Suppose heights of all women in the US have a standard deviation of 2.7 inches, and a random sample of 100 women's heights yields a standard deviation of 4 inches. Which one is the population parameter and which one is the point estimate? Which one is $\sigma$ and which one is $s$?
+3. Suppose heights of all women in the US have a standard deviation of 2.7 inches and a random sample of 100 women's heights yields a standard deviation of 4 inches. Which value is the population parameter and which value is the point estimate? Which one is $\sigma$ and which one is $s$?
 
-4. Explain, in plain English, what is going on in Figure 4.8 of the book (page 166).
+4. Explain, in plain English, what you see in Figure 4.8 of the book (page 166).
 
 5. List the conditions necessary for the CLT to hold. 
 
-6. Confirm that $z$ for a 98% confidence level is 2.33. (Include a sketch of the normal curve in your response.)
+6. Confirm that $z_{1-\alpha/2}$ for a 98% confidence level is 2.33. (Include a sketch of the normal curve in your response.)
 
 7. Calculate a 95% confidence interval for the average height of US women using a random sample of 100 women where the sample mean is 63 inches and the sample standard deviation is 3 inches. Interpret this interval in context of the data.
 
-8. Explain, in plain English, the difference between standard error and margin of error.
+8. Explain, in plain English, the difference between the standard error and the margin of error.
 
 9. A little more challenging: Suppose heights of all men in the US have a mean of 69.1 inches and a standard deviation of 2.9 inches. What is the probability that a random sample of 100 men will yield a sample average less than 70 inches? 
 ```
@@ -519,24 +519,24 @@ Test yourself:
 
 1. List the errors in the following hypotheses: $H_0:\bar{x} \gt 20$ versus $H_A:\bar{x} \ge 25$
 
-2. What is wrong with the following statement? "If $p\!~\text{-value}$ is large we accept the null hypothesis since a large $p\!~\text{-value}$ implies that the observed difference between the null value and the sample statistic is quite likely to happen just by chance."
+2. What is wrong with the following statement: "If the $p\!~\text{-value}$ is large, we accept the null hypothesis since a large $p\!~\text{-value}$ implies that the observed difference between the null value and the sample statistic is quite likely to happen just by chance"?
 
-3. Suppose a researcher is interested in evaluating the claim "The average height of adult males in the US is 69.1 inches," and she believes this is an underestimate.
+3. Suppose a researcher is interested in evaluating the claim "the average height of adult males in the US is 69.1 inches," and she believes this is an underestimate.
 
     a. How should she set up her hypotheses?
 
     b. Explain to her, in plain language, how she should collect data and carry out a hypothesis test.
 
-    c. Suppose she collects a sample of 40 adult males where the average is 70.2 inches.  A test returns a $p\!~\text{-value}$ of 0.0082. What should she conclude?
+    c. Suppose she collects a random sample of 40 adult males where the average is 70.2 inches.  A test returns a $p\!~\text{-value}$ of 0.0082. What should she conclude?
 
     d. Interpret this $p\!~\text{-value}$ (as a conditional probability) in context of the question.
 
-    e. Suppose that the true average is in fact 69.1 inches. If the researcher rejects the null hypothesis, what type of an error is the researcher making? In order to avoid making such an error, should she have used a smaller or a large significance level?
+    e. Suppose that the true average is in fact 69.1 inches. If the researcher rejects the null hypothesis, what type of an error is the researcher making? In order to avoid making such an error, should she have used a smaller or a larger significance level?
 
 4. Describe the differences and similarities between testing a hypothesis using simulation and testing a hypothesis using theory. Discuss how the calculation of the $p\!~\text{-value}$ changes while the definition of the $p\!~\text{-value}$ stays the same.
 
 
-5. In a random sample of 1,017 Americans, 60% said they do not trust the mass media when it comes to reporting the news fully, accurately, and fairly. The standard error associated with this estimate is 0.015 (1.5%). What is the margin of error at a 95% confidence level? Calculate a 95% confidence interval and interpret it in context. 
+5. In a random sample of 1,017 Americans, 60% said they do not trust the mass media when it comes to reporting the news fully, accurately, and fairly. The standard error associated with this estimate is 0.015 (1.5%). What is the margin of error of a 95% confidence level? Calculate a 95% confidence interval and interpret it in context. 
 
 6. If we want to decrease the margin of error, and hence have a more precise confidence interval, should we increase or decrease the sample size?
 ```
@@ -652,23 +652,23 @@ Use graphical diagnostics to check if these conditions are met.
 ```{block, test11, type='rmdexercise'}
 Test yourself:
 
-1. What is the $t$-value for a 95% confidence interval for a mean, where the sample size is 13?
+1. What is the $t$-value for a 95% confidence interval for a mean where the sample size is 13?
 
 2. What is the $p\!~\text{-value}$ for a hypothesis test where the alternative hypothesis is two-sided, the sample size is 20, and the test statistic, $t$, is calculated to be 1.75?
 
-3. 20 cardiac patients' blood pressure is measured before and after taking a medication. For a given patient, are the before and after blood pressure measurements dependent (paired) or independent?
+3. 20 cardiac patients' blood pressures are measured before and after taking a medication. For a given patient, are the before and after blood pressure measurements dependent (paired) or independent?
 
-4. A random sample of 100 students was obtained and then randomly assigned into two equal sized groups. One group rode on a roller coaster while the other rode a simulator at an amusement park. Afterwards, their blood pressure measurements were taken. Are the measurements dependent (paired) or independent?
+4. A random sample of 100 students was obtained and then randomly assigned into two equal-sized groups. One group rode on a roller coaster while the other rode a simulator at an amusement park. Afterwards, their blood pressure measurements were taken. Are the measurements dependent (paired) or independent?
 
 5. Describe how the two sample means test is different from the paired means test.
 
-6. A 95% confidence interval for the difference between the number of calories consumed by mature and juvenile cats $(\mu_{mat}-\mu_{juv})$ is (80 calories, 100 calories). Interpret this interval and determine if it suggests a significant difference between the two means.
+6. A 95% confidence interval for the difference between the number of calories consumed by mature and juvenile cats $(\mu_{mat}-\mu_{juv})$ is (80 calories, 100 calories). Interpret this interval, and determine if it suggests a significant difference between the two means.
 
-7. We would like to compare the average income of Americans who live in the Northeast, Midwest, South, and West. What are the appropriate hypotheses?
+7. We would like to compare the average incomes of Americans who live in the Northeast, Midwest, South, and West. What are the appropriate hypotheses?
 
-8. Suppose the sample in question 7. has 1000 observations, what are the degrees of freedom associated with the $F$-statistic?
+8. Suppose the sample in question 7 has 1000 observations, what are the degrees of freedom associated with the $F$-statistic?
 
-9. Suppose the null hypothesis is rejected. Describe how we would discover which regions' averages are different from each other. Make sure to discuss how many pairwise comparisons we would need to make, and what the corrected significance level would be.
+9. Suppose the appropriate null hypothesis from question 7 is rejected. Describe how we would discover which regions' averages are different from each other. Make sure to discuss how many pairwise comparisons we would need to make and what the corrected significance level would be.
 
 10. What visualizations are useful for checking each of the conditions required for performing ANOVA?
 
@@ -744,7 +744,7 @@ Such a discrepancy does not exist when conducting inference for means since the 
 
 #### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 6.3-6.6
 
-  1. Use a chi-square test of goodness of fit to evaluate if the distribution of levels of a single categorical variable follows a hypothesized distribution.
+  1. Use a chi-squared test of goodness of fit to evaluate if the distribution of levels of a single categorical variable follows a hypothesized distribution.
 
 * $H_0:$ The distribution of observed counts follows the hypothesized distribution and any observed differences are due to chance.
 
@@ -752,23 +752,23 @@ Such a discrepancy does not exist when conducting inference for means since the 
 
   2. Calculate the expected counts for a given level (cell) in a one-way table as the sample size times the hypothesized proportion for that level.
 
-  3. Calculate the chi-square test statistic as
+  3. Calculate the chi-squared test statistic as
 
 $$\chi^2 = \sum_{i=1}^k\frac{(\text{observed count} - \text{expected count})^2}{\text{expected count}}, \text{where } k \text{ is the number of cells.}$$
 
-  4. Note that the chi-square statistic is always positive and follows a right skewed distribution with one parameter, which is the degrees of freedom.
+  4. Note that the chi-squared statistic is always positive and follows a right skewed distribution with one parameter, which is the degrees of freedom.
 
-  5. Note that the degrees of freedom for the chi-square statistic for the goodness of fit test is $df=k-1$.
+  5. Note that the degrees of freedom for the chi-squared statistic for the goodness of fit test is $df=k-1$.
 
-  6. List the conditions necessary for performing a chi-square test (goodness of fit or independence)
+  6. List the conditions necessary for performing a chi-squared test (goodness of fit or independence)
 
 1. The observations should be independent.
 2. The expected counts for each cell should be at least five.
 3. The degrees of freedom should be at least two (if not, use methods for evaluating proportions).
 
-  7. Describe how to use the chi-square table to obtain a $p\!~\text{-value}$.
+  7. Describe how to use the chi-squared table to obtain a $p\!~\text{-value}$.
 
-  8. When evaluating the independence of two categorical variables, where at least one has more than two levels, use a chi-square test of independence.
+  8. When evaluating the independence of two categorical variables, where at least one has more than two levels, use a chi-squared test of independence.
 
 * $H_0:$ The two variables are independent.
 
@@ -779,9 +779,9 @@ $$\chi^2 = \sum_{i=1}^k\frac{(\text{observed count} - \text{expected count})^2}{
 $$E =\frac{\text{row total}\times\text{column total}}{\text{grand total}}$$
 
 
-  10. Calculate the degrees of freedom for chi-square test of independence as $df=(R-1)\times(C-1)$, where $R$ is the number of rows in a two-way table, and $C$ is the number of columns.
+  10. Calculate the degrees of freedom for chi-squared test of independence as $df=(R-1)\times(C-1)$, where $R$ is the number of rows in a two-way table, and $C$ is the number of columns.
 
-  11. Note that there is no such thing as a chi-square confidence interval for proportions.
+  11. Note that there is no such thing as a chi-squared confidence interval for proportions.
 
   12. Use simulation methods when sample size conditions are not met for inference for categorical variables.
 
@@ -797,29 +797,27 @@ $$E =\frac{\text{row total}\times\text{column total}}{\text{grand total}}$$
 ```{block, test12, type='rmdexercise'}
 Test yourself:
 
-1. Suppose 10% of ASU students smoke. You collect many random samples of 100 ASU students at a time, and calculate a sample proportion od students who smoke $(\hat{p})$ for each sample. What would you expect the distribution of $\hat{p}$ to be? Describe its shape, center, and spread.
+1. Suppose 10% of ASU students smoke. You collect many random samples of 100 ASU students at a time and calculate a sample proportion of students who smoke $(\hat{p})$ for each sample. What would you expect the distribution of $\hat{p}$ to be? Describe its shape, center, and spread.
 
 2. Suppose you want to construct a confidence interval with a margin of error no more than 4% for the proportion of ASU students who smoke. How would your calculation of the required sample size change if you do not know anything about the smoking habits of ASU students versus if you have a reliable previous study estimating that about 10% of ASU students smoke?
 
-3.  Suppose a 95% confidence interval for the difference between the proportion of male and the proportion of female ASU students who smoke is (-0.08,0.11). Interpret this interval making sure to incorporate a comparative statement about the two sexes of ASU students.  
+3.  Suppose a 95% confidence interval for the difference between the proportion of male and the proportion of female ASU students who smoke is (-0.08, 0.11). Interpret this interval, making sure to incorporate a comparative statement about the two sexes of ASU students.  
 
 4.  Does the above interval suggest a significant difference between the true proportions of smokers in the two groups?
 
-5.  Suppose you had a sample of 100 male ASU students where 11 of them smoke; and a sample of 80 female ASU students where 10 of them smoke. Calculate $\hat{p}_{pool}$.
+5.  Suppose you had a sample of 100 male ASU students where 11 of them smoke and a sample of 80 female ASU students where 10 of them smoke. Calculate $\hat{p}_{pool}$.
 
 6.  When and why do we use $\hat{p}_{pool}$ in the calculation of the standard error for the difference between two sample proportions?
 
 7.  Explain the different hypothesis tests one could use when assessing the distribution of a categorical variable (e.g. smoking status) with only two levels (e.g. levels: smoker and non-smoker) vs. more than two levels (e.g. levels: heavy smoker, moderate smoker, occasional smoker, non-smoker).
 
-8.  Why is the $p\!~\text{-value}$ for chi-square tests always "one sided"?
+8.  Why is the $p\!~\text{-value}$ for chi-squared tests always "one sided"?
 
-9.  What are the null and alternative hypotheses in the chi-square test of independence?
+9.  What are the null and alternative hypotheses in the chi-squared test of independence?
 
-10. Suppose a chi-square test of independence between two categorical variables (one with 5, the other with 3 levels) yields a test statistic of $\chi^2 = 14$. What is the conclusion of the hypothesis test at 5% significance level?
+10. Suppose a chi-squared test of independence between two categorical variables (one with 5, the other with 3 levels) yields a test statistic of $\chi^2 = 14$. What is the conclusion of the hypothesis test at a 5% significance level?
 
-11. Suppose you want to estimate the proportion of ASU students who smoke. You collect a random sample of 100 students, where only 8 of them smoke. Can you use the theoretical methods ($Z$) to construct a confidence interval based on these data? If not, describe how you could calculate a 95% bootstrap confidence interval.
-
-12. Why is the $p\!~\text{-value}$ for chi-square tests always "one sided"?
+11. Suppose you want to estimate the proportion of ASU students who smoke. You collect a random sample of 100 students, where only 8 of them smoke. Should you use the theoretical methods ($Z$) to construct a confidence interval based on these data? If not, describe how you could calculate a 95% bootstrap confidence interval.
 ```
 
 
@@ -937,42 +935,42 @@ $$\hat{y} = b_0 + b_1 x^*$$
 ```{block, test13, type='rmdexercise'}
 Test yourself:
 
-1.  A teaching assistant gives a quiz. There are 10 questions on the quiz and no partial credit is given. After grading the papers the TA writes down the number of questions each student got right and wrong. What is the correlation of the number of questions right and wrong? Hint: Make up some data for number of questions right, calculate number of questions wrong, and plot them against each other.
+1.  A teaching assistant gives a quiz. There are 10 questions on the quiz and no partial credit is given. After grading the papers, the TA writes down the number of questions each student answered correctly. What is the correlation between the number of questions answered correctly and incorrectly? Hint: Make up some data for number of questions right, calculate number of questions wrong, and plot them against each other.
 
-2. Suppose you fit a linear regression model predicting score on an exam from number of hours studied. Say you have studied for 4 hours. Would you prefer to be on the line, below the line, or above the line? What would the residual for your score be (0, negative, or positive)?
+2. Suppose you fit a linear regression model predicting the score on an exam from the number of hours studied. Say you have studied for 4 hours. Would you prefer to be on the line, below the line, or above the line? What would the residual for your score be (0, negative, or positive)?
 
 3. Someone hands you the scatter diagram shown below, but has forgotten to label the axes. Can you calculate the correlation coefficient? 
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, fig.align = "center"}
 set.seed(123)
 x <- sort(rnorm(20))
 y <- sort(rnorm(20))
-plot(x, y, xlab = "", ylab = "", col = "lightblue")
+plot(x, y, xlab = "", ylab = "", col = "lightblue", pch = 19)
 ```
 
 ```{block, test14, type='rmdexercise'}
 4.  We would not want to fit a least squares line to the data shown in the scatterplot below. Which of the conditions does it appear to violate?
 ```
 
-```{r, INC, echo = FALSE}
+```{r, INC, echo = FALSE, fig.align = 'center'}
 set.seed(21)
 n <- 200
 y <- 1:n + rnorm(n, 0, 1)
 x <- y + rnorm(n, 0, 30)*(1:n)/n
-plot(x, y, xlab = "", ylab = "", col = "lightblue")
+plot(x, y, xlab = "", ylab = "", col = "lightblue", pch = 19)
 ```
 
 ```{block, test15, type='rmdexercise'}
-5. Derive the formula for $b_0$ given the fact that the linear model is $\hat{y}=b_0 + b_1x$ and that the least squares line goes through $(\bar{x}, \bar{y})$.
+5. Derive the formula for $b_0$ as a function of $b_1$ given the fact that the linear model is $\hat{y}=b_0 + b_1x$ and that the least squares line goes through $(\bar{x}, \bar{y})$.
 
 6. One study on male college students found their average height to be 70 inches with a standard deviation of 2 inches. Their average weight was 140 pounds with a standard deviation of 25 pounds. The correlation between their height and weight was 0.60. Assuming that the two variables are linearly associated, write the linear model for predicting weight from height.
 
-7. Is a male who is 72 inches tall and who weighs 115 pounds on the line, below the line, or above the line?
+7. Is a male who is 72 inches tall and who weighs 115 pounds on the line, below the line, or above the line calculated in question 6?
 
-8.  Describe an indicator variable and what levels 0 and 1 mean for such variables.
+8.  What is an indicator variable, and what do levels 0 and 1 mean for such variables?
 
-9.  If the correlation between two variables $y$ and $x$ is 0.6, what percent of the variability in $y$ does $x$ explain?
+9.  If the correlation between two variables $y$ and $x$ is 0.6, what percent of the variability in $y$ do changes in $x$ explain?
 
 10.  The model below predicts GPA based on an indicator variable (0: not premed, 1: premed). Interpret the intercept and slope estimates in context of the data.
 
@@ -1030,30 +1028,35 @@ where $df=n-2$ and $t_{1- \alpha/2, df}$ is the critical score associated with t
 ```{block, test16, type='rmdexercise'}
 Test yourself: 
 
-1. Determine if each of the three unusual observations in the plot below would be considered just an outlier, a leverage point, or an influential point.
+1. Determine whether each of the three unusual observations (traingles) in the plot below would be primarily considered an outlier, a high leverage point, or an influential point.
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, fig.align = 'center'}
 set.seed(21)
 n <- 97
 y <- 1:n + rnorm(n, 0, 20)
 x <- y + rnorm(n, 0, 20)
 x <- c(x, 170, 160, 60)
 y <- c(y, 155, 50, 135)
-plot(x, y, xlab = "", ylab = "", col = "lightblue")
-points(c(170, 160, 60), c(155, 50, 135), col = c("red", "green", "blue"), pch = 19)
+plot(x, y, xlab = "", ylab = "", col = "pink", pch = 19)
+points(c(170, 160, 60), c(155, 50, 135), col = c("red", "green", "blue"), pch = 17, cex = 2)
 mod1 <- lm(y ~ x)
 ```
 
 ```{block, test17, type='rmdexercise'}
-2. Given the regression output below for predicting $y$ from $x$ where $n=100$, verify the $t$- and $p\!~\text{-values}$. Determine whether $x$ is a significant predictor of $y$ and interpret the $p\!~\text{-value}$ in context.
-
-3. Calculate a 95% confidence interval for the slope. 
+2. Given the regression output below for predicting $y$ from $x$ where $n=100$, verify the $t$- and $p\!~\text{-values}$. Determine whether $x$ is a significant predictor of $y$, and interpret the $p\!~\text{-value}$ in context.
 ```
 
 ```{r, table, echo = FALSE}
 htmlTable::htmlTable(round(summary(mod1)$coef,4), css.cell = "padding-left: 1em; padding-right: 1em;")
 ```
+
+
+```{block, test18, type='rmdexercise'}
+3. Calculate a 95% confidence interval for the slope from the output above. 
+```
+
+
 
 ### Week 15: (Nov 22, 29---No class 23-25 Thanksgiving)
 
@@ -1151,7 +1154,9 @@ $$b_i \pm t_{1-\alpha/2, n-k-1}\cdot SE_{b_i}$$
 
   8. Note that no model is perfect, but even imperfect models can be useful.
   
-```{block, test18, type='rmdexercise'}  
+```{block, test18b, type='rmdexercise'}  
+Test yourself:
+
 1.  How are multiple linear regression and simple linear regression different?
 
 2. What does "all else held constant" mean in the interpretation of a slope coefficient in multiple linear regression?
@@ -1164,7 +1169,7 @@ $$b_i \pm t_{1-\alpha/2, n-k-1}\cdot SE_{b_i}$$
 
 6. Describe the backward-selection algorithm using adjusted $R^2$ as the criterion for model selection.
 
-7. If a residuals plot (residuals vs. $x$ or residuals vs. $\hat{y}$) shows a fan shape, we worry about non-constant variability of residuals. What would the shape of these residuals look like if the absolute value of residuals are plotted against a predictor or $\hat{y}$?
+7. If a residuals plot (residuals vs. $x$ or residuals vs. $\hat{y}$) shows a fan shape, we worry about non-constant variability of residuals. What would the shape of these residuals be if the absolute value of the residuals are plotted against a predictor or $\hat{y}$?
 ```
 
 ### Final Exam
