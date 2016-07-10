@@ -7,13 +7,11 @@ output: html_document
 
 General Notes:
 
-1.  Direct links for [CrowdGrader](http://www.crowdgrader.org/) assignments will be updated during the course.
+1.  Most due dates are 5 p.m. Friday for [CrowdGrader](https://www.crowdgrader.org/) assignments.
 
-2.  Most due dates are 5 p.m. Friday for CrowdGrader assignments.
+2.  Most [CrowdGrader](https://www.crowdgrader.org/) peer reviews will be due by 11 p.m. on Tuesdays.
 
-3.  Most CrowdGrader peer reviews will be due by 11 p.m. on Tuesdays.
-
-4.  The grading rubric for submissions can be found in the [grubric](https://github.com/STAT-ATA-ASU/STT5811ClassRepo/tree/master/grubric) directory and below. 
+3.  The grading rubric for submissions can be found in the [grubric](https://github.com/STAT-ATA-ASU/STT5811ClassRepo/tree/master/grubric) directory and below. 
 
 #### Grading Rubric for Assignments
 
@@ -102,7 +100,7 @@ git pull upstream master
 
 * Create a free account on [DataCamp](https://www.datacamp.com/).  Complete chapter 1 of [*Data Analysis and Statistical Inference* ](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Fork the [StatsWithRLabs]() repository to your private GitHub account.  Complete the `intro_to_r_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., August 26, to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.  Install the `statsr` package by running the following from the R command line:
+* Fork the [StatsWithRLabs](https://github.com/STAT-ATA-ASU/StatsWithRLabs) repository to your private GitHub account.  Complete the `intro_to_r_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., August 26, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.  Install the `statsr` package by running the following from the R command line:
 
 ```
 devtools::install_github('alanarnholt/statsr')
@@ -159,7 +157,7 @@ Test yourself:
 
 * Complete chapter 2 of [*Data Analysis and Statistical Inference* ](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `intro_to_data_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., September 2, to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `intro_to_data_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., September 2, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
 
 * Integrating [zotero](www.zotero.com) with [RMarkdown](http://rmarkdown.rstudio.com) will be discussed during the first part of the week.  An example document will be stored in this folder.
@@ -214,7 +212,7 @@ Test yourself:
 
 * Complete chapter 3 of [*Data Analysis and Statistical Inference* ](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `probability_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., September 9, to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `probability_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., September 9, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
          
 #### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 2.1
 
@@ -330,7 +328,7 @@ Test yourself:
 
 ### Week 6: (Sep 20, 22)
 
-* Fork the [StatsWithRProjects]() repository to your private GitHub account.  Complete the `intro_dataprob_project.Rmd` project, and submit your compiled `*html` file no later than 5:00 p.m., September 23, to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository. 
+* Fork the [StatsWithRProjects](https://github.com/STAT-ATA-ASU/StatsWithRProjects) repository to your private GitHub account.  Complete the `intro_dataprob_project.Rmd` project, and submit your compiled `*html` file no later than 5:00 p.m., September 23, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository. 
 
 
 
@@ -344,7 +342,7 @@ Test yourself:
 
 * Complete chapter 4 of [*Data Analysis and Statistical Inference* ](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `sampling_distributions_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 p.m., September 30, to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `sampling_distributions_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 p.m., September 30, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
 
 #### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 4.1
@@ -405,7 +403,7 @@ Notice that this corresponds to half the width of the confidence interval.
 
 * Complete chapter 5 of [*Data Analysis and Statistical Inference* ](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `confidence_intervals_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., October 7, to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `confidence_intervals_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., October 7, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
 #### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 4.3
 
@@ -485,7 +483,7 @@ Use a smaller $\alpha$ if a Type I error is more critical than a Type II error. 
 
 * Complete chapter 6 of [*Data Analysis and Statistical Inference* ](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `inf_for_numerical_datas_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., October 21, to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `inf_for_numerical_datas_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., October 21, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
 #### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 5.1-5.4
 
@@ -585,7 +583,7 @@ Use graphical diagnostics to check if these conditions are met.
 
 * Complete chapter 7 of [*Data Analysis and Statistical Inference* ](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `inf_for_categorical_data_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., October 28, to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `inf_for_categorical_data_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., October 28, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
 #### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 6.1-6.2
 
@@ -695,7 +693,7 @@ $$E =\frac{\text{row total}\times\text{column total}}{\text{grand total}}$$
 
 ### Week 12: (Nov 1, 3)
 
-*  Complete the `stat_inf_project.Rmd` project found in your `StatsWithRProjects` forked repository. Submit your compiled `*html` file no later than 5:00 p.m., November 4, to [CrowdGrader]().  Make sure you commit and push your final product to your private repository. 
+*  Complete the `stat_inf_project.Rmd` project found in your [StatsWithRProjects](https://github.com/STAT-ATA-ASU/StatsWithRProjects) forked repository. Submit your compiled `*html` file no later than 5:00 p.m., November 4, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your final product to your private repository. 
 
 
 
@@ -813,7 +811,7 @@ $$\hat{y} = b_0 + b_1 x^*$$
 
 * Review chapter 8 of [*Data Analysis and Statistical Inference* ](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `simple_regression_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., November 18, to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `simple_regression_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., November 18, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
 
 #### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 7.3-7.4
@@ -860,7 +858,7 @@ where $df=n-2$ and $t_{1- \alpha/2, df}$ is the critical score associated with t
 
 * Complete chapter 9 of [*Data Analysis and Statistical Inference* ](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `multiple_regression_ASU.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., November 30, to [CrowdGrader]().  Make sure you commit and push your your final product to your private repository.
+* Complete the `multiple_regression_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., November 30, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
 #### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 8.1-8.2
 
@@ -950,4 +948,4 @@ $$b_i \pm t_{1-\alpha/2, n-k-1}\cdot SE_{b_i}$$
 
 ### Final Exam
 
-*  Complete the `reg_model_project.Rmd` project found in your `StatsWithRProjects` forked repository. Submit your compiled `*html` file no later than 5:00 p.m., December 7, to [CrowdGrader]().  Make sure you commit and push your final product to your private repository. 
+*  Complete the `reg_model_project.Rmd` project found in your [StatsWithRProjects](https://github.com/STAT-ATA-ASU/StatsWithRProjects) forked repository. Submit your compiled `*html` file no later than 5:00 p.m., December 7, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your final product to your private repository. 
