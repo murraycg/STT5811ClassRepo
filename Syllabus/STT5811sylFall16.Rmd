@@ -2,7 +2,9 @@
 title: "STT 5811 Syllabus - Fall 2016"
 author: ''
 date: "Fall 2016"
-output: html_document
+output: 
+  html_document: 
+    theme: readable
 ---
 
 **Instructor:**  Dr. Alan T. Arnholt    
