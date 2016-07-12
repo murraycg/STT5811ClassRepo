@@ -5,11 +5,20 @@
   border-radius: 10px;
   border: 3px solid green;
 } 
+.rmdoptional {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: yellow 5px;
+  border-radius: 10px;
+  border: 3px solid black;
+} 
 
 .rmdremind, .rmdcaution, .rmdimportant, .rmdnote, .rmdtip, .rmdwarning {
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
   background: #f5f5f5 5px center/3em no-repeat;
+  border-radius: 10px;
+  border: 3px solid black;
 } 
 .rmdcaution {
   background-image: url("../images/caution.png");

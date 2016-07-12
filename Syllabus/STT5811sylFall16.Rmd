@@ -35,17 +35,17 @@ This course introduces students at the post-calculus level to statistical concep
 
 [_OpenIntro Statistics, 3rd Edition_](https://www.openintro.org/stat/textbook.php?stat_book=os)
 
-[_Passion Driven Statistics_](https://github.com/alanarnholt/PDS-Book) also available on [Rpubs](http://rpubs.com/arnholt/193630). 
+[_Passion Driven Statistics_](https://alanarnholt.github.io/PDS-BookDown/BookDownTry/book/overview.html) also available on [Rpubs](http://rpubs.com/arnholt/193630). 
 
 [_Reproducible Research with R and RStudio, Second Edition_](https://github.com/christophergandrud/Rep-Res-Book) by Christopher Gandrud
 
 **Course Grading:**
 
-* 45% of the course grade will come from the nine course labs (5% each lab)
+* 54% of the course grade will come from the nine course labs (6% each lab)
 
-* 45% of the course grade will come from the three course projects (15% each project) 
+* 30% of the course grade will come from the three course projects (10% each project) 
 
-* 10% of the course grade will come from the Midterm exam
+* 16% of the course grade will come from the Midterm exam
 
 
 If you know you will be absent at any point in the semester for any reason, please let me know beforehand; and make sure to submit your work via [CrowdGrader](http://www.crowdgrader.org/) before the due date.  

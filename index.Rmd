@@ -14,7 +14,7 @@ output:
 
 * Course pacing and assignments are stored in the [`CoursePacing`](./CoursePacing/GenericPacingFall16.html) directory of the STT 5811 repository.
 
-* The text *Passion Driven Statistics* modified for use at Appalachian State University is maintained in the [PDS-Book](https://github.com/alanarnholt/PDS-Book) repository.
+* The `Bookdown` version of [*Passion Driven Statistics*](https://alanarnholt.github.io/PDS-BookDown/BookDownTry/book/overview.html) modified for use at Appalachian State University is maintained in the [PDS-BookDown](https://github.com/alanarnholt/PDS-BookDown) repository.
 
 * The `R` package `PDS` is maintained in the [PDS](https://github.com/alanarnholt/PDS) repository.
 
@@ -36,6 +36,7 @@ output:
 * [Roger Peng's Computing for Data Analysis Videos](http://bit.ly/UC5UDc)
 * [An Introduction to R](http://cran.r-project.org/doc/manuals/r-release/R-intro.html)
 * [*Advanced R Development* by Hadley Wickham](http://adv-r.had.co.nz/)
+* [DataCamp](https://www.datacamp.com/home)
 * [Free Code School intro R Course](https://www.codeschool.com/courses/try-r)
 * [swirl](swirlstat.com) "swirl teaches you R programming and data science interactively, at your own pace, and right in the R console"
 * [_R Packages_ by Hadley Wickham](http://r-pkgs.had.co.nz/)
