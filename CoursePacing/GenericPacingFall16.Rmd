@@ -1,12 +1,18 @@
 ---
-title: "Tentative Course Schedule STT 5811"
+title: "STT 5811 Course Schedule"
 author: "Alan Arnholt"
 date: 'Last compiled: `r format(Sys.time(), "%B %d, %Y")`'
-output: html_document
+output: bookdown::html_document2
 css: "../css/style.css"
 ---
 
-### General Notes:
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+### General Notes: {-}
 
 ```{block, note-text, type='rmdnote'}
 1.  Most due dates are 5 p.m. Friday for [CrowdGrader](https://www.crowdgrader.org/) assignments.
@@ -16,7 +22,7 @@ css: "../css/style.css"
 3.  The grading rubric for submissions can be found in the [grubric](https://github.com/STAT-ATA-ASU/STT5811ClassRepo/tree/master/grubric) directory and below. 
 ```
 
-#### Grading Rubric for Assignments
+#### Grading Rubric for Assignments {-}
 
 Field | Excellent (3) | Competent (2)  | Needs Work (1)
 ------|---------------|----------------|---------------
@@ -27,7 +33,7 @@ Coding  | Code (primarily R) produces correct answers.  Non-standard or complex 
 Clarity  | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are, for the most part, effective and appropriate for the assignment. | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate.
 
 
-### Week 1: (Aug 16, 18)
+## Week 1: (Aug 16, 18) {-}
 
 
 * Sign-up for free accounts on [GitHub](https://github.com) and [Rpubs](https://rpubs.com).
@@ -53,7 +59,7 @@ Watch the following video:
 * [Creating RStudio projects from Github Repos (5 min)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)    
  
 ```{block, week1optional, type='rmdoptional'}
-#### Optional
+#### Optional {-}
 * You may want to install [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), [zotero](https://www.zotero.org), and optionally [$LaTeX$](http://www.ctan.org/starter) on your personal computer. If you do, you will want to follow Jenny Bryan's excellent advice for [installing R and RStudio](http://stat545-ubc.github.io/block000_r-rstudio-install.html) and [installing Git](http://stat545-ubc.github.io/git01_git-install.html).  Jenny's advice is also in chapters 6 and 7 of [Happy Git and GitHub for the useR](http://happygitwithr.com/).  Note: [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), and [$LaTeX$](http://www.ctan.org/starter) are installed on the [Appstate RStudio](https://mathr.math.appstate.edu/) server.
 
 * Watch the following videos as appropriate:
@@ -66,7 +72,7 @@ Watch the following video:
 * [Reproducible Reporting (58 minutes)](https://www.rstudio.com/resources/webinars/archives/)
 ```
 
-### Week 2: (Aug 23, 25)
+## Week 2: (Aug 23, 25) {-}
 
 * Watch all videos for week one of [*Introduction to Probability and Data*](https://www.coursera.org/learn/probability-intro).
 
@@ -110,7 +116,7 @@ git pull upstream master
 devtools::install_github('alanarnholt/statsr')
 ```
 
-#### Learning Objectives [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 1.1-1.5
+#### Learning Objectives [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 1.1-1.5 {-}
 
   1. Identify variables as numerical or categorical.
 
@@ -155,7 +161,7 @@ Test yourself:
 ```
 
 ```{block, week2optional, type='rmdoptional'}
-#### Optional Videos---Statistics In Action
+#### Optional Videos---Statistics In Action {-}
 
 * [Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats - BBC Four](https://www.youtube.com/watch?v=jbkSRLYSojo)
 * [The Best Stats You've Ever Seen | Hans Rosling | TED Talks](https://www.youtube.com/watch?v=hVimVzgtD6w)
@@ -165,12 +171,12 @@ Test yourself:
 * [The Electronic Coach](https://www.youtube.com/watch?v=dhh8Ao4yweQ)
 * [As ‘Normal’ as Rabbits’ Weights and Dragons’ Wings](http://www.nytimes.com/2013/09/24/science/as-normal-as-rabbits-weights-and-dragons-wings.html?_r=2)
 
-#### Practice Exercises 
+#### Practice Exercises  {-}
 
 * End of chapter exercises in Chapter 1 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os): 1.1, 1.3, 1.11, 1.13, 1.17, 1.19, 1.25, 1.27, 1.31
 ```
 
-### Week 3 (Aug 30, Sep 1)
+## Week 3 (Aug 30, Sep 1) {-}
 
 * Watch all videos for week two of [*Introduction to Probability and Data*](https://www.coursera.org/learn/probability-intro).
 
@@ -187,7 +193,7 @@ Test yourself:
 
 * You may find these [videos helpful](https://www.youtube.com/watch?v=dto4gARbsi0&list=PLJBNI3mCp9g0wsSDK111qgimqVF1dwPXO).
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 1.6
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 1.6 {-}
 
   1. Use scatterplots to display the relationship between two numerical variables, making sure to note the direction (positive or negative), form (linear or non-linear), and strength of the relationship as well as any unusual observations.
 
@@ -213,7 +219,7 @@ Test yourself:
 2. Describe when and why we might want to apply a log transformation to a variable.
 ```
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 1.7-1.8
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 1.7-1.8 {-}
 
   1. Use frequency tables and bar plots to describe the distribution of one categorical variable.
 
@@ -229,7 +235,7 @@ Test yourself:
 ```
 
 ```{block, week3optional, type='rmdoptional'}
-#### Optional Videos
+#### Optional Videos {-}
 
 * [Case Study: Using Stents to Prevent Strokes](https://www.youtube.com/watch?list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8&v=nEHFF1ADpWE)
 * [Data Basics: Observations, Variable, and Data Matrices](https://www.youtube.com/watch?list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8&v=Mjif8PTgzUs)
@@ -240,12 +246,12 @@ Test yourself:
 * [Exploring Categorical Data](https://www.youtube.com/watch?list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8&v=7NhNeADL8fA)
 * [Using Randomization to Analyze a Gender Discrimination Study](https://www.youtube.com/watch?list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8&v=2pHhjx9hyM4)
 
-#### Practice Exercises 
+#### Practice Exercises {-}
 
 * End of chapter exercises in Chapter 1 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os): 1.39, 1.41, 1.45, 1.49, 1.51, 1.55, 1.59, 1.63, 1.65, 1.67, 1.69
 ```
 
-### Week 4: (Sep 6, 8)
+## Week 4: (Sep 6, 8) {-}
 
 * Watch all videos for week three of [*Introduction to Probability and Data*](https://www.coursera.org/learn/probability-intro).
 
@@ -257,7 +263,7 @@ Test yourself:
 
 * Complete the `probability_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., September 9, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
          
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 2.1
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 2.1 {-}
 
   1. Define the probability of an outcome as the proportion of times the outcome would occur if we observed the random process that gives rise to it an infinite number of times.
 
@@ -305,7 +311,7 @@ Test yourself:
 3. $P(A) = 0.5,$ $P(B) = 0.6,$ and there are no other possible outcomes in the sample space. What is $P(A \cap B)?$
 ```
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 2.2
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 2.2 {-}
 
   1. Distinguish between marginal and conditional probabilities.
 
@@ -318,7 +324,7 @@ Test yourself: 50% of students in a class are social science majors and the rest
 
 
 ```{block, week4optional, type='rmdoptional'}
-#### Optional Video
+#### Optional Video 
 
 * [Would You Take This Bet?](https://www.youtube.com/watch?v=vBX-KulgJ1o)
 
@@ -327,7 +333,7 @@ Test yourself: 50% of students in a class are social science majors and the rest
 * End of chapter exercises in Chapter 2 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os): 2.1, 2.3, 2.5, 2.7, 2.13, 2.15, 2.19, 2.21, 2.23
 ```
 
-### Week 5: (Sep 13, 15)
+## Week 5: (Sep 13, 15) {-}
 
 * Watch all videos for week four of [*Introduction to Probability and Data*](https://www.coursera.org/learn/probability-intro).
 
@@ -341,7 +347,7 @@ Test yourself: 50% of students in a class are social science majors and the rest
 * Read chapter 9 of [*PDS*](https://alanarnholt.github.io/PDS-BookDown/BookDownTry/book/overview.html).
 
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 3.1-3.2
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 3.1-3.2 {-}
 
   1. Define the standardized score ($z$-score) of a data point as the number of standard deviations it is away from the mean: $z = \frac{x - \mu}{\sigma}.$
 
@@ -359,7 +365,7 @@ Test yourself: True/False: In a right skewed distribution the $z\!~\text{-score}
 ```
 
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 3.4
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 3.4 {-}
 
   1. Determine if a random variable is binomial using the four conditions:
 
@@ -395,14 +401,14 @@ Test yourself:
 * End of chapter exercises in Chapter 3 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os): 3.3, 3.5, 3.9, 3.11, 3.17, 3.25, 3.27, 3.29, 3.33
 ```
 
-### Week 6: (Sep 20, 22)
+## Week 6: (Sep 20, 22) {-}
 
 * Fork the [StatsWithRProjects](https://github.com/STAT-ATA-ASU/StatsWithRProjects) repository to your private GitHub account.  Complete the `Project1Template.Rmd` project, and submit your compiled `*html` file no later than 5:00 p.m., September 23, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository. 
 
 
 
 
-### Week 7: (Sep 27, 29)
+## Week 7: (Sep 27, 29) {-}
 
 
 * Watch all videos for week one of [*Inferential Statistics*](https://www.coursera.org/learn/inferential-statistics-intro/home/welcome).
@@ -414,7 +420,7 @@ Test yourself:
 * Complete the `sampling_distributions_ASU.Rmd` lab and submit your compiled `*html` file no later than 5:00 p.m., September 30, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 4.1
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 4.1 {-}
 
   1. Define a statistic as a point estimate for a population parameter. For example, the sample mean is used to estimate the population mean. Note that "point estimate" and "statistic" are synonymous.
 
@@ -431,7 +437,7 @@ Test yourself:
 * Conceptually: Imagine taking many samples from the population. When the size of each sample is large, the sample means will be much more consistent across samples than when the sample sizes are small.
 * Mathematically: Remember $SE = \frac{s}{\sqrt{n}}$. Then, when $n$ increases, $SE$ will decrease since $n$ is in the denominator.
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 4.2
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 4.2 {-}
 
   1. Define a confidence interval as the plausible range of values for a population parameter.
 
@@ -440,7 +446,11 @@ Test yourself:
   3. Recognize that the Central Limit Theorem (CLT) is about the distribution of point estimates. Under certain conditions, this distribution will be nearly normal.
 
 In the case of the mean, the CLT tells us that if the sample size is sufficiently large and the observations in the sample are independent, then the distribution of the sample mean will be nearly normal.  The distribution will be centered at the true population mean and have a standard deviation of $\frac{\sigma}{\sqrt{n}}$.  The distribution of $\bar{x}$ is written with symbols as
-$$\bar{X} \dot{\sim} N\left(\mu_{\bar{x}} = \mu, \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\right)$$
+
+\begin{equation}
+\bar{X} \dot{\sim} N\left(\mu_{\bar{x}} = \mu, \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\right)
+\label{clt}
+\end{equation}
 
 
   4. Recall that independence of observations in a sample is provided by random sampling (in the case of observational studies) or random assignment (in the case of experiments).
@@ -449,10 +459,7 @@ In addition, the sample should not be too large compared to the population. More
 
   5. Recognize that the nearly normal distribution of the point estimate (as suggested by the CLT) implies that a confidence interval can be calculated as
 
-* $\text{point estimate} \pm z_{1 - \alpha/2}\cdot SD_{\text{point estimate}}$
-
-
-For averages this is: $\bar{x} \pm z_{1 - \alpha/2}\cdot \frac{\sigma}{\sqrt{n}}$
+* $\text{point estimate} \pm z_{1 - \alpha/2}\cdot SD_{\text{point estimate}}$---For averages this is: $\bar{x} \pm z_{1 - \alpha/2}\cdot \frac{\sigma}{\sqrt{n}}$
 
   6. Define margin of error as the distance required to travel in either direction away from the point estimate when constructing a confidence interval, i.e. $z_{1 - \alpha/2}\cdot \frac{\sigma}{\sqrt{n}}.$
 
@@ -501,7 +508,7 @@ Test yourself:
 * End of chapter exercises in Chapter 4 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os): 4.1, 4.3, 4.5, 4.33, 4. 35, 4.37, 4.41, 4.9, 4.11, 4.13, 4.15
 ```
 
-### Week 8: (Oct 4, 6)
+## Week 8: (Oct 4, 6) {-}
 
 * Watch all videos for week two of [*Inferential Statistics*](https://www.coursera.org/learn/inferential-statistics-intro/home/welcome).
 
@@ -513,7 +520,7 @@ Test yourself:
 
 * Complete the `confidence_intervals_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., October 7, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 4.3
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 4.3 {-}
 
   1. Explain how the hypothesis testing framework resembles a court trial.
 
@@ -548,14 +555,14 @@ Test yourself:
 
   8. Note that the conclusion of a hypothesis test might be erroneous regardless of the decision we make.
 
-* Define a Type 1 error as rejecting the null hypothesis when the null hypothesis is actually true.
-* Define a Type 2 error as failing to reject the null hypothesis when the alternative hypothesis is actually true.
+* Define a Type I error as rejecting the null hypothesis when the null hypothesis is actually true.
+* Define a Type II error as failing to reject the null hypothesis when the alternative hypothesis is actually true.
 
-  9. Note that the probability of making a Type 1 error is equivalent to the significance level, and choose a significance level depending on the risks associated with Type 1 and Type 2 errors.
+  9. Note that the probability of making a Type I error is equivalent to the significance level, and choose a significance level depending on the risks associated with Type I and Type II errors.
 
 Use a smaller $\alpha$ if a Type I error is more critical than a Type II error.  Use a larger $\alpha$ if a Type II error is more critical than a Type I error.
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 4.4-4.5
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 4.4-4.5 {-}
 
   1. Recognize that sampling distributions of point estimates coming from samples that don’t meet the required conditions for the CLT (about sample size, skew, and independence) will not be normal.
 
@@ -616,14 +623,14 @@ Test yourself:
 * End of chapter exercises in Chapter 4 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os): 4.17, 4.19, 4.23, 4.25, 4.27, 4.43, 4.45, 4.29, 4.31, 4.47
 ```
 
-### Week 9: (Oct 11---Fall Break Oct 13, 14)
+## Week 9: (Oct 11---Fall Break Oct 13, 14) {-}
 
 ```{block, MIDTERM, type='rmdnote'}
 * Midterm Exam---October 11
 ```
 
 
-### Week 10: (Oct 18, 20)
+## Week 10: (Oct 18, 20) {-}
 
 * Watch all videos for week three of [*Inferential Statistics*](https://www.coursera.org/learn/inferential-statistics-intro/home/welcome).
 
@@ -635,7 +642,7 @@ Test yourself:
 
 * Complete the `inf_for_numerical_datas_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., October 21, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 5.1-5.4
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 5.1-5.4 {-}
 
   1. Use the $t$-distribution for inference on a single mean, mean of differences (paired groups), and difference of independent means.
 
@@ -684,15 +691,16 @@ Test yourself:
 
   16. Explain how power changes for changes in effect size, sample size, significance level, and standard error.
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 5.5
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 5.5 {-}
 
   1. Define analysis of variance (ANOVA) as a statistical inference method that is used to determine, by simultaneously considering many groups at once, if the variability between the sample means is so large that it seems unlikely to be from chance alone.
 
   2. Recognize that the null hypothesis in ANOVA sets all means equal to each other and that the alternative hypothesis suggest that at least one mean is different.
 
-$H_O:\mu_1 = \mu_2,\ldots,\mu_k$
-
-$H_A: \text{at least one mean is different}$
+\begin{align*}
+H_O:&\mu_1 = \mu_2,\ldots,\mu_k\\
+H_A:& \text{at least one mean is different}
+\end{align*}
 
   3. List the conditions necessary for performing ANOVA:
 
@@ -719,7 +727,12 @@ Use graphical diagnostics to check if these conditions are met.
   9. Construct bootstrap confidence intervals using one of the following methods:
 
 * Percentile method: XX% confidence level is the middle XX% of the bootstrap distribution.
-* Standard error method: If the standard error of the bootstrap distribution is known and the distribution is nearly normal, the bootstrap interval can also be calculated as $$\text{point estimate} \pm t_{1 - \alpha/2, df}\cdot SE_{boot}.$$
+* Standard error method: If the standard error of the bootstrap distribution is known and the distribution is nearly normal, the bootstrap interval can also be calculated as 
+
+\begin{equation}
+\text{point estimate} \pm t_{1 - \alpha/2, df}\cdot SE_{boot}.
+\label{bsci}
+\end{equation}
 
   10. Recognize that when the bootstrap distribution is extremely skewed and sparse, the bootstrap confidence interval may not be reliable.
   
@@ -758,7 +771,7 @@ Test yourself:
 * End of chapter exercises in Chapter 5 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os): 5.1, 5.3, 5.5, 5.13, 5.17, 5.19, 5.21, 5.23, 5.27, 5.31, 5.35, 5.37, 5.39, 5.41, 5.43, 5.45, 5.47, 5.49, 5.51
 ```
 
-### Week 11: (Oct 25, 27)
+## Week 11: (Oct 25, 27) {-}
 
 * Watch all videos for week four of [*Inferential Statistics*](https://www.coursera.org/learn/inferential-statistics-intro/home/welcome).
 
@@ -770,7 +783,7 @@ Test yourself:
 
 * Complete the `inf_for_categorical_data_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., October 28, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 6.1-6.2
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 6.1-6.2 {-}
 
   1. Define the population proportion as $p$ (parameter) and sample proportion as $\hat{p}$.
 
@@ -779,11 +792,13 @@ Test yourself:
 * Note that when the population proportion $p$ is not known (almost always), the standard error of the sample proportion is written as $SE_{\hat{p}} = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}.$
 
   3. Recognize that the Central Limit Theorem (CLT) is about the distribution of point estimates. Under certain conditions, the distribution of $\hat{p}$ will be nearly normal. The CLT tells us that if
+    + the observations in the sample are independent,
+    + the sample size is sufficiently large (checked using the success/failure condition: $np\ge10$ and $n(1-p)\ge 10$, then the distribution of the sample proportion will be nearly normal, centered at the true population proportion with a standard deviation of $SD_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}.$ The distribution of $\hat{p}$ is written with symbols as
 
-* the observations in the sample are independent,
-* the sample size is sufficiently large (checked using the success/failure condition: $np\ge10$ and $n(1-p)\ge 10$, then the distribution of the sample proportion will be nearly normal, centered at the true population proportion with a standard deviation of $SD_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}.$ The distribution of $\hat{p}$ is written with symbols as
-
-$$\hat{p} \dot{\sim} N\left(\mu_{\hat{p}}=p, \sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}} \right)$$
+\begin{equation}
+\hat{p} \dot{\sim} N\left(\mu_{\hat{p}}=p, \sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}} \right)
+\label{disphat}
+\end{equation}
 
   4. Note that if the CLT doesn’t apply and the sample proportion is low (close to 0), the sampling distribution will likely be right skewed. If the sample proportion is high (close to 1), the sampling distribution will likely be left skewed.
 
@@ -823,7 +838,7 @@ Such a discrepancy does not exist when conducting inference for means since the 
   9. Note that the reason for the difference in calculations of standard error is the same as in the case of the single proportion. When the null hypothesis claims that the two population proportions are equal, we need to take that information into consideration when calculating the standard error for the hypothesis test. Consequently, we use a common proportion for both samples.
 
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 6.3-6.6
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 6.3-6.6 {-}
 
   1. Use a chi-squared test of goodness of fit to evaluate if the distribution of levels of a single categorical variable follows a hypothesized distribution.
 
@@ -909,13 +924,13 @@ Test yourself:
 ```
 
 
-### Week 12: (Nov 1, 3)
+## Week 12: (Nov 1, 3) {-}
 
 *  Complete the `Project2Template.Rmd` project found in your [StatsWithRProjects](https://github.com/STAT-ATA-ASU/StatsWithRProjects) forked repository. Submit your compiled `*html` file no later than 5:00 p.m., November 4, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your final product to your private repository. 
 
 
 
-### Week 13: (Nov 8, 10)
+## Week 13: (Nov 8, 10) {-}
 
 * Watch all videos for week one of [*Linear Regression and Modeling*](https://www.coursera.org/learn/linear-regression-model/home/welcome).
 
@@ -927,7 +942,7 @@ Test yourself:
 
 * No Lab this week!
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 7.1
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 7.1 {-}
 
   1. Define the explanatory variable as the independent variable (predictor) and the response variable as the dependent variable (predicted).
 
@@ -996,7 +1011,10 @@ where $r$ is the correlation coefficient, $s_y$ is the standard deviation of the
 
   13. Use the above property to calculate the estimate for the intercept $(b_0)$ as
 
-$$b_0 = \bar{y} - b_1\bar{x},$$
+\begin{equation}
+b_0 = \bar{y} - b_1\bar{x},
+\label{b0}
+\end{equation}
 
 where $b_1$ is the slope, $\bar{y}$ is the average of the response variable, and $\bar{x}$ is the average of explanatory variable.
 
@@ -1005,7 +1023,7 @@ where $b_1$ is the slope, $\bar{y}$ is the average of the response variable, and
 * "When $x=0$, we would expect $y$ to equal, on average, $b_0$"---when $x$ is numerical.
 * "The expected average value of the response variable for the reference level of the explanatory variable is $b_0$"---when $x$ is categorical.
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 7.2
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 7.2 {-}
 
   1. Predict the value of the response variable for a given value of the explanatory variable, $x^*$, by plugging $x^*$ into the linear model:
 
@@ -1030,7 +1048,7 @@ Test yourself:
 3. Someone hands you the scatter diagram shown below, but has forgotten to label the axes. Can you calculate the correlation coefficient? 
 ```
 
-```{r, echo = FALSE, fig.align = "center"}
+```{r, label = "usp", echo = FALSE, fig.align = "center", fig.cap="Scatter plot 1"}
 set.seed(123)
 x <- sort(rnorm(20))
 y <- sort(rnorm(20))
@@ -1041,7 +1059,7 @@ plot(x, y, xlab = "", ylab = "", col = "lightblue", pch = 19)
 4.  We would not want to fit a least squares line to the data shown in the scatterplot below. Which of the conditions does it appear to violate?
 ```
 
-```{r, INC, echo = FALSE, fig.align = 'center'}
+```{r, INC, echo = FALSE, fig.align = 'center', fig.cap = "Scatter plot 2"}
 set.seed(21)
 n <- 200
 y <- 1:n + rnorm(n, 0, 1)
@@ -1076,7 +1094,7 @@ $$\widehat{\text{gpa}}= 3.57 − 0.01 \times \text{premed}$$
 * End of chapter exercises in Chapter 7 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os): 7.1, 7.3, 7.7, 7.9, 7.11, 7.13, 7.15
 ```
 
-### Week 14: (Nov 15, 17)
+## Week 14: (Nov 15, 17) {-}
 
 * Watch all videos for week two of [*Linear Regression and Modeling*](https://www.coursera.org/learn/linear-regression-model/home/welcome).
 
@@ -1089,7 +1107,7 @@ $$\widehat{\text{gpa}}= 3.57 − 0.01 \times \text{premed}$$
 * Complete the `simple_regression_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., November 18, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 7.3-7.4
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 7.3-7.4 {-}
 
   1. Define a leverage point as a point that lies away from the center of the data in the horizontal direction.
 
@@ -1131,7 +1149,7 @@ Test yourself:
 1. Determine whether each of the three unusual observations (traingles) in the plot below would be primarily considered an outlier, a high leverage point, or an influential point.
 ```
 
-```{r, echo = FALSE, fig.align = 'center'}
+```{r, echo = FALSE, fig.align = 'center', fig.cap = "Scatter plot 3"}
 set.seed(21)
 n <- 97
 y <- 1:n + rnorm(n, 0, 20)
@@ -1167,7 +1185,7 @@ htmlTable::htmlTable(round(summary(mod1)$coef,4), css.cell = "padding-left: 1em;
 * End of chapter exercises in Chapter 7 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os): 7.25, 7.37, 7.39, 7.41, 7.43
 ```
 
-### Week 15: (Nov 22, 29---No class 23-25 Thanksgiving)
+## Week 15: (Nov 22, 29---No class 23-25 Thanksgiving) {-}
 
 * Watch all videos for week three of [*Linear Regression and Modeling*](https://www.coursera.org/learn/linear-regression-model/home/welcome).
 
@@ -1177,7 +1195,7 @@ htmlTable::htmlTable(round(summary(mod1)$coef,4), css.cell = "padding-left: 1em;
 
 * Complete the `multiple_regression_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., November 30, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 8.1-8.2
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 8.1-8.2 {-}
 
   1. Define the fitted multiple linear regression model as
 
@@ -1204,7 +1222,7 @@ where $n$ is the number of cases and $k$ is the number of predictors.  Note that
   8. Define the full model as the model with all explanatory variables included as predictors.
 
 
-#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 8.3
+#### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Section 8.3 {-}
 
   1. The significance of the model as a whole is assessed using an $F$-test where:
 
@@ -1294,7 +1312,7 @@ Test yourself:
 * End of chapter exercises in Chapter 8 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os): 8.1, 8.3, 8.5, 8.7, 8.9, 8.11. 8.13
 ```
 
-### Final Exam
+### Final Exam {-}
 
 ```{block, FINAL, type='rmdnote'}
 *  Complete the `Project3Template.Rmd` project found in your [StatsWithRProjects](https://github.com/STAT-ATA-ASU/StatsWithRProjects) forked repository. Submit your compiled `*html` file no later than 5:00 p.m., December 7, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your final product to your private repository. 
