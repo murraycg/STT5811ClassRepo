@@ -5,6 +5,7 @@ date: "Fall 2016"
 output: 
   html_document: 
     theme: readable
+css: "../css/style.css"
 ---
 
 **Instructor:**  Dr. Alan T. Arnholt    
