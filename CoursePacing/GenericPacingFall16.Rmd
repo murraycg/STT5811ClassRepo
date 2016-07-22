@@ -640,7 +640,7 @@ Test yourself:
 
 * Complete chapter 6 of [*Data Analysis and Statistical Inference* ](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
 
-* Complete the `inf_for_numerical_datas_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., October 21, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
+* Complete the `inf_for_numerical_data_ASU2.Rmd` lab, and submit your compiled `*html` file no later than 5:00 p.m., October 21, to [CrowdGrader](https://www.crowdgrader.org/).  Make sure you commit and push your your final product to your private repository.
 
 #### Learning Objectives for [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os) Sections 5.1-5.4 {-}
 
