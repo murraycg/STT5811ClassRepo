@@ -1,12 +1,5 @@
 ---
-title: "STT 5811 Homepage"
-author: ""
-date: ""
-output:
-  html_document:
-    css: asu.css
-    highlight: textmate
-    theme: readable
+title: "Welcome"
 ---
 
 
@@ -128,3 +121,5 @@ output:
 
 ### Other Interesting Stuff
 * [R-bloggers](http://r-bloggers.com)
+
+* * *

@@ -1,0 +1,15 @@
+name: "my-website"
+output_dir: "."
+navbar:
+  title: "STT 5811"
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/STAT-ATA-ASU/STT5811ClassRepo/         
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css  
+      
