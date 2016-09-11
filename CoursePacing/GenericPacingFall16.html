@@ -95,6 +95,7 @@ button.code-folding-btn:focus {
 </style>
 
 
+
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
@@ -118,7 +119,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">STT 5811 Course Schedule</h1>
 <h4 class="author"><em>Alan T. Arnholt</em></h4>
-<h4 class="date"><em>Last compiled: August 02, 2016</em></h4>
+<h4 class="date"><em>Last compiled: September 11, 2016</em></h4>
 
 </div>
 
@@ -666,6 +667,9 @@ Watch the first 30 minutes of <a href="https://www.rstudio.com/resources/webinar
 <li>
 Read the vignette in the <code>PDS</code> package.
 </li>
+<li>
+<a href="../rmarkdownSTUFF/NormalGGio.html">Shading normal areas</a>
+</li>
 </ul>
 <h4 id="practice-exercises">
 Practice Exercises
@@ -719,10 +723,10 @@ End of chapter exercises in Chapter 3 of <a href="https://www.openintro.org/stat
 <li><p>Recognize that the Central Limit Theorem (CLT) is about the distribution of point estimates. Under certain conditions, this distribution will be nearly normal.</p></li>
 </ol>
 <p>In the case of the mean, the CLT tells us that if the sample size is sufficiently large and the observations in the sample are independent, then the distribution of the sample mean will be nearly normal. The distribution will be centered at the true population mean and have a standard deviation of <span class="math inline">\(\frac{\sigma}{\sqrt{n}}\)</span>. The distribution of <span class="math inline">\(\bar{x}\)</span> is written with symbols as</p>
-\begin{equation}
+<span class="math display">\[\begin{equation}
 \bar{X} \dot{\sim} N\left(\mu_{\bar{x}} = \mu, \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\right)
 \label{clt}
-\end{equation}
+\end{equation}\]</span>
 <ol start="4" style="list-style-type: decimal">
 <li>Recall that independence of observations in a sample is provided by random sampling (in the case of observational studies) or random assignment (in the case of experiments).</li>
 </ol>
@@ -1064,10 +1068,10 @@ Midterm Exam—October 11
 <li><p>Define analysis of variance (ANOVA) as a statistical inference method that is used to determine, by simultaneously considering many groups at once, if the variability between the sample means is so large that it seems unlikely to be from chance alone.</p></li>
 <li><p>Recognize that the null hypothesis in ANOVA sets all means equal to each other and that the alternative hypothesis suggest that at least one mean is different.</p></li>
 </ol>
-\begin{align*}
+<span class="math display">\[\begin{align*}
 H_O:&amp;\mu_1 = \mu_2,\ldots,\mu_k\\
 H_A:&amp; \text{at least one mean is different}
-\end{align*}
+\end{align*}\]</span>
 <ol start="3" style="list-style-type: decimal">
 <li><p>List the conditions necessary for performing ANOVA:</p></li>
 <li>The observations should be independent within and across groups.</li>
@@ -1097,10 +1101,10 @@ H_A:&amp; \text{at least one mean is different}
 <li>Percentile method: XX% confidence level is the middle XX% of the bootstrap distribution.</li>
 <li>Standard error method: If the standard error of the bootstrap distribution is known and the distribution is nearly normal, the bootstrap interval can also be calculated as</li>
 </ul>
-\begin{equation}
+<span class="math display">\[\begin{equation}
 \text{point estimate} \pm t_{1 - \alpha/2, df}\cdot SE_{boot}.
 \label{bsci}
-\end{equation}
+\end{equation}\]</span>
 <ol start="10" style="list-style-type: decimal">
 <li>Recognize that when the bootstrap distribution is extremely skewed and sparse, the bootstrap confidence interval may not be reliable.</li>
 </ol>
@@ -1208,10 +1212,10 @@ End of chapter exercises in Chapter 5 of <a href="https://www.openintro.org/stat
 <li>the sample size is sufficiently large (checked using the success/failure condition: <span class="math inline">\(np\ge10\)</span> and <span class="math inline">\(n(1-p)\ge 10\)</span>, then the distribution of the sample proportion will be nearly normal, centered at the true population proportion with a standard deviation of <span class="math inline">\(SD_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}.\)</span> The distribution of <span class="math inline">\(\hat{p}\)</span> is written with symbols as</li>
 </ul></li>
 </ol>
-\begin{equation}
+<span class="math display">\[\begin{equation}
 \hat{p} \dot{\sim} N\left(\mu_{\hat{p}}=p, \sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}} \right)
 \label{disphat}
-\end{equation}
+\end{equation}\]</span>
 <ol start="4" style="list-style-type: decimal">
 <li><p>Note that if the CLT doesn’t apply and the sample proportion is low (close to 0), the sampling distribution will likely be right skewed. If the sample proportion is high (close to 1), the sampling distribution will likely be left skewed.</p></li>
 <li><p>Remember that confidence intervals are calculated as</p></li>
@@ -1459,10 +1463,10 @@ End of chapter exercises in Chapter 6 of <a href="https://www.openintro.org/stat
 <li><p>Note that the least squares line always passes through the average of the response and explanatory variables <span class="math inline">\((\bar{x}, \bar{y}).\)</span></p></li>
 <li><p>Use the above property to calculate the estimate for the intercept <span class="math inline">\((b_0)\)</span> as</p></li>
 </ol>
-\begin{equation}
+<span class="math display">\[\begin{equation}
 b_0 = \bar{y} - b_1\bar{x},
 \label{b0}
-\end{equation}
+\end{equation}\]</span>
 <p>where <span class="math inline">\(b_1\)</span> is the slope, <span class="math inline">\(\bar{y}\)</span> is the average of the response variable, and <span class="math inline">\(\bar{x}\)</span> is the average of explanatory variable.</p>
 <ol start="14" style="list-style-type: decimal">
 <li>Interpret the intercept as</li>
@@ -1930,6 +1934,7 @@ Complete the <code>Project3Template.Rmd</code> project found in your <a href="ht
 $(document).ready(function () {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 });
+
 
 </script>
 

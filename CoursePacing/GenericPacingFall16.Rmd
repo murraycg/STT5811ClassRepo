@@ -398,6 +398,7 @@ Test yourself:
 * Watch the [*Data Wrangling with R and RStudio* (55 minutes)](https://www.rstudio.com/resources/webinars/archives/) video.
 * Watch the first 30 minutes of [*The Grammar of Graphics and Data Science*](https://www.rstudio.com/resources/webinars/archives/).
 * Read the vignette in the `PDS` package.
+* [Shading normal areas](../rmarkdownSTUFF/NormalGGio.html)
 
 #### Practice Exercises 
 
