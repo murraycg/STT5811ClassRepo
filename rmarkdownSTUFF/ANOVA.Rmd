@@ -1,0 +1,33 @@
+---
+title: "ANOVA"
+author: "Alan T. Arnholt"
+output: 
+  html_document: 
+    theme: yeti
+    highlight: textmate
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+```
+
+## ANOVA
+
+```{r}
+library(PDS)
+head(frustration)
+mod.aov <- aov(Frustration.Score ~ Major, data = frustration)
+mod.aov
+summary(mod.aov)
+mod.lm <- lm(Frustration.Score ~ Major, data = frustration)
+anova(mod.lm)
+model.tables(mod.aov, type = "means")
+GM <- mean(frustration$Frustration.Score)
+GM
+TM <- tapply(frustration$Frustration.Score, frustration$Major, mean)
+TM
+N <- xtabs(~Major, data = frustration)
+N
+SSTreat <- N[1]*(TM[1] - GM)^2  + N[2]*(TM[2] - GM)^2 + N[3]*(TM[3] - GM)^2  + N[4]*(TM[4] - GM)^2
+SSTreat
+```
