@@ -1,7 +1,7 @@
 ---
 title: "STT 5811 Course Schedule"
 author: "Alan T. Arnholt"
-date: 'Last compiled: `r format(Sys.time(), "%B %d, %Y")`'
+date: 'Last compiled: `r format(Sys.time(), "%A, %B %d, %Y - %X.")`'
 output: 
   html_document: 
     highlight: textmate
@@ -639,6 +639,8 @@ Test yourself:
 * Watch all videos for week three of [*Inferential Statistics*](https://www.coursera.org/learn/inferential-statistics-intro/home/welcome).
 
 * Read sections 5.1-5.5 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os).
+
+* Read [_Can A New Drug Reduce the Spread of Schistosomiasis?_](https://alanarnholt.github.io/STT3850/Notes/Parent/Parent.html)---Use control f on the web page to find the appropriate text inside the notes.
 
 * Read chapter 11 of [*PDS*](https://alanarnholt.github.io/PDS-Bookdown2/).
 
