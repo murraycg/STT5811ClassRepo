@@ -3,6 +3,8 @@ output_dir: "."
 navbar:
   title: "STT 5811"
   left:
+    - text: "Syllabus"
+      href: ./Syllabus/STT5811sylFall16.html
     - text: "Resources"
       href: https://alanarnholt.github.io/web/resources.html
     - text: "For Students"

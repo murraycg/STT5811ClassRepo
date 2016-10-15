@@ -4,9 +4,9 @@ author: ''
 date: "Fall 2016"
 output: 
   html_document: 
+    theme: yeti
     highlight: textmate
-    theme: cosmo
-css: "../css/style.css"
+    css: "../css/style.css"
 ---
 
 **Instructor:**  Dr. Alan T. Arnholt    
