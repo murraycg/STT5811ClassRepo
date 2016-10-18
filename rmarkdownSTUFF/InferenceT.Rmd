@@ -1,0 +1,70 @@
+---
+title: "Inference"
+author: "Alan T. Arnholt"
+output: 
+  html_document: 
+    theme: yeti
+    highlight: textmate
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, message = FALSE)
+```
+
+```{r}
+library(ggplot2)
+library(statsr)
+library(openintro)
+library(DT)
+datatable(textbooks)
+```
+
+Is there a difference in price for textbooks between UCLA and amazon?
+
+Graph statistic of interest first.  Note the assumption to use a paired $t-$test is that the population of differences follows a normal distribution.  This is not really an appropriate example.
+
+```{r}
+ggplot(data = textbooks, aes(x = diff)) + 
+  geom_histogram(binwidth = 3, fill = "pink") + 
+  theme_bw()
+
+ggplot(data = textbooks, aes(sample = diff)) + 
+  stat_qq() + 
+  theme_bw()
+```
+
+Go through hypotheses
+
+```{r}
+t.test(x = textbooks$uclaNew, y = textbooks$amazNew, paired = TRUE, mu = 0)
+t.test(x = textbooks$diff, mu = 0)
+inference(y = diff, data = textbooks, type = "ht", statistic = "mean", method = "theoretical", null = 0, alternative = "twosided")
+#
+inference(y = diff, data = textbooks, type = "ht", statistic = "mean", method = "simulation", null = 0, alternative = "twosided")
+```
+
+What is wrong with the conclusion on page 230?
+
+## Difference of two means
+
+### Example 5.18
+
+
+```{r}
+datatable(ncbirths)
+```
+
+Go through hypotheses
+
+```{r}
+t.test(weight ~ habit, data = ncbirths)
+#
+inference(y = weight, x = habit, data = ncbirths, type = "ci", statistic = "mean", method = "theoretical", null = 0)
+```
+
+## Two versions of a course exam
+
+```{r}
+library(PASWR2)
+tsum.test(mean.x = 79.4, s.x = 14, n.x = 30, mean.y = 74.1, s.y = 20, n.y = 27, alternative = "greater")
+```
