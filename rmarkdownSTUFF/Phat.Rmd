@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r, echo = FALSE}
 ui <- fluidPage(
   fluidRow(
-    column(2, numericInput(inputId = "m", label = "Simulations:", value = 10000, min = 1000, max = 50000)),
+    column(2, numericInput(inputId = "m", label = "Samples:", value = 10000, min = 1000, max = 50000)),
     column(2, numericInput(inputId = "n", label = "n:", value = 100, min = 1, max = 1000000)),
     column(2, numericInput(inputId = "p", label = "p:", value = 0.5, min = 0, max = 1)),
     column(8, offset = 2, plotOutput("NG", height = "300px", width = "500px"))
