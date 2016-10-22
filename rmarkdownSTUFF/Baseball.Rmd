@@ -1,0 +1,103 @@
+---
+title: "Baseball"
+author: "Alan T. Arnholt"
+date: 'Last compiled: `r format(Sys.time(), "%b %d, %Y")`'
+output: 
+  bookdown::html_document2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, message = FALSE, warning = FALSE, fig.align = "center")
+```
+
+Create the data set discussed on page 248 of Open Intro.
+
+```{r, label = "BBsetup"}
+library(dplyr)
+library(openintro)
+bat10 <- mlbBat10 %>%
+  filter(AB > 200)
+# Note unused factor levels
+table(bat10$position)
+bat10$position <- droplevels(bat10$position)
+table(bat10$position)
+# Combine 1B, 2B, 3B, SS into infield (IF)
+library(plyr)
+bat10$pos <- revalue(bat10$position, 
+                       replace = c("1B" = "IF", "2B" = "IF", "3B" = "IF", "SS" = "IF"))
+table(bat10$pos)
+# Note must detach plyr for dplyr to work properly
+detach("package:plyr", unload = TRUE)
+```
+
+Create summary statistics presented in Table 5.24 of Open Intro.
+
+```{r}
+T524 <- bat10 %>%
+  group_by(pos) %>%
+  summarise(n = n(), Mean = round(mean(OBP), 4), SD = round(sd(OBP), 4))
+T524
+```
+
+```{r}
+DT::datatable(T524)
+```
+
+```{r, label = "BPOI", fig.cap = "Side-by-side boxplots of on base percentage according to position"}
+library(ggplot2)
+ggplot(data = bat10, aes(x = pos, y = OBP, fill = pos)) + 
+  geom_boxplot() + 
+  theme_bw() + 
+  labs(y = "On base percentage", x = "Position") + 
+  guides(fill = FALSE)
+```
+
+```{r, label = "QQ", fig.width = 10}
+ggplot(data = bat10, aes(sample = OBP, color = pos)) + 
+  stat_qq() + 
+  theme_bw()
+ggplot(data = bat10, aes(sample = OBP, color = pos)) + 
+  stat_qq() +
+  facet_grid(.~pos) +
+  theme_bw() + 
+  guides(color = FALSE)
+```
+
+```{r}
+mod.aov <- aov(OBP ~ pos, data = bat10)
+summary(mod.aov)
+```
+
+**Finished - Now consider a different problem.**
+
+```{r, fig.width = 10}
+T5N <- bat10 %>%
+  group_by(position) %>%
+  summarise(n = n(), Mean = round(mean(OBP), 4), SD = round(sd(OBP), 4))
+T5N
+ggplot(data = bat10, aes(x = position, y = OBP, fill = position)) + 
+  geom_boxplot() + 
+  theme_bw() + 
+  guides(fill = FALSE)
+ggplot(data = bat10, aes(sample = OBP, color = position)) + 
+  stat_qq() + 
+  theme_bw()
+ggplot(data = bat10, aes(sample = OBP, color = position)) + 
+  stat_qq() +
+  facet_grid(.~position) +
+  theme_bw() + 
+  guides(color = FALSE)
+```
+
+```{r}
+mod2.aov <- aov(OBP ~ position, data = bat10)
+summary(mod2.aov)
+```
+
+```{r, fig.width = 8, fig.height = 8}
+TukeyHSD(mod2.aov)
+par(las = 1)
+plot(TukeyHSD(mod2.aov))
+par(las = 0)
+```
+
