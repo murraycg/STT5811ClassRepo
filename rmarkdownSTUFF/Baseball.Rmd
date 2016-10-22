@@ -117,6 +117,8 @@ ggplot(data = NDF, aes(x = team, y = OBP)) +
   theme_bw()
 # Standard 90% CI first
 t.test(OBP ~ team, data = NDF, conf.level = 0.90)
+df <- t.test(OBP ~ team, data = NDF, conf.level = 0.90)$parameter
+df
 ```
 
 ## Bootstrap {-}
@@ -151,7 +153,7 @@ BSCI
 ## Standard Bootstrap {-}
 
 ```{r}
-SBS <- obsdiff + c(-1, 1)*qt(.95, 10)*sd(diffmean)
+SBS <- obsdiff + c(-1, 1)*qt(0.95, df)*sd(diffmean)
 SBS
 ```
 

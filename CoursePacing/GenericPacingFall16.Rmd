@@ -777,6 +777,11 @@ Test yourself:
 * End of chapter exercises in Chapter 5 of [*OpenIntro Statistics, 3rd Edition*](https://www.openintro.org/stat/textbook.php?stat_book=os): 5.1, 5.3, 5.5, 5.13, 5.17, 5.19, 5.21, 5.23, 5.27, 5.31, 5.35, 5.37, 5.39, 5.41, 5.43, 5.45, 5.47, 5.49, 5.51
 ```
 
+```{block, INCLASS, type='rmdnote'}
+[Discuss](../rmarkdownSTUFF/Baseball.html) 
+```
+
+
 ## Week 11: (Oct 25, 27) {-}
 
 * Watch all videos for week four of [*Inferential Statistics*](https://www.coursera.org/learn/inferential-statistics-intro/home/welcome).
