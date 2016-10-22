@@ -23,12 +23,11 @@ bat10$position <- droplevels(bat10$position)
 table(bat10$position)
 # Combine 1B, 2B, 3B, SS into infield (IF)
 #
-library(plyr)
-bat10$pos <- revalue(bat10$position, 
+bat10$pos <- plyr::revalue(bat10$position, 
                        replace = c("1B" = "IF", "2B" = "IF", "3B" = "IF", "SS" = "IF"))
 table(bat10$pos)
 # Note must detach plyr for dplyr to work properly
-detach("package:plyr", unload = TRUE)
+# detach("package:plyr", unload = TRUE)
 ```
 
 Create summary statistics presented in Table 5.24 of Open Intro.
@@ -100,5 +99,59 @@ TukeyHSD(mod2.aov)
 par(las = 1)
 plot(TukeyHSD(mod2.aov))
 par(las = 0)
+```
+
+-----
+
+## Confidence Intervals (2 Groups) {-}
+
+```{r}
+NDF <- bat10 %>%
+  filter(team == "BAL" | team == "BOS") %>%
+  select(OBP, team) 
+NDF %>%
+  group_by(team) %>%
+  summarize(Mean = mean(OBP), SD = sd(OBP), n = n())
+ggplot(data = NDF, aes(x = team, y = OBP)) + 
+  geom_boxplot() + 
+  theme_bw()
+# Standard 90% CI first
+t.test(OBP ~ team, data = NDF, conf.level = 0.90)
+```
+
+## Bootstrap {-}
+
+```{r}
+BALOBP <- bat10$OBP[bat10$team == "BAL"]
+BOSOBP <- bat10$OBP[bat10$team == "BOS"]
+obsdiff <- mean(BALOBP) - mean(BOSOBP)
+obsdiff
+SIMS <- 10^4 - 1
+diffmean <- numeric(SIMS)
+for(i in 1:SIMS){
+  sampBAL <- sample(BALOBP, size = sum(!is.na(BALOBP)), replace = TRUE)
+  sampBOS <- sample(BOSOBP, size = sum(!is.na(BOSOBP)), replace = TRUE)
+  diffmean[i] <- mean(sampBAL) - mean(sampBOS)
+}
+hist(diffmean)
+# OR
+ggplot(data = data.frame(x = diffmean), aes(x = x)) + 
+  geom_density(fill = "pink") + 
+  theme_bw() + 
+  labs(x = substitute(paste(bar(x)[Bal],"*", - bar(x)[Bos],"*")))
+```
+
+## Percentile Approach {-}
+
+```{r}
+BSCI <- quantile(diffmean, probs = c(0.05, 0.95))
+BSCI
+```
+
+## Standard Bootstrap {-}
+
+```{r}
+SBS <- obsdiff + c(-1, 1)*qt(.95, 10)*sd(diffmean)
+SBS
 ```
 
