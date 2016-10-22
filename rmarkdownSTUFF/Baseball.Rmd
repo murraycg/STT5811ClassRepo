@@ -22,6 +22,7 @@ table(bat10$position)
 bat10$position <- droplevels(bat10$position)
 table(bat10$position)
 # Combine 1B, 2B, 3B, SS into infield (IF)
+#
 library(plyr)
 bat10$pos <- revalue(bat10$position, 
                        replace = c("1B" = "IF", "2B" = "IF", "3B" = "IF", "SS" = "IF"))

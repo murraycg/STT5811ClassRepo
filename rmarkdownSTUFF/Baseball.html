@@ -144,6 +144,7 @@ table(bat10$position)</code></pre>
  1B  2B  3B  OF  SS  DH   C 
  33  39  40 120  42  14  39 </code></pre>
 <pre class="r"><code># Combine 1B, 2B, 3B, SS into infield (IF)
+#
 library(plyr)
 bat10$pos &lt;- revalue(bat10$position, 
                        replace = c(&quot;1B&quot; = &quot;IF&quot;, &quot;2B&quot; = &quot;IF&quot;, &quot;3B&quot; = &quot;IF&quot;, &quot;SS&quot; = &quot;IF&quot;))
@@ -166,8 +167,8 @@ T524</code></pre>
 3     DH    14 0.3478 0.0360
 4      C    39 0.3226 0.0451</code></pre>
 <pre class="r"><code>DT::datatable(T524)</code></pre>
-<div id="htmlwidget-ebc179a3da3111729b94" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ebc179a3da3111729b94">{"x":{"filter":"none","data":[["1","2","3","4"],["IF","OF","DH","C"],[154,120,14,39],[0.3315,0.3342,0.3478,0.3226],[0.0371,0.0294,0.036,0.0451]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>pos\u003c/th>\n      <th>n\u003c/th>\n      <th>Mean\u003c/th>\n      <th>SD\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8380e9f8ca0a1bbc4090" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8380e9f8ca0a1bbc4090">{"x":{"filter":"none","data":[["1","2","3","4"],["IF","OF","DH","C"],[154,120,14,39],[0.3315,0.3342,0.3478,0.3226],[0.0371,0.0294,0.036,0.0451]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>pos\u003c/th>\n      <th>n\u003c/th>\n      <th>Mean\u003c/th>\n      <th>SD\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
 <pre class="r"><code>library(ggplot2)
 ggplot(data = bat10, aes(x = pos, y = OBP, fill = pos)) + 
   geom_boxplot() + 
