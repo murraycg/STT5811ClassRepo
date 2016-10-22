@@ -1,0 +1,46 @@
+---
+title: "Sample Proportion of Successes"
+author: "Alan T. Arnholt"
+date: "October 22, 2016"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Exercise
+
+1. Experiment changing the values for $n$ and $p$.
+2. For what values of $n$ and $p$ is the histogram approximately normal?
+3. Determine the relationship between $n$, $p$ and $\sigma_{\hat{p}}$.
+
+```{r, echo = FALSE}
+ui <- fluidPage(
+  fluidRow(
+    column(2, numericInput(inputId = "m", label = "Simulations:", value = 10000, min = 1000, max = 50000)),
+    column(2, numericInput(inputId = "n", label = "n:", value = 100, min = 1, max = 1000000)),
+    column(2, numericInput(inputId = "p", label = "p:", value = 0.5, min = 0, max = 1)),
+    column(8, offset = 2, plotOutput("NG", height = "300px", width = "500px"))
+  ))
+
+
+server <- function(input, output){
+  library(ggplot2)
+  output$NG <- renderPlot({
+    DF <- data.frame(phat = rbinom(input$m, input$n, input$p)/input$n)
+    MEANphat <- mean(DF$phat)
+    SDphat <- sd(DF$phat)
+    ggplot2::ggplot(data = DF) + 
+      geom_histogram(aes(x = phat, y =..density..), fill = "pink", 
+                     alpha = 0.2, color = "black", binwidth = 1/input$n) + 
+      theme_bw() + 
+      labs(x = expression(hat(p))) + 
+      stat_function(fun = dnorm, args = list(input$p, sqrt(input$p*(1 - input$p)/input$n)), n = 500, color = "red") +
+      theme_bw(base_size = 18) + 
+      labs(x = paste("Mean of phat", round(MEANphat, 4), " SD of phat", round(SDphat, 4))) 
+  })
+}
+shinyApp(ui = ui, server = server)
+```
