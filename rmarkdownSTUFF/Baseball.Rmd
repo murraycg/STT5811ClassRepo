@@ -112,9 +112,19 @@ NDF <- bat10 %>%
 NDF %>%
   group_by(team) %>%
   summarize(Mean = mean(OBP), SD = sd(OBP), n = n())
-ggplot(data = NDF, aes(x = team, y = OBP)) + 
+ggplot(data = NDF, aes(x = team, y = OBP, fill = team)) + 
   geom_boxplot() + 
+  theme_bw() + 
+  labs(y = "On base percentage") + 
+  guides(fill = FALSE)
+ggplot(data = NDF, aes(sample = OBP, color = team)) + 
+  stat_qq() + 
   theme_bw()
+# Or
+ggplot(data = NDF, aes(sample = OBP, color = team)) + 
+  stat_qq() + 
+  theme_bw() + 
+  facet_grid(. ~ team)
 # Standard 90% CI first
 t.test(OBP ~ team, data = NDF, conf.level = 0.90)
 df <- t.test(OBP ~ team, data = NDF, conf.level = 0.90)$parameter
@@ -156,4 +166,6 @@ BSCI
 SBS <- obsdiff + c(-1, 1)*qt(0.95, df)*sd(diffmean)
 SBS
 ```
+
+
 
