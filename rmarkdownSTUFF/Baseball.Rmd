@@ -1,7 +1,6 @@
 ---
 title: "Baseball"
 author: "Alan T. Arnholt"
-date: 'Last compiled: `r format(Sys.time(), "%b %d, %Y")`'
 output: 
   bookdown::html_document2
 ---
@@ -43,6 +42,24 @@ T524
 DT::datatable(T524)
 ```
 
+## Hypotheses {-}
+
+**Your Turn:** 
+
+1.  Write the null and alternative hypotheses to test whether the on base percentage is related to position.
+
+$H_0:$
+
+$H_A:$
+
+2. List the conditions necessary for performing ANOVA:
+  +
+  +
+  +
+
+
+
+
 ```{r, label = "BPOI", fig.cap = "Side-by-side boxplots of on base percentage according to position"}
 library(ggplot2)
 ggplot(data = bat10, aes(x = pos, y = OBP, fill = pos)) + 
@@ -68,13 +85,58 @@ mod.aov <- aov(OBP ~ pos, data = bat10)
 summary(mod.aov)
 ```
 
+**Your turn:**  Compute the $p-$value using `pf`.  Does your answer agree with the output from the ANOVA table?
+
+```{r}
+# Your code here
+```
+
+```{r}
+library(ggplot2)
+ggplot(data = data.frame(x = seq(0, 6, length= 200)), aes(x = x)) +
+  stat_function(fun = df, args = list(3, 233), geom = "area", fill = "purple", alpha = 0.5) +
+  theme_bw() + 
+  labs(x = "", y = "")
+
+df_limit <- function(x){
+  y <- df(x, 3, 323)
+  y[x < 1.994] <- NA
+  return(y)
+}
+p <- ggplot(data.frame(x = c(0, 6)), aes(x = x))
+p + stat_function(fun = df_limit, geom = "area", fill = "purple", alpha = 0.4, n = 500) + 
+  stat_function(fun = df, args = list(3, 323)) +
+  theme_bw() +
+  labs(x = "", y = "")
+```
+
 **Finished - Now consider a different problem.**
 
-```{r, fig.width = 10}
+Use `bat10` to test whether the on base percentate is related to position.
+
+
+```{r}
 T5N <- bat10 %>%
   group_by(position) %>%
   summarise(n = n(), Mean = round(mean(OBP), 4), SD = round(sd(OBP), 4))
 T5N
+```
+
+**Your turn:** 
+
+1. Write the null and alternative hypotheses to test whether the on base percentage is related to position.
+
+$H_O:$
+
+$H_A:$
+
+2. List the conditions nescessary for performing ANOVA:
+  +
+  +
+  +
+
+
+```{r, , fig.width = 10}
 ggplot(data = bat10, aes(x = position, y = OBP, fill = position)) + 
   geom_boxplot() + 
   theme_bw() + 
@@ -92,6 +154,45 @@ ggplot(data = bat10, aes(sample = OBP, color = position)) +
 ```{r}
 mod2.aov <- aov(OBP ~ position, data = bat10)
 summary(mod2.aov)
+```
+
+**Your turn:** 
+
+1.  Do you reject the null hypothesis?  If so, what does this mean in plain English?
+2.  Which positions have a higher on base percentage?
+
+
+## Bonferroni Method {-}
+
+$$CI_{1 - \alpha_e}(\mu_i - \mu_j) = (\bar{Y}_{i\bullet} - \bar{Y}_{j\bullet}) \pm t_{1 - \tfrac{\alpha_c}{2K};df_{Error}}\sqrt{MS_{Error}}\sqrt{\frac{1}{n_i} + \frac{1}{n_j}}$$
+```{r}
+T5N
+(0.3354 - 0.3348) +c(-1, 1)*qt(1 - 0.05/(2*choose(7,2)), 320)*sqrt(0.001182)*sqrt(1/33 + 1/39)
+```
+
+**Your Turn:**
+
+Find a 95% Bonferroni CI for the $\mu_{3B} - \mu_{1B}$
+
+```{r}
+# Your code here
+```
+
+##Tukey's Honestly Significant Difference (HSD) {-}
+
+$$CI_{1 - \alpha_e}(\mu_i - \mu_j) = (\bar{Y}_{i\bullet} - \bar{Y}_{j\bullet}) \pm \frac{q_{1 - \alpha_e:a, \nu}}{\sqrt{2}}\sqrt{MS_{Error}}\sqrt{\frac{1}{n_i} + \frac{1}{n_j}}$$
+Note: $a=$ the number of treatments, $\nu=$ the degrees of freedom for $MS_{Error}$.  The notation $q_{1 - \alpha;a,\nu}$ denotes the studentized range value with $1 - \alpha$ area to the left with $a$ and $\nu$ degrees of freedom, respectively.  For example, $q_{0.95;4,20} = `r qtukey(0.95, 4, 20)`$ is obtained by entering:
+
+```{r}
+qtukey(0.95, 4, 20)
+```
+
+**Your Turn:**
+
+Verify using the formula that $CI_{0.95}(\mu_{3B} - \mu_{1B}) = [-0.05696, -0.00899]$.
+
+```{r}
+# Your code here
 ```
 
 ```{r, fig.width = 8, fig.height = 8}
@@ -132,6 +233,8 @@ df
 ```
 
 ## Bootstrap {-}
+
+For more on the bootstrap method see [http://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/TheBootstrap.html](http://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/TheBootstrap.html).
 
 ```{r}
 BALOBP <- bat10$OBP[bat10$team == "BAL"]
