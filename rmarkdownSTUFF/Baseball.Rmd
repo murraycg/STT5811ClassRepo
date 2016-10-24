@@ -178,6 +178,13 @@ Find a 95% Bonferroni CI for the $\mu_{3B} - \mu_{1B}$
 # Your code here
 ```
 
+Another approach is to use `pairwise.t.test()`
+
+```{r}
+pairwise.t.test(bat10$OBP, bat10$position, p.adj = "bonferroni")
+```
+
+
 ##Tukey's Honestly Significant Difference (HSD) {-}
 
 $$CI_{1 - \alpha_e}(\mu_i - \mu_j) = (\bar{Y}_{i\bullet} - \bar{Y}_{j\bullet}) \pm \frac{q_{1 - \alpha_e:a, \nu}}{\sqrt{2}}\sqrt{MS_{Error}}\sqrt{\frac{1}{n_i} + \frac{1}{n_j}}$$
