@@ -112,7 +112,7 @@ p + stat_function(fun = df_limit, geom = "area", fill = "purple", alpha = 0.4, n
 
 **Finished - Now consider a different problem.**
 
-Use `bat10` to test whether the on base percentate is related to position.
+Use `bat10` to test whether the on base percentage is related to position.
 
 
 ```{r}
@@ -130,7 +130,7 @@ $H_O:$
 
 $H_A:$
 
-2. List the conditions nescessary for performing ANOVA:
+2. List the conditions necessary for performing ANOVA:
   +
   +
   +
@@ -167,7 +167,7 @@ summary(mod2.aov)
 $$CI_{1 - \alpha_e}(\mu_i - \mu_j) = (\bar{Y}_{i\bullet} - \bar{Y}_{j\bullet}) \pm t_{1 - \tfrac{\alpha_c}{2K};df_{Error}}\sqrt{MS_{Error}}\sqrt{\frac{1}{n_i} + \frac{1}{n_j}}$$
 ```{r}
 T5N
-(0.3354 - 0.3348) +c(-1, 1)*qt(1 - 0.05/(2*choose(7,2)), 320)*sqrt(0.001182)*sqrt(1/33 + 1/39)
+(0.3554 - 0.3348) +c(-1, 1)*qt(1 - 0.05/(2*choose(7,2)), 320)*sqrt(0.001182)*sqrt(1/33 + 1/39)
 ```
 
 **Your Turn:**
