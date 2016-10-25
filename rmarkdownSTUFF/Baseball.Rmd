@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE, comment = NA, message = FALSE, warning = FALSE, fig.align = "center")
 ```
 
-Create the data set discussed on page 248 of Open Intro.
+Create the data set discussed on page 248 of [*OpenIntro Statistics*](https://drive.google.com/file/d/0B-DHaDEbiOGkc1RycUtIcUtIelE/view).
 
 ```{r, label = "BBsetup"}
 library(dplyr)
@@ -29,7 +29,7 @@ table(bat10$pos)
 # detach("package:plyr", unload = TRUE)
 ```
 
-Create summary statistics presented in Table 5.24 of Open Intro.
+Create the summary statistics presented in Table 5.24 of [*OpenIntro Statistics*](https://drive.google.com/file/d/0B-DHaDEbiOGkc1RycUtIcUtIelE/view).
 
 ```{r}
 T524 <- bat10 %>%
