@@ -109,6 +109,12 @@ git remote -v
 ```
 git pull upstream master
 ```
+
+* If the upstream repository is using `gh-pages`, use `gh-pages` instead of `master` to obtain updates.
+```
+git pull upstream gh-pages
+```
+
 * If there are conflicts, you will need to resolve them before proceeding.
 
 * Create a free account on [DataCamp](https://www.datacamp.com/).  Complete chapter 1 of [*Data Analysis and Statistical Inference* ](https://www.datacamp.com/courses/statistical-inference-and-data-analysis)
