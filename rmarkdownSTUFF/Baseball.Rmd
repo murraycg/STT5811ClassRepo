@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA, message = FALSE, warning = FALS
 
 Create the data set discussed on page 248 of [*OpenIntro Statistics*](https://drive.google.com/file/d/0B-DHaDEbiOGkc1RycUtIcUtIelE/view).
 
+* Note the book is now linked.
+
 ```{r, label = "BBsetup"}
 library(dplyr)
 library(openintro)
