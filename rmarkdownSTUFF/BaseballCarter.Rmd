@@ -1,0 +1,283 @@
+---
+title: "Baseball"
+author: "Alan T. Arnholt"
+output: 
+  bookdown::html_document2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, message = FALSE, warning = FALSE, fig.align = "center")
+```
+
+Create the data set discussed on page 248 of [*OpenIntro Statistics*](https://drive.google.com/file/d/0B-DHaDEbiOGkc1RycUtIcUtIelE/view).
+
+* Note the book is now linked.
+
+```{r, label = "BBsetup"}
+library(dplyr)
+library(openintro)
+bat10 <- mlbBat10 %>%
+  filter(AB > 200)
+# Note unused factor levels
+table(bat10$position)
+bat10$position <- droplevels(bat10$position)
+table(bat10$position)
+# Combine 1B, 2B, 3B, SS into infield (IF)
+#
+bat10$pos <- plyr::revalue(bat10$position, 
+                       replace = c("1B" = "IF", "2B" = "IF", "3B" = "IF", "SS" = "IF"))
+table(bat10$pos)
+# Note must detach plyr for dplyr to work properly
+# detach("package:plyr", unload = TRUE)
+```
+
+Create the summary statistics presented in Table 5.24 of [*OpenIntro Statistics*](https://drive.google.com/file/d/0B-DHaDEbiOGkc1RycUtIcUtIelE/view).
+
+```{r}
+T524 <- bat10 %>%
+  group_by(pos) %>%
+  summarise(n = n(), Mean = round(mean(OBP), 4), SD = round(sd(OBP), 4))
+T524
+```
+
+```{r}
+DT::datatable(T524)
+```
+
+## Hypotheses {-}
+
+**Your Turn:** 
+
+1.  Write the null and alternative hypotheses to test whether the on base percentage is related to position.
+
+$H_0:$
+
+$H_A:$
+
+2. List the conditions necessary for performing ANOVA:
+  +
+  +
+  +
+
+
+
+
+```{r, label = "BPOI", fig.cap = "Side-by-side boxplots of on base percentage according to position"}
+library(ggplot2)
+ggplot(data = bat10, aes(x = pos, y = OBP, fill = pos)) + 
+  geom_boxplot() + 
+  theme_bw() + 
+  labs(y = "On base percentage", x = "Position") + 
+  guides(fill = FALSE)
+```
+
+```{r, label = "QQ", fig.width = 10}
+ggplot(data = bat10, aes(sample = OBP, color = pos)) + 
+  stat_qq() + 
+  theme_bw()
+ggplot(data = bat10, aes(sample = OBP, color = pos)) + 
+  stat_qq() +
+  facet_grid(.~pos) +
+  theme_bw() + 
+  guides(color = FALSE)
+```
+
+```{r}
+mod.aov <- aov(OBP ~ pos, data = bat10)
+summary(mod.aov)
+```
+
+**Your turn:**  Compute the $p-$value using `pf`.  Does your answer agree with the output from the ANOVA table?
+
+```{r}
+# Your code here
+```
+
+```{r}
+library(ggplot2)
+ggplot(data = data.frame(x = seq(0, 6, length= 200)), aes(x = x)) +
+  stat_function(fun = df, args = list(3, 233), geom = "area", fill = "purple", alpha = 0.5) +
+  theme_bw() + 
+  labs(x = "", y = "")
+
+df_limit <- function(x){
+  y <- df(x, 3, 323)
+  y[x < 1.994] <- NA
+  return(y)
+}
+p <- ggplot(data.frame(x = c(0, 6)), aes(x = x))
+p + stat_function(fun = df_limit, geom = "area", fill = "purple", alpha = 0.4, n = 500) + 
+  stat_function(fun = df, args = list(3, 323)) +
+  theme_bw() +
+  labs(x = "", y = "")
+```
+
+**Finished - Now consider a different problem.**
+
+Use `bat10` to test whether the on base percentage is related to position.
+
+
+```{r}
+T5N <- bat10 %>%
+  group_by(position) %>%
+  summarise(n = n(), Mean = round(mean(OBP), 4), SD = round(sd(OBP), 4))
+T5N
+```
+
+**Your turn:** 
+
+1. Write the null and alternative hypotheses to test whether the on base percentage is related to position.
+
+$H_O: \mu_1 = \mu_2$
+
+$H_A:$
+
+2. List the conditions necessary for performing ANOVA:
+  +
+  +
+  +
+
+
+```{r, , fig.width = 10}
+ggplot(data = bat10, aes(x = position, y = OBP, fill = position)) + 
+  geom_boxplot() + 
+  theme_bw() + 
+  guides(fill = FALSE)
+ggplot(data = bat10, aes(sample = OBP, color = position)) + 
+  stat_qq() + 
+  theme_bw()
+ggplot(data = bat10, aes(sample = OBP, color = position)) + 
+  stat_qq() +
+  facet_grid(.~position) +
+  theme_bw() + 
+  guides(color = FALSE)
+```
+
+```{r}
+mod2.aov <- aov(OBP ~ position, data = bat10)
+summary(mod2.aov)
+```
+
+**Your turn:** 
+
+1.  Do you reject the null hypothesis?  If so, what does this mean in plain English?
+2.  Which positions have a higher on base percentage?
+
+
+## Bonferroni Method {-}
+
+$$CI_{1 - \alpha_e}(\mu_i - \mu_j) = (\bar{Y}_{i\bullet} - \bar{Y}_{j\bullet}) \pm t_{1 - \tfrac{\alpha_c}{2K};df_{Error}}\sqrt{MS_{Error}}\sqrt{\frac{1}{n_i} + \frac{1}{n_j}}$$
+```{r}
+T5N
+(0.3554 - 0.3348) +c(-1, 1)*qt(1 - 0.05/(2*choose(7,2)), 320)*sqrt(0.001182)*sqrt(1/33 + 1/39)
+```
+
+**Your Turn:**
+
+Find a 95% Bonferroni CI for the $\mu_{3B} - \mu_{1B}$
+
+```{r}
+# Your code here
+```
+
+Another approach is to use `pairwise.t.test()`
+
+```{r}
+pairwise.t.test(bat10$OBP, bat10$position, p.adj = "bonferroni")
+```
+
+
+##Tukey's Honestly Significant Difference (HSD) {-}
+
+$$CI_{1 - \alpha_e}(\mu_i - \mu_j) = (\bar{Y}_{i\bullet} - \bar{Y}_{j\bullet}) \pm \frac{q_{1 - \alpha_e:a, \nu}}{\sqrt{2}}\sqrt{MS_{Error}}\sqrt{\frac{1}{n_i} + \frac{1}{n_j}}$$
+Note: $a=$ the number of treatments, $\nu=$ the degrees of freedom for $MS_{Error}$.  The notation $q_{1 - \alpha;a,\nu}$ denotes the studentized range value with $1 - \alpha$ area to the left with $a$ and $\nu$ degrees of freedom, respectively.  For example, $q_{0.95;4,20} = `r qtukey(0.95, 4, 20)`$ is obtained by entering:
+
+```{r}
+qtukey(0.95, 4, 20)
+```
+
+**Your Turn:**
+
+Verify using the formula that $CI_{0.95}(\mu_{3B} - \mu_{1B}) = [-0.05696, -0.00899]$.
+
+```{r}
+# Your code here
+```
+
+```{r, fig.width = 8, fig.height = 8}
+TukeyHSD(mod2.aov)
+par(las = 1)
+plot(TukeyHSD(mod2.aov))
+par(las = 0)
+```
+
+-----
+
+## Confidence Intervals (2 Groups) {-}
+
+```{r}
+NDF <- bat10 %>%
+  filter(team == "BAL" | team == "BOS") %>%
+  select(OBP, team) 
+NDF %>%
+  group_by(team) %>%
+  summarize(Mean = mean(OBP), SD = sd(OBP), n = n())
+ggplot(data = NDF, aes(x = team, y = OBP, fill = team)) + 
+  geom_boxplot() + 
+  theme_bw() + 
+  labs(y = "On base percentage") + 
+  guides(fill = FALSE)
+ggplot(data = NDF, aes(sample = OBP, color = team)) + 
+  stat_qq() + 
+  theme_bw()
+# Or
+ggplot(data = NDF, aes(sample = OBP, color = team)) + 
+  stat_qq() + 
+  theme_bw() + 
+  facet_grid(. ~ team)
+# Standard 90% CI first
+t.test(OBP ~ team, data = NDF, conf.level = 0.90)
+df <- t.test(OBP ~ team, data = NDF, conf.level = 0.90)$parameter
+df
+```
+
+## Bootstrap {-}
+
+For more on the bootstrap method see [http://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/TheBootstrap.html](http://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/TheBootstrap.html).
+
+```{r}
+BALOBP <- bat10$OBP[bat10$team == "BAL"]
+BOSOBP <- bat10$OBP[bat10$team == "BOS"]
+obsdiff <- mean(BALOBP) - mean(BOSOBP)
+obsdiff
+SIMS <- 10^4 - 1
+diffmean <- numeric(SIMS)
+for(i in 1:SIMS){
+  sampBAL <- sample(BALOBP, size = sum(!is.na(BALOBP)), replace = TRUE)
+  sampBOS <- sample(BOSOBP, size = sum(!is.na(BOSOBP)), replace = TRUE)
+  diffmean[i] <- mean(sampBAL) - mean(sampBOS)
+}
+hist(diffmean)
+# OR
+ggplot(data = data.frame(x = diffmean), aes(x = x)) + 
+  geom_density(fill = "pink") + 
+  theme_bw() + 
+  labs(x = substitute(paste(bar(x)[Bal],"*", - bar(x)[Bos],"*")))
+```
+
+## Percentile Approach {-}
+
+```{r}
+BSCI <- quantile(diffmean, probs = c(0.05, 0.95))
+BSCI
+```
+
+## Standard Bootstrap {-}
+
+```{r}
+SBS <- obsdiff + c(-1, 1)*qt(0.95, df)*sd(diffmean)
+SBS
+```
+
+
+
